@@ -1,0 +1,121 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+/**********************************************************/
+
+body {
+  background: #fff;
+  width:50%;
+  height: 50%;
+}
+
+/* imgContainer "contains" imgClass */
+.imgContainer{
+  height: 800px;
+  width: 600px;
+  margin: 20% 60% 100% 0%;
+
+}
+
+.Appdoit{
+  height: 800px;
+  width: 600px; 
+  margin: 20% 60% 100% 0%;
+}
+
+/* imgClass sets main's images sizes */
+.imgClass{
+  height: 84%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  width: 112%;
+  margin: 0% 100%  60% 17%;
+  }
+
+
+.header{
+  position:fixed;
+  top:3%;
+  left:10%;
+  right: 15%;
+  width:80%;
+  height: 20%;
+  background: #C00000;
+  padding:0%;
+
+  }
+
+
+.footer{
+  position:fixed;
+  bottom:3%;
+  left:10%;
+  right:15%;
+  width:80%;
+  height:20%;
+  background: #C00000;
+  padding:0%;
+ 
+  }
+
+
+/****************************************************************************
+  These Boxes don't allow images to "go over the header and lower the footer" 
+  making white a certain area per each one of them (B,T,L,R).
+****************************************************************************/
+
+.ghostBottomBox{
+  position: fixed;
+  bottom: 0%;
+  left: 10%;
+  right: 15%;
+  width: 80%;
+  height: 3%;
+  padding: 0%;
+  background-color: #fff;
+
+}
+
+.ghostTopBox{
+  position: fixed;
+  top: 0%;
+  left: 10%;
+  right: 15%;
+  width: 80%;
+  height: 3%;
+  padding: 0%;
+  background-color: #fff;
+
+}
+
+
+.ghostLeftBox{
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  width: 10%;
+  height: 100%;
+  padding: 0%;
+  background-color: #fff;
+
+}
+
+.ghostRightBox{
+  position: fixed;
+  bottom: 0%;
+  left: 90%;
+  right: 0%;
+  width: 15%;
+  height: 100%;
+  padding: 0%;
+  background-color: #fff;
+
+}
+
+/****************************************************************************
+****************************************************************************/
