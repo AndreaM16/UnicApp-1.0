@@ -23,11 +23,16 @@
 
   <body ng-app="appdoitApp"> 
       <div ng-view="Appdoit" class=" AppdoitSize"></div>
-      <div class="textBox"> Quest'App ha lo scopo di riportare notizie relative all'Università di Caglari, fare segnalazioni, conoscere contatti utili e visualizzare i corsi disponibili.
+      <div class="textBox"> Quest'App ha lo scopo di riportare notizie relative all'Università di Cagliari, fare segnalazioni, conoscere contatti utili e visualizzare i corsi disponibili.
       <br><br>
       Puoi anche visitare:</div>
 
-      <a href="http://www.unica.it" class="mainBtn btn-danger btn-lg active" role="button">http://www.unica.it/</a>
+      <!--<a href="http://www.unica.it" class="mainBtn btn-default btn-lg active valign" name="http://www.unica.it/"><span>http://www.unica.it/</span></a>-->
+
+      <button id="unica" class="mainBtn btn-lg btn-default active" name="unica" type="submit">
+    <span>www.Unica.it</span>
+    <i class="" style="font-size:30px; vertical-align: middle;"></i>
+    </button>
 
       <div class="header"></div>
       
@@ -53,6 +58,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
