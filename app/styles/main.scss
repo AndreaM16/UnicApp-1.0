@@ -21,8 +21,11 @@ html, body {
 
 }
 
+/* TextBox, hidden to hide the scrollbar and
+   inner - overflow: auto lets it be responsive*/
+
 .textBox{
-  width: 100%;
+  width: 86%;
   height: 20%;
   margin-top: 0;
   margin-right: 0;
@@ -31,18 +34,25 @@ html, body {
   font-weight: bold;
   font-size: 115%;
   text-align: left;
-  bottom: 27%;
+  bottom: 24%;
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
+  left: 7%;
+  right: 7%;
+  color: #000;
+}
 
+#inner{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .mainBtn{
 
   display: block;
-  height: 6%;
-  width: 50%;
-  color: #fff;
+  height: 8%;
+  width: 62%;
   text-align: center;
   margin-left: 0;
   margin-right: 0;
@@ -50,26 +60,62 @@ html, body {
   font-size: 110%;
   position: fixed;
   padding: 0;
-  left: 25%;
+  left: 18%;
   right: 0;
-  bottom: 12%;
+  bottom: 3%;
   overflow: auto;
-  background: #B00000;
-}
-
-.btn-default.valign{
-  vertical-align: middle;
-  display: inline-block;
-  float: none;
+  font-weight: bold;
+  border: #000;
+  font-size: 130%;
 }
 
 .btn-default.active{
-  background-color: #B00000;
+  background-color: #E5001B;
   color: #fff;
   line-height: 1;
 
 }
 
+/*
+.menuBtn {
+  position: fixed;
+  top:0;
+  padding: 0;
+  border: 0;
+  height: 8%;
+  width: 15%;
+  font-weight: bold;
+  font-size: 130% ;
+  background: #E5001B;
+  color: #fff;
+
+}*/
+
+.menuBtn {
+  
+  position: fixed;
+  top:0;
+  padding: 0;
+  border: 0;
+  height: 8%;
+  width: 15%;
+  font-weight: bold;
+  font-size: 220% ;
+  background: #E5001B;
+  
+}
+.menuBtn:before{
+  content: "";
+  position: absolute;
+  left: 23%;
+  top: 34%;
+  width: 50%;
+  height: 6%;
+  background: #fff;
+  box-shadow: 
+    0 0.5em 0 0 white,
+    0 0.25em 0 0 white;
+}
 
 .header{
   position: fixed;
@@ -78,8 +124,21 @@ html, body {
   right: 0%;
   width: 85%;
   height: 8%;
-  background: #B00000;
+  background: #E5001B;
   padding: 0%;
+  }
+
+  .headerText{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: 185%;
+    float: center;
+    bottom: 14%;
+    left: 23%;
+    top: 14%;
+
   }
 
 /*.imgClass{
@@ -121,7 +180,7 @@ h2{
   left: 0;
   width: 5%;
   height: 17%;
-  background: #B00000;
+  background: #E5001B;
   margin-bottom: 0;
   margin-top: 0;
 
@@ -171,36 +230,3 @@ h2{
   padding: 0;
 }
 
-button {
-  position: absolute;
-  bottom: 40%;
-  padding: 0;
-  border: 0;
-  height: 20%;
-  width: 10%;
-  background: rgba(255,255,255,0.6);
-  color: #000;
-  font-size: 245%;
-}
-
-.next {
-  right: 0;
-}
-
-.prev {
-  left: 0;
-}
-
-.menuBtn {
-  position: fixed;
-  top:0;
-  padding: 0;
-  border: 0;
-  height: 8%;
-  width: 15%;
-  line-height: 1%;
-  font-weight: 10%;
-  background: #B00000;
-  color: #fff;
-
-}
