@@ -31,6 +31,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -50,3 +54,9 @@ $('.prev').click(function() {
 });
 
 */
+
+$(function(){
+    $('#mainBtn').click(function(){
+        window.location='http://www.unica.it/'
+    });
+});

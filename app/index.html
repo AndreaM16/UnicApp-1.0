@@ -18,22 +18,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.css">
 
   </head>
 
   <body ng-app="appdoitApp"> 
+      
       <div ng-view="Appdoit" class=" AppdoitSize"></div>
-      <div class="textBox"> Quest'App ha lo scopo di riportare notizie relative all'Università di Cagliari, fare segnalazioni, conoscere contatti utili e visualizzare i corsi disponibili.
-      <br><br>
-      Puoi anche visitare:</div>
-
-      <!--<a href="http://www.unica.it" class="mainBtn btn-default btn-lg active valign" name="http://www.unica.it/"><span>http://www.unica.it/</span></a>-->
-
       
 
-      <div class="header"><span class="headerText">Benvenuto</span></div>
       
-
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/json3/lib/json3.js"></script>
@@ -63,7 +57,19 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="bower_components/swiper/dist/js/swiper.js"></script>
+        <script src="bower_components/swiper/dist/js/swiper.jquery.js"></script>
         <!-- endbuild -->
+
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    </script>
 
 </body>
 </html>

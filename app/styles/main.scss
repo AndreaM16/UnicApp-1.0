@@ -12,6 +12,38 @@ html, body {
   height: 100%;
 }
 
+.swiper-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position:relative;
+       
+    }
+    .swiper-slide{
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
 .AppdoitSize{
   width: 100%;
   height: 44%;
@@ -26,15 +58,15 @@ html, body {
 
 .textBox{
   width: 86%;
-  height: 20%;
+  height: 24%;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
   font-family: "Open Sans", Ag abc123, serif;
   font-weight: bold;
-  font-size: 115%;
+  font-size: 122%;
   text-align: left;
-  bottom: 24%;
+  bottom: 18%;
   position: fixed;
   overflow: hidden;
   left: 7%;
@@ -48,6 +80,7 @@ html, body {
   overflow: auto;
 }
 
+/* unica.it btn */
 .mainBtn{
 
   display: block;
@@ -69,6 +102,7 @@ html, body {
   font-size: 130%;
 }
 
+/* fixing the default button using active attribute */
 .btn-default.active{
   background-color: #E5001B;
   color: #fff;
@@ -76,21 +110,7 @@ html, body {
 
 }
 
-/*
-.menuBtn {
-  position: fixed;
-  top:0;
-  padding: 0;
-  border: 0;
-  height: 8%;
-  width: 15%;
-  font-weight: bold;
-  font-size: 130% ;
-  background: #E5001B;
-  color: #fff;
-
-}*/
-
+/* Menu nav btn */
 .menuBtn {
   
   position: fixed;
@@ -104,6 +124,8 @@ html, body {
   background: #E5001B;
   
 }
+
+/* Making it look like it is*/
 .menuBtn:before{
   content: "";
   position: absolute;
@@ -128,6 +150,7 @@ html, body {
   padding: 0%;
   }
 
+/* Putting "Benvenuto" in the header */
   .headerText{
     color: #fff;
     font-weight: bold;
@@ -141,17 +164,7 @@ html, body {
 
   }
 
-/*.imgClass{
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover ;
-  background-position: center;
-  position: relative;
-  margin: 0% 0% 0% 0%;
-  }*/
-
-
+/* Ghostly tile with "Benvenuto" at the bottom of the image slider */
 h1{
   position: absolute;
   bottom: 0;
@@ -162,7 +175,7 @@ h1{
   margin-top: 0;
   background: rgba(255,255,255,0.6);
 }
-
+/* Putting into it the text */
 h1 span{
   color: #000;
   font-size: 70%; 
@@ -174,6 +187,7 @@ h1 span{
   margin-top: 0;
 }
 
+/* Little red tile on the left of h1 */
 h2{
   position: absolute;
   bottom: 0;
@@ -185,48 +199,3 @@ h2{
   margin-top: 0;
 
 } 
-
-.demo{
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  position: relative;
-
-}
-
-.display{
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  margin: 0;
-  right: 0;
-  left: 0;
-  padding: 0;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-.container div {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  display: none;
-
-}
-.container img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
