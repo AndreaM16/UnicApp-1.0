@@ -40,23 +40,4 @@ angular
       });
   });
 
-/*
-$('.container img:gt(0)').hide();
 
-$('.next').click(function() {
-    $('.container img:first-child').fadeOut().next().fadeIn().end().appendTo('.container');
-});
-
-$('.prev').click(function() {
-    $('.container img:first-child').fadeOut();
-    $('.container img:last-child').prependTo('.container').fadeOut();
-    $('.container img:first-child').fadeIn();
-});
-
-*/
-
-$(function(){
-    $('#mainBtn').click(function(){
-        window.location='http://www.unica.it/'
-    });
-});

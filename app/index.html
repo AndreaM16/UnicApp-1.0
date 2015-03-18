@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <!--JS supported-->
 <html class="js">
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.css">
+    <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
 
   </head>
 
@@ -56,20 +56,20 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="bower_components/swiper/dist/js/swiper.js"></script>
-        <script src="bower_components/swiper/dist/js/swiper.jquery.js"></script>
-        <!-- endbuild -->
-
+        <script src="scripts/controllers/about.js">
+        </script>
+        <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        spaceBetween: 30,
+    $(document).ready(function () {
+    var swiper = new Swiper('.swiper-container',{
+        direction: 'horizontal',
+        paginationClickable: 'true'
+        })
     });
     </script>
+
 
 </body>
 </html>
