@@ -1,11 +1,8 @@
- <!-- unica bottom button -->
+<!-- unica bottom button -->
   <button id="unica" class="mainBtn btn-lg btn-default active" name="unica" type="submit" href="http://www.unica.it/">
     <span>http://www.unica.it/</span>
       <i class="" style="font-size:30px; vertical-align: middle;"></i>
   </button>
-
-  <!--Menu btn-->
-  <a href="#menu" class="menuBtn"></a>
 
 
   <div class="textBox"> Quest'App ha lo scopo di riportare notizie relative all'Università di Cagliari, fare segnalazioni, conoscere contatti utili e visualizzare i corsi disponibili.
@@ -19,14 +16,15 @@
 <h1><span>Benvenuto</span></h1>
 <h2></h2>
 
+
 <!-- Slider main container -->
 <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" style="background-image: url('images/img1.jpg')"></div>
-        <div class="swiper-slide" style="background-image: url('images/img2.jpg')"></div>
-        <div class="swiper-slide" style="background-image: url('images/img3.jpg')"></div>
+        <div class="swiper-slide" ng-click="swipers" style="background-image: url('images/img1.jpg')"></div>
+        <div class="swiper-slide" ng-click="swipers" style="background-image: url('images/img2.jpg')"></div>
+        <div class="swiper-slide" ng-click="swipers" style="background-image: url('images/img3.jpg')"></div>
         
     </div>
 
@@ -34,12 +32,7 @@
     </div>
 </div>
 
-<script>
- $(document).ready(function () {
-    var swiper = new Swiper('.swiper-container',{
-        direction: 'horizontal',
-        paginationClickable: 'true'
-        })
-  });
+    <a href="#menu "class="menuBtn"></a>
 
-</script>
+<!--scripts-->
+<script src="scripts/swipers.js"></script>
