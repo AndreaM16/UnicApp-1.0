@@ -7953,7 +7953,7 @@ html, body {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000371}}
 .AppdoitSize {
   width: 100%;
   height: 44%;
@@ -7964,7 +7964,7 @@ html, body {
 
 /* TextBox, hidden to hide the scrollbar and
    inner - overflow: auto lets it be responsive*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000384}}
 .textBox {
   width: 86%;
   height: 24%;
@@ -7983,7 +7983,7 @@ html, body {
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003102}}
 #inner {
   width: 100%;
   height: 100%;
@@ -7991,7 +7991,7 @@ html, body {
 }
 
 /* unica.it btn */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003109}}
 .mainBtn {
   display: block;
   height: 8%;
@@ -8000,28 +8000,31 @@ html, body {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  font-size: 110%;
   position: fixed;
   padding: 0;
   left: 18%;
   right: 0;
   bottom: 3%;
-  overflow: auto;
   font-weight: bold;
   border: #000;
   font-size: 130%;
 }
 
 /* fixing the default button using active attribute */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003130}}
 .btn-default.active {
   background-color: #E5001B;
   color: #fff;
-  line-height: 1;
+  line-height: 3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003136}}
+a:hover, a:focus {
+  text-decoration: none;
 }
 
 /* Menu nav btn */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003141}}
 .menuBtn {
   position: fixed;
   top: 0;
@@ -8035,7 +8038,7 @@ html, body {
 }
 
 /* Making it look like it is*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003156}}
 .menuBtn:before {
   content: "";
   position: absolute;
@@ -8047,7 +8050,7 @@ html, body {
   box-shadow: 0 0.5em 0 0 white, 0 0.25em 0 0 white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003169}}
 .header {
   position: fixed;
   top: 0%;
@@ -8060,7 +8063,7 @@ html, body {
 }
 
 /* Putting "Benvenuto" in the header */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003181}}
 .headerText {
   color: #fff;
   font-weight: bold;
@@ -8074,7 +8077,7 @@ html, body {
 }
 
 /* Ghostly tile with "Benvenuto" at the bottom of the image slider */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003195}}
 h1 {
   position: absolute;
   z-index: 2;
@@ -8088,7 +8091,7 @@ h1 {
 }
 
 /* Putting into it the text */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003207}}
 h1 span {
   color: #000;
   font-size: 70%;
@@ -8101,7 +8104,7 @@ h1 span {
 }
 
 /* Little red tile on the left of h1 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003219}}
 h2 {
   z-index: 2;
   position: absolute;

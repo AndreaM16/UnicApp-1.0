@@ -1,9 +1,9 @@
 
 <!-- unica bottom button -->
-  <button id="unica" class="mainBtn btn-lg btn-default active" name="unica" type="submit" href="http://www.unica.it/">
+  <a href="http://www.unica.it/" target="_blank" type="button" class="mainBtn btn-lg btn-default active">
     <span>http://www.unica.it/</span>
-      <i class="" style="font-size:30px; vertical-align: middle;"></i>
-  </button>
+      <i class="" style="font-size:40%; vertical-align: middle;"></i>
+  </a>
 
 <!-- Making the textbox-->
   <div class="textBox"> Quest'App ha lo scopo di riportare notizie relative all'Università di Cagliari, fare segnalazioni, conoscere contatti utili e visualizzare i corsi disponibili.
@@ -23,9 +23,9 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" ng-click="swipers" style="background-image: url('images/img1.jpg')"></div>
-        <div class="swiper-slide" ng-click="swipers" style="background-image: url('images/img2.jpg')"></div>
-        <div class="swiper-slide" ng-click="swipers" style="background-image: url('images/img3.jpg')"></div>
+        <div class="swiper-slide" ng-click="swipers()" style="background-image: url('images/img1.jpg')"></div>
+        <div class="swiper-slide" ng-click="swipers()" style="background-image: url('images/img2.jpg')"></div>
+        <div class="swiper-slide" ng-click="swipers()" style="background-image: url('images/img3.jpg')"></div>
         
     </div>
 
@@ -33,9 +33,8 @@
     </div>
 </div>
 
-    <a href="#menu "class="menuBtn"></a>
+<a href="#/"class="menuBtn"></a>
 
 <!--scripts-->
 <script src="scripts/swipers.js"></script>
-<!--
-<script src="scripts/imgrepeat.js"></script>-->
+
