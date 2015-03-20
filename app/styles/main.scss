@@ -49,7 +49,27 @@ html, body {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-    }    
+    }
+
+  .swiper-pagination {
+     top: 70%; 
+
+     .swiper-pagination-bullet{
+      background-color: #fff;
+      width: 3%;
+      height: 13%;
+      opacity: 1;
+     }
+
+    .swiper-pagination-bullet-active{
+    background: #E5001B;
+    opacity: 1;
+    } 
+
+  }
+
+  
+
 
 .AppdoitSize{
   width: 100%;
