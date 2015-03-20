@@ -4,14 +4,94 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-/**********************************************************/
-
+/*************************BODY**************************/
+/*************************HTML*****************************/
 html, body {
   background: #fff;
   width: 100%;
   height: 100%;
 }
 
+/***********************************************************/
+/***********************CUSTOM HEADER***********************/
+
+/* Menu nav btn */
+.menuBtn {
+  
+  position: fixed;
+  top:0;
+  left: 0;
+  padding: 0;
+  border: 0;
+  height: 8%;
+  width: 15%;
+  font-weight: bold;
+  font-size: 220% ;
+  background: #E5001B;
+  
+}
+
+/* Making it look like it is*/
+.menuBtn:before{
+  content: "";
+  position: absolute;
+  left: 23%;
+  top: 34%;
+  width: 50%;
+  height: 6%;
+  background: #fff;
+  box-shadow: 
+    0 0.5em 0 0 white,
+    0 0.25em 0 0 white;
+}
+
+ .header{
+  position: fixed;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 85%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+/* Putting "Benvenuto" in the header */
+  .headerText{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: 185%;
+    float: center;
+    bottom: 14%;
+    left: 23%;
+    top: 14%;
+
+  }
+
+/**********************************************************/
+/***************************CONTAINER**********************/
+
+.container{
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+
+}
+
+
+.AppdoitSize{
+  width: 100%;
+  height: 44%;
+  top: 8%;
+  position: relative;
+  margin: 0;
+
+}
+
+/***************************SWIPER************************/
 .swiper-container {
         top: 0;
         bottom: 0;
@@ -67,129 +147,7 @@ html, body {
     } 
 
   }
-
-.AppdoitSize{
-  width: 100%;
-  height: 44%;
-  top: 8%;
-  position: relative;
-  margin: 0;
-
-}
-
-
-/* TextBox, hidden to hide the scrollbar and
-   inner - overflow: auto lets it be responsive*/
-
-.textBox{
-  width: 86%;
-  height: 24%;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-  font-family: "Open Sans", Ag abc123, serif;
-  font-weight: bold;
-  font-size: 122%;
-  text-align: left;
-  bottom: 18%;
-  position: fixed;
-  overflow: hidden;
-  left: 7%;
-  right: 7%;
-  color: #000;
-}
-
-#inner{
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-/* unica.it btn */
-.mainBtn{
-
-  display: block;
-  height: 8%;
-  width: 62%;
-  text-align: center;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  position: fixed;
-  padding: 0;
-  left: 18%;
-  right: 0;
-  bottom: 3%;
-  
-  font-weight: bold;
-  border: #000;
-  font-size: 130%;
-}
-
-/* fixing the default button using active attribute */
-.btn-default.active{
-  background-color: #E5001B;
-  color: #fff;
-  line-height: 3;
-}
-
-a:hover, a:focus{
-  text-decoration: none;
-}
-
-/* Menu nav btn */
-.menuBtn {
-  
-  position: fixed;
-  top:0;
-  padding: 0;
-  border: 0;
-  height: 8%;
-  width: 15%;
-  font-weight: bold;
-  font-size: 220% ;
-  background: #E5001B;
-  
-}
-
-/* Making it look like it is*/
-.menuBtn:before{
-  content: "";
-  position: absolute;
-  left: 23%;
-  top: 34%;
-  width: 50%;
-  height: 6%;
-  background: #fff;
-  box-shadow: 
-    0 0.5em 0 0 white,
-    0 0.25em 0 0 white;
-}
-
- .header{
-  position: fixed;
-  top: 0%;
-  left: 15%;
-  right: 0%;
-  width: 85%;
-  height: 8%;
-  background: #E5001B;
-  padding: 0%;
-  }
-
-/* Putting "Benvenuto" in the header */
-  .headerText{
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    font-size: 185%;
-    float: center;
-    bottom: 14%;
-    left: 23%;
-    top: 14%;
-
-  }
+/*********************TILES******************************/
 
 /* Ghostly tile with "Benvenuto" at the bottom of the image slider */
 h1{
@@ -228,3 +186,66 @@ h2{
   margin-top: 0;
 
 } 
+
+/***********************TEXTBOX***********************/
+/* TextBox, hidden to hide the scrollbar and
+   inner - overflow: auto lets it be responsive*/
+
+.textBox{
+  width: 86%;
+  height: 24%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: "Open Sans", Ag abc123, serif;
+  font-weight: bold;
+  font-size: 122%;
+  text-align: left;
+  bottom: 18%;
+  position: fixed;
+  overflow: hidden;
+  left: 7%;
+  right: 7%;
+  color: #000;
+}
+
+#inner{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/********************BOTTOMBUTTON*************************/
+/* unica.it btn */
+.mainBtn{
+
+  display: block;
+  height: 8%;
+  width: 62%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  position: fixed;
+  padding: 0;
+  left: 18%;
+  right: 0;
+  bottom: 3%;
+  font-weight: bold;
+  border: #000;
+  font-size: 130%;
+}
+
+/* fixing the default button using active attribute */
+.btn-default.active{
+  background-color: #E5001B;
+  color: #fff;
+  line-height: 3;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+/**********************************************************/
+/**********************************************************/
