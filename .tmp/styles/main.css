@@ -8159,5 +8159,14 @@ html, body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003290}}
 .AppdoitSize .container .push .pushy-open {
   width: 66%;
-  margin-left: -66%;
+  margin-left: -63%;
+  background-color: #6b6b6b;
+  border-bottom: solid #c7c6c6 1px;
+  overflow: hidden;
+  padding-top: 1em;
+  padding-left: 3.8em;
+  padding-bottom: 1em;
+  white-space: nowrap;
+  display: block;
+  font-size: 14px;
 }
