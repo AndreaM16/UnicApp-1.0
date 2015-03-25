@@ -27,6 +27,7 @@ html, body {
 /***********************************************************/
 /***********************CUSTOM HEADER***********************/
 
+
 /* Menu nav btn */
 .menuBtn {
   
@@ -86,11 +87,20 @@ html, body {
 
  /***************************mnContainer*******************/ 
 
- 
+ .mnContainer{
+
+    height: 92%;
+    width: 100%;
+    top: 8%;
+    bottom: 0;
+    position: relative;
+
+
+
  
 /***************************SWIPER************************/
 .swiper-container {
-        top: 8%;
+        top: 0%;
         bottom: 0;
         right: 2%;
         left: 0;
@@ -150,7 +160,7 @@ html, body {
 h1{
   position: absolute;
   z-index: 2;
-  bottom: 47%;
+  bottom: 54%;
   height: 9%;
   left: 5%;
   width: 40%;
@@ -174,7 +184,7 @@ h1 span{
 h2{
   z-index: 2;
   position: absolute;
-  bottom: 47%;
+  bottom: 54%;
   left: 0;
   width: 5%;
   height: 9%;
@@ -243,7 +253,7 @@ h2{
 a:hover, a:focus{
   text-decoration: none;
 }
-
+}
 /**********************************************************/
 /**********************************************************/
 
