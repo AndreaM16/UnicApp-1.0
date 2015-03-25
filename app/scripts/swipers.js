@@ -9,6 +9,6 @@ angular.module('swipers')
     var swiper = new Swiper('.swiper-container',{
         direction: 'horizontal',
         pagination: '.swiper-pagination',
-        paginationClickable: true 
+        paginationClickable: true
         })
   })]);
