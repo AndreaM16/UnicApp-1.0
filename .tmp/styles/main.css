@@ -7895,11 +7895,37 @@ html, body {
   height: 100%;
 }
 
-/***********************************************************/
-/***********************CUSTOM HEADER***********************/
-/* Menu nav btn */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000319}}
-.menuBtn {
+/**********************************************************/
+/***************************CONTAINER**********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000320}}
+.AppdoitSize {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: relative;
+  margin: 0;
+  /***********************************************************/
+  /***********************CUSTOM HEADER***********************/
+  /* Menu nav btn */
+  /* Making it look like it is*/
+  /* Putting "Benvenuto" in the header */
+  /***************************mnContainer*******************/
+  /***************************SWIPER************************/
+  /*********************TILES******************************/
+  /* Ghostly tile with "Benvenuto" at the bottom of the image slider */
+  /* Putting into it the text */
+  /* Little red tile on the left of h1 */
+  /***********************TEXTBOX***********************/
+  /* TextBox, hidden to hide the scrollbar and
+     inner - overflow: auto lets it be responsive*/
+  /********************BOTTOMBUTTON*************************/
+  /* unica.it btn */
+  /* fixing the default button using active attribute */
+  /**********************************************************/
+  /**********************************************************/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000331}}
+.AppdoitSize .menuBtn {
   position: fixed;
   top: 0;
   left: 0;
@@ -7911,10 +7937,8 @@ html, body {
   font-size: 220%;
   background: #E5001B;
 }
-
-/* Making it look like it is*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000335}}
-.menuBtn:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000347}}
+.AppdoitSize .menuBtn:before {
   content: "";
   position: absolute;
   left: 23%;
@@ -7924,10 +7948,10 @@ html, body {
   background: #fff;
   box-shadow: 0 0.5em 0 0 white, 0 0.25em 0 0 white;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000348}}
-.header {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000360}}
+.AppdoitSize .header {
   position: fixed;
+  z-index: 2;
   top: 0%;
   left: 15%;
   right: 0%;
@@ -7936,10 +7960,8 @@ html, body {
   background: #E5001B;
   padding: 0%;
 }
-
-/* Putting "Benvenuto" in the header */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000360}}
-.headerText {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000373}}
+.AppdoitSize .headerText {
   color: #fff;
   font-weight: bold;
   text-align: center;
@@ -7950,43 +7972,21 @@ html, body {
   left: 23%;
   top: 14%;
 }
-
-/**********************************************************/
-/***************************CONTAINER**********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000376}}
-.container {
-  height: 100%;
-  width: 100%;
-  bottom: 0;
-  top: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000385}}
-.AppdoitSize {
-  width: 100%;
-  height: 44%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000392}}
+.AppdoitSize .swiper-container {
   top: 8%;
-  position: relative;
-  margin: 0;
-}
-
-/***************************SWIPER************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\0000395}}
-.swiper-container {
-  top: 0;
   bottom: 0;
-  right: 0;
+  right: 2%;
   left: 0;
   position: relative;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  width: 98%;
+  height: 46%;
   margin: 0;
   padding: 0;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003107}}
-.swiper-slide {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003104}}
+.AppdoitSize .swiper-slide {
   text-align: center;
   height: 100%;
   width: 100%;
@@ -8012,42 +8012,36 @@ html, body {
   -webkit-align-items: center;
   align-items: center;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003134}}
-.swiper-pagination {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003131}}
+.AppdoitSize .swiper-pagination {
   top: 70%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003137}}
-.swiper-pagination .swiper-pagination-bullet {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003134}}
+.AppdoitSize .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
   width: 3%;
   height: 13%;
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003144}}
-.swiper-pagination .swiper-pagination-bullet-active {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003141}}
+.AppdoitSize .swiper-pagination .swiper-pagination-bullet-active {
   background: #E5001B;
   opacity: 1;
 }
-
-/*********************TILES******************************/
-/* Ghostly tile with "Benvenuto" at the bottom of the image slider */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003153}}
-h1 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003150}}
+.AppdoitSize h1 {
   position: absolute;
   z-index: 2;
-  bottom: 0;
-  height: 17%;
+  bottom: 47%;
+  height: 9%;
   left: 5%;
   width: 40%;
   margin-bottom: 0;
   margin-top: 0;
   background: rgba(255, 255, 255, 0.6);
 }
-
-/* Putting into it the text */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003165}}
-h1 span {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003162}}
+.AppdoitSize h1 span {
   color: #000;
   font-size: 70%;
   padding-left: 2%;
@@ -8057,26 +8051,20 @@ h1 span {
   margin-bottom: 0;
   margin-top: 0;
 }
-
-/* Little red tile on the left of h1 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003177}}
-h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003174}}
+.AppdoitSize h2 {
   z-index: 2;
   position: absolute;
-  bottom: 0;
+  bottom: 47%;
   left: 0;
   width: 5%;
-  height: 17%;
+  height: 9%;
   background: #E5001B;
   margin-bottom: 0;
   margin-top: 0;
 }
-
-/***********************TEXTBOX***********************/
-/* TextBox, hidden to hide the scrollbar and
-   inner - overflow: auto lets it be responsive*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003194}}
-.textBox {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003191}}
+.AppdoitSize .textBox {
   width: 86%;
   height: 24%;
   margin-top: 0;
@@ -8093,18 +8081,14 @@ h2 {
   right: 7%;
   color: #000;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003212}}
-#inner {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003209}}
+.AppdoitSize #inner {
   width: 100%;
   height: 100%;
   overflow: auto;
 }
-
-/********************BOTTOMBUTTON*************************/
-/* unica.it btn */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003220}}
-.mainBtn {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003217}}
+.AppdoitSize .mainBtn {
   display: block;
   height: 8%;
   width: 62%;
@@ -8121,19 +8105,13 @@ h2 {
   border: #000;
   font-size: 130%;
 }
-
-/* fixing the default button using active attribute */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003240}}
-.btn-default.active {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003237}}
+.AppdoitSize .btn-default.active {
   background-color: #E5001B;
   color: #fff;
   line-height: 3;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003246}}
-a:hover, a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/github\.com-andream16-unicapp\.github\.io\/app\/styles\/main\.scss}line{font-family:\00003243}}
+.AppdoitSize a:hover, .AppdoitSize a:focus {
   text-decoration: none;
 }
-
-/**********************************************************/
-/**********************************************************/
