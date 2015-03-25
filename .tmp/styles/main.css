@@ -8137,16 +8137,39 @@ html, body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003265}}
 .AppdoitSize .container .push .benvenuto {
   border-bottom: 1px solid #6b6b6b;
+  padding-left: 3%;
+  line-height: 3;
+  height: 9%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 140%;
+  font-weight: normal;
+  background: #d1d1d1;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #d1d1d1), color-stop(0%, #fefefe), color-stop(0%, #d1d1d1), color-stop(99%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* IE10+ */
+  background: linear-gradient(to right, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003286}}
 .AppdoitSize .container .push a:hover, .AppdoitSize .container .push a:focus {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003292}}
 .AppdoitSize .container .push .pushy {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003280}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003296}}
 .AppdoitSize .container .push .pushy-left {
   transform: translate3d(-100%, 0, 0);
   /* Updated the values */
@@ -8154,20 +8177,35 @@ html, body {
   background-color: #fff;
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003305}}
 .AppdoitSize .container .push .container-push, .AppdoitSize .container .push .push-push {
   transform: translate3d(100%, 0, 0);
   /* Updated the values */
   /* Don't forget the vendor prefixes */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003311}}
 .AppdoitSize .container .push .pushy-open {
   width: 77%;
   margin-left: -65%;
-  background-color: #c7c6c6;
-  padding-top: 10%;
+  padding-top: 0%;
   padding-left: 10%;
   padding-bottom: 0%;
   overflow-x: auto;
   font-size: 100%;
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, white 1%, #d1d1d1 100%, #fefefe 100%, #d1d1d1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, white), color-stop(100%, #d1d1d1), color-stop(100%, #fefefe), color-stop(100%, #d1d1d1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, white 1%, #d1d1d1 100%, #fefefe 100%, #d1d1d1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, white 1%, #d1d1d1 100%, #fefefe 100%, #d1d1d1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, white 1%, #d1d1d1 100%, #fefefe 100%, #d1d1d1 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, white 1%, #d1d1d1 100%, #fefefe 100%, #d1d1d1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1',GradientType=1 );
+  /* IE6-9 */
 }
