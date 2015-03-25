@@ -172,7 +172,7 @@ html, body {
 h1{
   position: absolute;
   z-index: 2;
-  bottom: 49%;
+  bottom: 48%;
   height: 9%;
   left: 5%;
   width: 40%;
@@ -196,7 +196,7 @@ h1 span{
 h2{
   z-index: 2;
   position: absolute;
-  bottom: 49%;
+  bottom: 48%;
   left: 0;
   width: 5%;
   height: 9%;
@@ -262,6 +262,11 @@ h2{
   line-height: 3;
 }
 
+.benvenuto{
+
+border-bottom: 1px solid rgba(107, 107, 107, 1);
+}
+
 a:hover, a:focus{
   text-decoration: none;
 }
@@ -288,17 +293,16 @@ a:hover, a:focus{
 }
 
 .pushy-open{
-  width: 76%;
-  margin-left: -63%;
-  background-color: rgba(107, 107, 107, 1);
-  border-bottom: solid rgba(199, 198, 198, 1) 1px;
-  overflow: hidden;
-  padding-top: 1em;
-  padding-left: 3.8em;
-  padding-bottom: 1em;
-  white-space: nowrap;
-  display: block;
-  font-size: 14px;
+  width: 77%;
+  margin-left: -65%;
+  background-color: rgba(199, 198, 198, 1);
+  
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 0%;
+  overflow-x: auto;
+  font-size: 100%;
+
 
 }
 

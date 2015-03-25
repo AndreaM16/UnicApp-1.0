@@ -8055,7 +8055,7 @@ html, body {
 .AppdoitSize .container .push h1 {
   position: absolute;
   z-index: 2;
-  bottom: 49%;
+  bottom: 48%;
   height: 9%;
   left: 5%;
   width: 40%;
@@ -8078,7 +8078,7 @@ html, body {
 .AppdoitSize .container .push h2 {
   z-index: 2;
   position: absolute;
-  bottom: 49%;
+  bottom: 48%;
   left: 0;
   width: 5%;
   height: 9%;
@@ -8135,14 +8135,18 @@ html, body {
   line-height: 3;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003265}}
+.AppdoitSize .container .push .benvenuto {
+  border-bottom: 1px solid #6b6b6b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003270}}
 .AppdoitSize .container .push a:hover, .AppdoitSize .container .push a:focus {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003276}}
 .AppdoitSize .container .push .pushy {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003280}}
 .AppdoitSize .container .push .pushy-left {
   transform: translate3d(-100%, 0, 0);
   /* Updated the values */
@@ -8150,23 +8154,20 @@ html, body {
   background-color: #fff;
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003289}}
 .AppdoitSize .container .push .container-push, .AppdoitSize .container .push .push-push {
   transform: translate3d(100%, 0, 0);
   /* Updated the values */
   /* Don't forget the vendor prefixes */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003295}}
 .AppdoitSize .container .push .pushy-open {
-  width: 76%;
-  margin-left: -63%;
-  background-color: #6b6b6b;
-  border-bottom: solid #c7c6c6 1px;
-  overflow: hidden;
-  padding-top: 1em;
-  padding-left: 3.8em;
-  padding-bottom: 1em;
-  white-space: nowrap;
-  display: block;
-  font-size: 14px;
+  width: 77%;
+  margin-left: -65%;
+  background-color: #c7c6c6;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 0%;
+  overflow-x: auto;
+  font-size: 100%;
 }
