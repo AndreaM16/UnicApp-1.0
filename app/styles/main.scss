@@ -266,19 +266,25 @@ a:hover, a:focus{
 /**********************************************************/
 /********************PUSHY******************************/
 .pushy{
-    width: 400px; /* Changed the width to 400px */
+    width: 100%; /* Changed the width to 400px */
 }
 
 .pushy-left{
-    transform: translate3d(-400px,0,0); /* Updated the values */
+    transform: translate3d(-100%,0,0); /* Updated the values */
     /* Don't forget the vendor prefixes */
+    background-color: #fff;
+    opacity: 0;
 }
 
 .container-push, .push-push{
-    transform: translate3d(400px,0,0); /* Updated the values */
+    transform: translate3d(100%,0,0); /* Updated the values */
     /* Don't forget the vendor prefixes */
 }
 
+.pushy-open{
+  width: 66%;
+  margin-left: -66%;
+}
 }
 }
 }

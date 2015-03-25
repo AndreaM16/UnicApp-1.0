@@ -8136,18 +8136,25 @@ html, body {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003268}}
 .AppdoitSize .container .push .pushy {
-  width: 400px;
+  width: 100%;
   /* Changed the width to 400px */
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003272}}
 .AppdoitSize .container .push .pushy-left {
-  transform: translate3d(-400px, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  /* Updated the values */
+  /* Don't forget the vendor prefixes */
+  background-color: #fff;
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003279}}
+.AppdoitSize .container .push .container-push, .AppdoitSize .container .push .push-push {
+  transform: translate3d(100%, 0, 0);
   /* Updated the values */
   /* Don't forget the vendor prefixes */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003277}}
-.AppdoitSize .container .push .container-push, .AppdoitSize .container .push .push-push {
-  transform: translate3d(400px, 0, 0);
-  /* Updated the values */
-  /* Don't forget the vendor prefixes */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003284}}
+.AppdoitSize .container .push .pushy-open {
+  width: 66%;
+  margin-left: -66%;
 }
