@@ -8210,3 +8210,12 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1',GradientType=1 );
   /* IE6-9 */
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003332}}
+.AppdoitSize .container .push .mnImg {
+  background-repeat: no-repeat;
+  background-size: 16%;
+  width: 100%;
+  margin: 0;
+  padding: 9% 20%;
+  background-position: center left;
+}

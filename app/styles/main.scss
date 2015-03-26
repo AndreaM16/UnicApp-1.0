@@ -327,8 +327,16 @@ background: -ms-linear-gradient(left,  rgba(255,255,255,1) 1%,rgba(209,209,209,1
 background: linear-gradient(to right,  rgba(255,255,255,1) 1%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%,rgba(209,209,209,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1',GradientType=1 ); /* IE6-9 */
 
+}
 
+.mnImg{
 
+  background-repeat: no-repeat;
+  background-size: 16%;
+  width: 100%;
+  margin: 0;
+  padding: 9% 20%;
+  background-position: center left;
 }
 
 }
