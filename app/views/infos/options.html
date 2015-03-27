@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title></title>
+    <!--This meta enables different devices to adapt our App for their own resolution-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../styles/info.css">
+   
+</head>
+
+<body  ng-app="">
+
+   
+    <div class="headerfull">
+        <span class="headerText">Info & Dettagli</span>
+        <a href="../info.html"class="btn-back" style="background-image: url('../../images/back.png')"></a></div>
+
+    <div class="optContainer">
+        <p class="optp">Invia statistiche d'uso</p><br>
+        <p class="optprivacy">Guarda la nostra privacy policy</p>
+         
+         <div class="switchbtn">
+                <div class="button-wrap">
+                <div class="button-bg">
+                <div class="button-out"></div>
+                <div class="button-in"></div>
+                <div class="button-switch"></div>
+                </div>
+                </div>
+        </div>
+
+        <div class="onbtn">ON</div>
+        <div class="offbtn">OFF</div>
+        
+    </div>
+
+    
+  
+    <script src="../../../bower_components/jquery/dist/jquery.js"></script>
+   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $('.button-wrap').on("click", function(){
+        $(this).toggleClass('button-active');
+        });
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+html, body {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Menu nav btn */
+.menu-btn {
+  
+  position: fixed;
+  top:0;
+  left: 0;
+  padding: 0;
+  border: 0;
+  height: 8%;
+  width: 15%;
+  font-weight: bold;
+  font-size: 220% ;
+  background: #E5001B;
+  
+}
+
+/* Making it look like it is*/
+.menu-btn:before{
+  content: "";
+  position: absolute;
+  left: 23%;
+  top: 34%;
+  width: 50%;
+  height: 6%;
+  background: #fff;
+  box-shadow: 
+    0 0.5em 0 0 white,
+    0 0.25em 0 0 white;
+}
+
+ .header{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 70%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+/* Putting "Benvenuto" in the header */
+  .headerText{
+  	font-family: Open Sans, helvetica, arial, serif !important;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: 140%;
+    float: center;
+    bottom: 14%;
+    left: 25%;
+    top: 25%;
+
+  }
+
+  /* Menu nav btn */
+.menu-btn2 {
+  
+  position: fixed;
+  top:0;
+  left: 85%;
+  padding: 0;
+  border: 0;
+  height: 8%;
+  width: 15%;
+  font-weight: bold;
+  font-size: 220% ;
+  background: #E5001B;
+  background-repeat: no-repeat;
+  background-position: 45% 45%;
+  
+}
+
+/* Making it look like it is*/
+.menu-btn2:before{
+  content: "";
+  position: absolute;
+  left: 23%;
+  top: 34%;
+  width: 50%;
+  height: 6%;
+}
+
+.mapContainer{
+	height: 40%;
+	width: 100%;
+	top: 8%;
+	position: fixed;
+	z-index: 1;
+
+}
+
+.infoContainer{
+	height: 52%;
+	width: 100%;
+	top: 48%;
+	position: fixed;
+
+}
+
+p{
+	margin: 0;
+	left: 5%;
+	top: 3%;
+	position: relative;
+	font-family: Open Sans, helvetica, arial, serif !important;
+	color: #646162;
+	opacity: 1;
+	line-height: 0.5;
+}
+
+.p1{
+	font-weight: bold;
+	font-size: 120%;
+
+}
+
+.p2{
+	font-size: 90%;
+}
+
+.p3{
+	font-size: 80%;
+}
+
+.zoomy{
+
+	z-index: 2;
+	width: 10%;
+	height: 10%;
+	left: 88%;
+	top: 0;
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	background-repeat: no-repeat;
+	padding-bottom: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-top: 2%;
+	background-position: center center;
+	background-size: 45% 45%;
+}
+
+.mapContainer1{
+	height: 92%;
+	width: 100%;
+	top: 8%;
+	position: fixed;
+	z-index: 1;
+
+}
+
+.btn-back{
+
+  	position: fixed;
+  top:0;
+  left: 0;
+  padding: 0;
+  border: 0;
+  height: 8%;
+  width: 15%;
+  background: #E5001B;
+   background-size: 45% 45%;
+  background-repeat: no-repeat;
+  background-position: 45% 45%;
+
+  
+
+
+}
+
+.headerfull{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 85%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+  .optContainer{
+  	width: 100%;
+  	height: 92%;
+  	top: 8%;
+  	position: fixed;
+  	left: 0;
+  }
+
+  .optp{
+  	top: 10%;
+
+  }
+
+  .optprivacy{
+
+  	top: 65%;
+  	text-align: center;
+  	margin-right: 15%;
+  	text-decoration: underline;
+  }
+
+
+ .switchbtn .button-wrap {
+ z-index: 1;
+  width: 25%;
+  height: 7%;
+  margin: 0;
+  cursor: pointer;
+  left: 70%;
+  position: absolute;
+}
+.switchbtn .button-bg {
+  width: 100%;
+  height: 88%;
+  background-color: #fff;
+  border: 1px solid #646162;
+  border-radius: 40px;
+  padding: 3px;
+  color:#fff;
+  transition:all 0.2s ease;
+  z-index: 1;
+}
+.switchbtn .button-switch {
+  position:absolute;
+  left:0;
+  width: 50%;
+  height: 100%;
+  border:1px solid #E5001B;
+  background-color: #E5001B;
+  border-radius: 36px;
+  transition:all 0.2s ease;
+  z-index: 2;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+}
+.switchbtn .button-active .button-switch { left:55%; border-color:#22bb22; background-color: #22bb22;}
+.switchbtn .button-in, 
+.switchbtn .button-out {
+  position:absolute; 
+  transition:all 0.2s ease;
+  padding-top:15px;
+  font-size:0.8em;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.switchbtn .button-in { margin-left:76px; }
+.switchbtn .button-out { margin-left:18px; }
+.switchbtn .button-active .button-out {  }
+.switchbtn .button-active .button-in {  }
+.switchbtn .button-active .button-bg {  }
+
+
+.onbtn{
+	position: absolute;
+	height: 7%;
+	width: 10%;
+	left: 86%;
+	z-index: 2;
+	color: #fff;
+	text-align: center;
+	line-height: 3;
+	top: 5%;
+}
+
+.offbtn{
+	position: absolute;
+	height: 7%;
+	width: 10%;
+	left: 71.5%;
+	z-index: 2;
+	color: #fff;
+	text-align: center;
+	line-height: 3;
+	top: 5%;
+}

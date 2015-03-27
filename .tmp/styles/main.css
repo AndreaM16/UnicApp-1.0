@@ -8219,3 +8219,30 @@ html, body {
   padding: 9% 20%;
   background-position: center left;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003342}}
+.AppdoitSize .container .push .colSwitch {
+  border-bottom: 1px solid #6b6b6b;
+  padding-left: 3%;
+  line-height: 3;
+  height: 9%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 140%;
+  font-weight: normal;
+  background: #d1d1d1;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #d1d1d1), color-stop(0%, #fefefe), color-stop(0%, #d1d1d1), color-stop(99%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* IE10+ */
+  background: linear-gradient(to right, #d1d1d1 0%, #fefefe 0%, #d1d1d1 0%, white 99%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 */
+}
