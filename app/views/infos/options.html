@@ -7,10 +7,10 @@
     <!--This meta enables different devices to adapt our App for their own resolution-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../styles/info.css">
-   
+    
 </head>
 
-<body  ng-app="">
+<body   ng-controller="popUpController" class="pop">
 
    
     <div class="headerfull">
@@ -19,7 +19,8 @@
 
     <div class="optContainer">
         <p class="optp">Invia statistiche d'uso</p><br>
-        <p class="optprivacy">Guarda la nostra privacy policy</p>
+        <p class="optprivacy" ng-click="launch('popUp')">
+            Guarda la nostra privacy policy</p>
          
          <div class="switchbtn">
                 <div class="button-wrap">
@@ -30,10 +31,9 @@
                 </div>
                 </div>
         </div>
-
-        <div class="onbtn">ON</div>
-        <div class="offbtn">OFF</div>
         
+        <div class="onbtn" style="color: #000">ON</div>
+        <div class="offbtn" style="color: #000">OFF</div>
     </div>
 
     

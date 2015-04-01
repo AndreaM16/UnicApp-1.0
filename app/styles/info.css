@@ -246,8 +246,16 @@ p{
   margin: 0;
   top: 0;
   bottom: 0;
+
 }
-.switchbtn .button-active .button-switch { left:55%; border-color:#22bb22; background-color: #22bb22;}
+.switchbtn .button-active .button-switch { 
+  left:55%; 
+  border-color:#22bb22; 
+  background-color: #22bb22;
+  color: #fff;
+  
+}
+
 .switchbtn .button-in, 
 .switchbtn .button-out {
   position:absolute; 
@@ -256,13 +264,8 @@ p{
   font-size:0.8em;
   text-transform:uppercase;
   font-weight:bold;
-}
-.switchbtn .button-in { margin-left:76px; }
-.switchbtn .button-out { margin-left:18px; }
-.switchbtn .button-active .button-out {  }
-.switchbtn .button-active .button-in {  }
-.switchbtn .button-active .button-bg {  }
 
+}
 
 .onbtn{
 	position: absolute;
@@ -282,7 +285,6 @@ p{
 	width: 10%;
 	left: 71.5%;
 	z-index: 2;
-	color: #fff;
 	text-align: center;
 	line-height: 3;
 	top: 5%;
