@@ -289,3 +289,68 @@ p{
 	line-height: 3;
 	top: 5%;
 }
+
+#popup {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  display: none;
+  background: rgba(255,255,255,0.6);
+  top: 0;
+}
+
+.txtBox{
+
+  height: 60%;
+  width: 80%;
+  top: 20%;
+  left: 10%;
+  z-index: 4;
+  background-color: #fff;
+  position: absolute;
+  font-family: Open Sans, helvetica, arial, serif !important;
+  border: 1px solid #646162;
+  border-radius: 3%;
+  overflow: hidden;
+  text-align: left;
+
+}
+
+.myText{
+  height: 85%;
+  width: 96%;
+  color: #646162;
+  opacity: 1;
+  line-height: 1;
+  font-size: 85%;
+  margin-top: 4%;
+  margin-left: 2%;
+}
+
+.closeBtn{
+  
+  display: block;
+  height: 5%;
+  width: 40%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  position: fixed;
+  padding: 0;
+  left: 30%;
+  right: 0;
+  bottom: 21%;
+  font-weight: bold;
+  border:#000;
+  border-radius: 5%;
+  font-size: 120%;
+
+}
+
+.btn-default.active{
+  background-color: #E5001B;
+  color: #fff;
+  line-height: 1;
+}
