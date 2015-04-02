@@ -365,7 +365,7 @@ p{
 
 .subContentSection{
   top: 0;
-  height: 40%;
+  height: 25%;
   width: 100%;
 
 }
@@ -409,11 +409,11 @@ p{
   width: 100%;
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 168%;
+  background-size: cover;
   margin: 0;
   position: absolute;
   z-index: 2;
-  height: 20%;
+  height: 13%;
   left: 70%;
 }
 
@@ -421,10 +421,10 @@ p{
   width: 30%;
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 158%;
+  background-size: cover;
   margin: 0;
   position: absolute;
   z-index: 2;
-  height: 20%;
+  height: 13%;
   left: 70%;
 }
