@@ -354,3 +354,77 @@ p{
   color: #fff;
   line-height: 1;
 }
+
+.contentContainer{
+  position: fixed;
+  top: 8%;
+  height: 92%;
+  width: 100%;
+
+}
+
+.subContentSection{
+  top: 0;
+  height: 40%;
+  width: 100%;
+
+}
+
+.new1, .new2{
+  height: 50%;
+  border-bottom: 1px solid #646162;
+}
+
+.pContainer{
+  height: 100%;
+  width: 70%;
+  margin: 0;
+
+}
+
+.new2{
+  top: 50%;
+}
+
+.p4{
+  
+  font-weight: bold;
+  font-size: 110%;
+  top: 16%;
+}
+
+.p5{
+  font-size: 94%;
+  top: 36%;
+}
+
+.p6{
+  font-size: 80%;
+  top: 60%;
+  font-style: italic;
+}
+
+
+.img1{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 168%;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  height: 20%;
+  left: 70%;
+}
+
+.img2{
+  width: 30%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 158%;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  height: 20%;
+  left: 70%;
+}

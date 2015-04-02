@@ -7893,13 +7893,13 @@ html, body {
   background: #fff;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /**********************************************************/
 /***************************CONTAINER**********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000321}}
-.AppdoitSize {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000323}}
+.Appdoitsize {
   width: 100%;
   height: 100%;
   top: 0;
@@ -7907,8 +7907,8 @@ html, body {
   margin: 0;
   /***************************pushy*******************/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000330}}
-.AppdoitSize .container {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000332}}
+.Appdoitsize .container {
   height: 100%;
   width: 100%;
   top: 0;
@@ -7919,8 +7919,8 @@ html, body {
   left: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000342}}
-.AppdoitSize .container .push {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000344}}
+.Appdoitsize .container .push {
   width: 100%;
   height: 100%;
   top: 0;
@@ -7947,8 +7947,8 @@ html, body {
   /**********************************************************/
   /********************PUSHY******************************/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000356}}
-.AppdoitSize .container .push .menu-btn {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000358}}
+.Appdoitsize .container .push .menu-btn {
   position: fixed;
   top: 0;
   left: 0;
@@ -7960,8 +7960,8 @@ html, body {
   font-size: 220%;
   background: #E5001B;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000372}}
-.AppdoitSize .container .push .menu-btn:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000374}}
+.Appdoitsize .container .push .menu-btn:before {
   content: "";
   position: absolute;
   left: 23%;
@@ -7971,8 +7971,8 @@ html, body {
   background: #fff;
   box-shadow: 0 0.5em 0 0 white, 0 0.25em 0 0 white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000385}}
-.AppdoitSize .container .push .header {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000387}}
+.Appdoitsize .container .push .header {
   position: fixed;
   z-index: 2;
   top: 0%;
@@ -7983,8 +7983,8 @@ html, body {
   background: #E5001B;
   padding: 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\0000398}}
-.AppdoitSize .container .push .headerText {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003100}}
+.Appdoitsize .container .push .headerText {
   color: #fff;
   font-weight: bold;
   text-align: center;
@@ -7995,8 +7995,8 @@ html, body {
   left: 23%;
   top: 14%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003114}}
-.AppdoitSize .container .push .swiper-container {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003116}}
+.Appdoitsize .container .push .swiper-container {
   top: 0%;
   bottom: 0;
   right: 0;
@@ -8008,8 +8008,8 @@ html, body {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003126}}
-.AppdoitSize .container .push .swiper-slide {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003128}}
+.Appdoitsize .container .push .swiper-slide {
   text-align: center;
   height: 100%;
   width: 100%;
@@ -8035,24 +8035,24 @@ html, body {
   -webkit-align-items: center;
   align-items: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003153}}
-.AppdoitSize .container .push .swiper-pagination {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003155}}
+.Appdoitsize .container .push .swiper-pagination {
   top: 70%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003156}}
-.AppdoitSize .container .push .swiper-pagination .swiper-pagination-bullet {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003158}}
+.Appdoitsize .container .push .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
   width: 3%;
   height: 13%;
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003163}}
-.AppdoitSize .container .push .swiper-pagination .swiper-pagination-bullet-active {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003165}}
+.Appdoitsize .container .push .swiper-pagination .swiper-pagination-bullet-active {
   background: #E5001B;
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003172}}
-.AppdoitSize .container .push h1 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003174}}
+.Appdoitsize .container .push h1 {
   position: absolute;
   z-index: 2;
   bottom: 48%;
@@ -8063,8 +8063,8 @@ html, body {
   margin-top: 0;
   background: rgba(255, 255, 255, 0.6);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003184}}
-.AppdoitSize .container .push h1 span {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003186}}
+.Appdoitsize .container .push h1 span {
   color: #000;
   font-size: 70%;
   padding-left: 2%;
@@ -8074,8 +8074,8 @@ html, body {
   margin-bottom: 0;
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003196}}
-.AppdoitSize .container .push h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003198}}
+.Appdoitsize .container .push h2 {
   z-index: 2;
   position: absolute;
   bottom: 48%;
@@ -8086,8 +8086,8 @@ html, body {
   margin-bottom: 0;
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003213}}
-.AppdoitSize .container .push .textBox {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003215}}
+.Appdoitsize .container .push .textBox {
   width: 86%;
   height: 24%;
   margin-top: 0;
@@ -8104,14 +8104,14 @@ html, body {
   right: 7%;
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003231}}
-.AppdoitSize .container .push #inner {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003233}}
+.Appdoitsize .container .push #inner {
   width: 100%;
   height: 100%;
   overflow: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003239}}
-.AppdoitSize .container .push .mainBtn {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003241}}
+.Appdoitsize .container .push .mainBtn {
   display: block;
   height: 8%;
   width: 62%;
@@ -8128,14 +8128,14 @@ html, body {
   border: #000;
   font-size: 130%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003259}}
-.AppdoitSize .container .push .btn-default.active {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003261}}
+.Appdoitsize .container .push .btn-default.active {
   background-color: #E5001B;
   color: #fff;
   line-height: 3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003265}}
-.AppdoitSize .container .push .benvenuto {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003267}}
+.Appdoitsize .container .push .benvenuto {
   border-bottom: 1px solid #6b6b6b;
   border-right: 2px solid #6b6b6b;
   padding-left: 3%;
@@ -8162,30 +8162,30 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#ffffff',GradientType=1 );
   /* IE6-9 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003287}}
-.AppdoitSize .container .push a:hover, .AppdoitSize .container .push a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003289}}
+.Appdoitsize .container .push a:hover, .Appdoitsize .container .push a:focus {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003293}}
-.AppdoitSize .container .push .pushy {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003295}}
+.Appdoitsize .container .push .pushy {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003297}}
-.AppdoitSize .container .push .pushy-left {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003299}}
+.Appdoitsize .container .push .pushy-left {
   transform: translate3d(-100%, 0, 0);
   /* Updated the values */
   /* Don't forget the vendor prefixes */
   background-color: #fff;
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003306}}
-.AppdoitSize .container .push .container-push, .AppdoitSize .container .push .push-push {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003308}}
+.Appdoitsize .container .push .container-push, .Appdoitsize .container .push .push-push {
   transform: translate3d(100%, 0, 0);
   /* Updated the values */
   /* Don't forget the vendor prefixes */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003312}}
-.AppdoitSize .container .push .pushy-open {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003314}}
+.Appdoitsize .container .push .pushy-open {
   width: 65%;
   margin-left: -65%;
   padding-top: 0%;
@@ -8210,8 +8210,8 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1',GradientType=1 );
   /* IE6-9 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003332}}
-.AppdoitSize .container .push .mnImg {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003334}}
+.Appdoitsize .container .push .mnImg {
   background-repeat: no-repeat;
   background-size: 16%;
   width: 100%;
@@ -8219,8 +8219,8 @@ html, body {
   padding: 9% 20%;
   background-position: center left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003342}}
-.AppdoitSize .container .push .colSwitch {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/andream\/YoProjects\/UnicApp-1\.0\/app\/styles\/main\.scss}line{font-family:\00003344}}
+.Appdoitsize .container .push .colSwitch {
   border-bottom: 1px solid #6b6b6b;
   padding-left: 3%;
   line-height: 3;
@@ -8246,3 +8246,20 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#ffffff',GradientType=1 );
   /* IE6-9 */
 }
+
+/*
+#wrapper {
+  position: absolute;
+  z-index: 0;
+  top: 8%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#scroller {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}*/
