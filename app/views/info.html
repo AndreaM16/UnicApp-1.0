@@ -1,22 +1,13 @@
-<!DOCTYPE html>
 
-<html>
-<head>
-
-    <title></title>
-    <!--This meta enables different devices to adapt our App for their own resolution-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/pages.css">
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 
-<body ng-app="">
-
-   
+<div ng-view="">  
     <div class="header">
         <span class="headerText">Info & Contatti</span>
-        <a href="../#"class="menu-btn"></a>
-        <a href="infos/options.html"class="menu-btn2" style="background-image: url('../images/settings.png')"></a>
+        <a ng-href="../#"class="menu-btn"></a>
+        <a ng-href="infos/options.html"class="menu-btn2" style="background-image: url('../images/settings.png')"></a>
     </div>
 
     <div class="mapContainer">
@@ -36,7 +27,4 @@
 </div>
 
 <script src="../scripts/maps.js"></script>
-
-</body>
-
-</html>
+</div>
