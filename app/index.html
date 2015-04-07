@@ -17,18 +17,44 @@
     <!--This meta enables different devices to adapt our App for their own resolution-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
+    <link rel="stylesheet" href="styles/index.css">
+    
     <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
     <!--<script type="text/javascript" src="../../iscrolly/iscroll/build/iscroll.js"></script>-->
     <!--<script type="text/javascript" src="scripts/viewCtrl.js"></script>-->
+    <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
 
   </head>
 
   <!--<body ng-app="appdoitApp" onload="loaded()">-->
   <body ng-app="appdoitApp">
 
+    <!--container contains all the part of the body that has
+    to be pushed on the right to open the menu-->
+
+    <div class="container">
+    <div class="push">
+
   <div ng-view="" class="Appdoitsize"></div>
+
+    <!-- Pushy Menu -->
+    <div class="pushy pushy-left">
+    <div class="benvenuto">UnicApp</div>
+        <div class="menuList">
+        <a href="#/" class="mnImg" style="background-image: url('images/home.png')">Benvenuto</a>
+        <a href="views/notizie.html" class="mnImg" style="background-image: url('images/ultime.png')">Ultime Notizie</a>
+        <a href="#/" class="mnImg" style="background-image: url('images/segnala.png')">Segnalazioni</a>
+        <a href="views/info.html" class="mnImg" style="background-image: url('images/info.png')">Info & Contatti</a>
+        <a href="#/" class="mnImg" style="background-image: url('images/corsi.png')">Corsi</a>
+        <a href="#/" class="mnImg" style="background-image: url('images/prenotazione.png')">Prenotazione</a>
+        <a href="#/" class="mnImg" style="background-image: url('images/calendar.png')">Calendario & Attività</a>
+        <a href="#/" class="mnImg" style="background-image: url('images/events.png')">Eventi</a>
+        <a href="#/" class="mnImg" style="background-image: url('images/docu.png')">Documenti utili</a>
+    </div>
+    </div>
+
+    </div>
+    </div>
     
   <div class="scriptsContainer"> 
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -64,6 +90,7 @@
 
          <div class="customScripts">
             <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+
 
             <!--<script src="scripts/myIScrolly.js"></script>-->
         
