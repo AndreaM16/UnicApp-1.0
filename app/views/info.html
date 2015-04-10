@@ -2,9 +2,9 @@
 
     
     <div class="header">
-        <span class="headerText">Info & Contatti</span>
+        <span class="headerText">{{myHeaderText}}</span>
         <div class="menu-btn"></div>
-        <a ng-href="#options"class="menu-btn2" style="background-image: url('../images/settings.png')"></a>
+        <a ng-href="#options"class="menu-btn2" style="{{mySettingsImage}}"></a>
     </div>
 
     <div class="mapContainer">
@@ -12,15 +12,15 @@
         <!--Custom directive my-maps-->
         <!--<mymaps id="map-canvas"></mymaps>-->
         <a ng-href="#fullmap" class="zoomy" 
-           style="background-image: url('../images/zoom.png')">
+           style="{{myZoomImage}}">
        </a>
 
     </div>
 
     <div class="infoContainer">
-            <p class="p1">Sergio Melchiorre {{prova}}</p><br>
-            <p class="p2">Segretario generale Università</p><br>
-            <p class="p3">Via Roma 09010, Cagliari</p>
+        <div ng-repeat="par in pars">
+            <p class="{{par.className}}">{{par.text}}</p><br>
+        </div>
     </div>
     
     <!--<script src="../scripts/maps.js"></script>-->

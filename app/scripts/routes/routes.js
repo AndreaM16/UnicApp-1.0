@@ -1,40 +1,18 @@
-'use strict';
 
-/**
- * @ngdoc overview
- * @name appdoitApp
- * @description
- * # appdoitApp
- *
- * Main module of the application.
- */
-var appdoitApp =
-angular
-  .module('appdoitApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .controller('InfoController', function($scope){
-          $scope.prova= 'MARIO';
-  })
 
-  .config(function ($routeProvider) {
+myApp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: ''
+        controller: 'MainController'
       })
       .when('/news', {
         templateUrl: 'views/news.html',
-        controller: ''
+        controller: 'NewsController'
       })
       .when('/report', {
         templateUrl: 'views/report.html',
-        controller: ''
+        controller: 'ReportController'
       })
       .when('/info', {
         templateUrl: 'views/info.html',
@@ -42,34 +20,33 @@ angular
       })
       .when('/courses', {
         templateUrl: 'views/courses.html',
-        controller: ''
+        controller: 'CoursesController'
       })
       .when('/booking', {
         templateUrl: 'views/booking.html',
-        controller: ''
+        controller: 'BookingController'
       })
       .when('/calendar', {
         templateUrl: 'views/calendar.html',
-        controller: ''
+        controller: 'CalendarController'
       })
       .when('/events', {
         templateUrl: 'views/events.html',
-        controller: ''
+        controller: 'EventsController'
       })
       .when('/documents', {
         templateUrl: 'views/documents.html',
-        controller: ''
-      })
-      .when('/fullmap', {
-        templateUrl: 'views/infos/fullmap.html',
-        controller: ''
+        controller: 'DocumentsController'
       })
       .when('/options', {
         templateUrl: 'views/infos/options.html',
-        controller: ''
+        controller: 'OptionsController'
+      })
+      .when('/fullmap', {
+        templateUrl: 'views/infos/fullmap.html',
+        controller: 'FullmapController'
       })
       .otherwise({
         redirectTo: '/'
       });
-  });
-
+  })
