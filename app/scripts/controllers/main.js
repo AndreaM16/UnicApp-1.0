@@ -12,6 +12,6 @@
 angular.module('appdoitApp')
   .controller('MainCtlr', ['$scope', function ($scope) {
     
-  }]);*/
-
+  }]);
+*/
 

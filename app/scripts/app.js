@@ -18,6 +18,10 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .controller('InfoController', function($scope){
+          $scope.prova= 'MARIO';
+  })
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -34,7 +38,7 @@ angular
       })
       .when('/info', {
         templateUrl: 'views/info.html',
-        controller: ''
+        controller: 'InfoController'
       })
       .when('/courses', {
         templateUrl: 'views/courses.html',
