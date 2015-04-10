@@ -1,21 +1,20 @@
 
-    <link rel="stylesheet" href="../styles/pages.css">
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-</head>
 
-<div ng-view="">  
+    
     <div class="header">
         <span class="headerText">Info & Contatti</span>
-        <a ng-href="../#"class="menu-btn"></a>
-        <a ng-href="infos/options.html"class="menu-btn2" style="background-image: url('../images/settings.png')"></a>
+        <div class="menu-btn"></div>
+        <a ng-href="#options"class="menu-btn2" style="background-image: url('../images/settings.png')"></a>
     </div>
 
     <div class="mapContainer">
          
-        <div id="googleMap" style="width:100%;height:100%;"></div>
-        <a href="infos/fullmap.html" class="zoomy" 
+        <!--Custom directive my-maps-->
+        <mymaps id="map-canvas"></mymaps>
+        <a ng-href="#fullmap" class="zoomy" 
            style="background-image: url('../images/zoom.png')">
        </a>
+
     </div>
 
     <div class="infoContainer">
@@ -24,7 +23,6 @@
             <p class="p3">Via Roma 09010, Cagliari</p>
     </div>
 
-</div>
-
-<script src="../scripts/maps.js"></script>
-</div>
+    
+    <script src="../scripts/maps.js"></script>
+    <script src="bower_components/pushy/js/pushy.js"></script>

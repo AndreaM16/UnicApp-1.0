@@ -7,10 +7,11 @@
  * # MainCtrl
  * Controller of the appdoitApp
  */
-angular.module('appdoitApp')
-  .controller('MainCtrl', '$scope', function ($scope) {
-    
-  });
 
+ /*
+angular.module('appdoitApp')
+  .controller('MainCtlr', ['$scope', function ($scope) {
+    
+  }]);*/
 
 

@@ -8,6 +8,7 @@
  *
  * Main module of the application.
  */
+var appdoitApp =
 angular
   .module('appdoitApp', [
     'ngAnimate',
@@ -21,41 +22,50 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: ''
       })
       .when('/news', {
         templateUrl: 'views/news.html',
-        controller: 'NewsCtrl'
+        controller: ''
       })
       .when('/report', {
         templateUrl: 'views/report.html',
-        controller: 'ReportCtrl'
+        controller: ''
       })
       .when('/info', {
         templateUrl: 'views/info.html',
-        controller: 'InfoCtrl'
+        controller: ''
       })
       .when('/courses', {
         templateUrl: 'views/courses.html',
-        controller: 'CoursesCtrl'
+        controller: ''
       })
       .when('/booking', {
         templateUrl: 'views/booking.html',
-        controller: 'BookingCtrl'
+        controller: ''
       })
       .when('/calendar', {
         templateUrl: 'views/calendar.html',
-        controller: 'CalendarCtrl'
+        controller: ''
       })
       .when('/events', {
         templateUrl: 'views/events.html',
-        controller: 'EventsCtrl'
+        controller: ''
       })
       .when('/documents', {
         templateUrl: 'views/documents.html',
-        controller: 'DocumentsCtrl'
+        controller: ''
+      })
+      .when('/fullmap', {
+        templateUrl: 'views/infos/fullmap.html',
+        controller: ''
+      })
+      .when('/options', {
+        templateUrl: 'views/infos/options.html',
+        controller: ''
       })
       .otherwise({
         redirectTo: '/'
       });
   });
+
