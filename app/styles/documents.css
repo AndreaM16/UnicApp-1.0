@@ -1,0 +1,11 @@
+.documentsHeader{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 85%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
