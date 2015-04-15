@@ -130,17 +130,21 @@ h1{
   margin-bottom: 0;
   margin-top: 0;
   background: rgba(255,255,255,0.6);
+
 }
 /* Putting into it the text */
 h1 span{
+
   color: #000;
-  font-size: 70%; 
+  font-size: 70%;
   padding-left: 2%;
   padding-right: 0%;
   bottom: 0;
   height: 100%;
   margin-bottom: 0;
   margin-top: 0;
+  line-height: 2;
+   
 }
 
 /* Little red tile on the left of h1 */
