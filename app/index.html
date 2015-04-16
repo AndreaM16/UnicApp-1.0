@@ -28,12 +28,10 @@
     <link rel="stylesheet" href="styles/documents.css">
     <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
     <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
-   
-    <!-- Google Apis
-   <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=
-           AIzaSyA3LLRXQcoQ0Vs4-8bwJT2j9E_qKsAYn8A"></script> -->
-  </head>
+    
+
+    <!-- Google Apis -->
+   </head>
 
   <body>
 
@@ -41,9 +39,13 @@
     to be pushed on the right to open the menu-->
     <div class="container">
         <div class="push">
+            
+            
             <!--ng-view to contain all my views-->
-            <div ng-view=""  class="Appdoitsize"></div>
-    
+                 <div class="Appdoitsize" ng-view="" >
+
+                 </div> 
+
                 <!-- Pushy Menu -->
                 <div class="pushy pushy-left">
                     <div class="welcome">{{myTitle}}</div>
@@ -52,10 +54,11 @@
                                 <a ng-href="{{item.link}}" class="{{item.imgClass}}" style="{{item.backgroundImage}}">{{item.title}}</a>
                             </div>
                         </div>
-                        </div>
                 </div>
-        </div>
-    </div>
+                       
+          </div>
+      </div>
+    
     
     
     
@@ -86,7 +89,9 @@
 
             <div class="customScripts">
                 <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
-                                  
+                <script src='scripts/modules/lodash.js'></script>
+                <!--<script src='../bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+                <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>-->             
             </div>
    </div>
 
@@ -106,7 +111,9 @@
    <script src="scripts/controllers/documentsController.js"></script>
    <!--App Routes-->
    <script src="scripts/routes/routes.js"></script>
-    
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArqKwlqOFydRwfrFSsCnuEqfKeZVNuTeM"></script>
+
 </body>
 
 </html>

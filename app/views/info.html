@@ -1,16 +1,19 @@
 
+ 
 
-    
     <div class="header">
         <span class="headerText">{{myHeaderText}}</span>
         <div class="menu-btn"></div>
-        <a ng-href="#options"class="menu-btn2" style="{{mySettingsImage}}"></a>
+        <div ng-href="#options" class="menu-btn2" style="{{mySettingsImage}}"></div>
     </div>
 
     <div class="mapContainer">
          
         <!--Custom directive my-maps-->
-        <!--<mymaps id="map-canvas"></mymaps>-->
+        <!--<my-maps id="map-canvas"></my-maps>-->
+
+        <div id="map-canvas"></div>
+
         <a ng-href="#fullmap" class="zoomy" 
            style="{{myZoomImage}}">
        </a>
@@ -22,6 +25,10 @@
             <p class="{{par.className}}">{{par.text}}</p><br>
         </div>
     </div>
+
+    
     
     <!--<script src="../scripts/maps.js"></script>-->
     <script src="bower_components/pushy/js/pushy.js"></script>
+    <script src="../scripts/custom/myStaticMap.js"></script>
+
