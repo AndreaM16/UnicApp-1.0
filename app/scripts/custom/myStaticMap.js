@@ -8,7 +8,12 @@ angular.module('map-canvas', [])
 
   var mapOptions = {
     zoom: 8,
-    center: new google.maps.LatLng(-34.397, 150.644)
+    center: new google.maps.LatLng(41.9026329,12.452200400000038),
+    disableDefaultUI:true,
+        draggable: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 
   var map = new google.maps.Map(document.getElementById('map-canvas'),

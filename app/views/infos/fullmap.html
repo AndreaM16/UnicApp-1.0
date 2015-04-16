@@ -1,45 +1,14 @@
 
-    <!--
-    <script src="http://maps.googleapis.com/maps/api/js"></script>-->
-    
 
-    <div class="headerfull">
-        <span class="headerText">{{headerText}}</span>
-        <a ng-href="#info"class="btn-back" style="{{myBackground}}"></a>
-        
+    <div class="fullmapHeader">
+        <span class="fullmapHeaderText">{{myHeaderText}}</span>
+
+        <a ng-href="#info" class="btn-back" style="{{myBackground}}"></a>
     </div>
 
-    <!--
-    <my-maps id="map-canvas"></my-maps>-->
-         
-       
+    <div class="fullmapContainer">
+        <div id="fullmap-canvas"></div>
+    </div>
 
- 
-<!--
-<script>
-
-var myCenter=new google.maps.LatLng(41.9026329,12.452200400000038);
-function initialize() {
-  var mapProp = {
-    center:myCenter,
-    disableDefaultUI:true,
-    zoom:5,
-    draggable: true,
-    scrollwheel: false,
-    disableDoubleClickZoom: true,
-    zoomControl: true,
-
-
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-    var marker=new google.maps.Marker({
-    position:myCenter
-
-    });
-
-    marker.setMap(map);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>-->
+    
+    <script src="../scripts/custom/myDynamicMap.js"></script>

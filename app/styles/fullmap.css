@@ -1,0 +1,30 @@
+.fullmapHeader{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 90%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+/* Putting "Benvenuto" in the header */
+  .fullmapHeaderText{
+  	font-family: Open Sans, helvetica, arial, serif !important;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: 140%;
+    float: center;
+    bottom: 14%;
+    left: 25%;
+    top: 25%;
+
+  }
+
+.fullmapContainer{top:8%; height: 92%; width: 100%; position: fixed;}
+
+#fullmap-canvas{height: 100%; width: 100%;}

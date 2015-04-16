@@ -50,7 +50,7 @@ html, body {
 
 /* Putting "Benvenuto" in the header */
   .headerText{
-  	font-family: Open Sans, helvetica, arial, serif !important;
+    font-family: Open Sans, helvetica, arial, serif !important;
     color: #fff;
     font-weight: bold;
     text-align: center;
@@ -114,7 +114,7 @@ html, body {
 p{
 	margin: 0;
 	left: 5%;
-	top: 3%;
+	top: 0;
 	position: relative;
 	font-family: Open Sans, helvetica, arial, serif !important;
 	color: #646162;
@@ -124,24 +124,25 @@ p{
 
 .p1{
 	font-weight: bold;
-	font-size: 120%;
+	font-size: 140%;
+  margin-top: 10%;
 
 }
 
 .p2{
-	font-size: 90%;
+	font-size: 115%;
 }
 
 .p3{
-	font-size: 80%;
+	font-size: 105%;
 }
 
 .zoomy{
 
 	z-index: 2;
-	width: 10%;
-	height: 10%;
-	left: 88%;
+	width: 16%;
+	height: 16%;
+	left: 84%;
 	top: 0;
 	background-color: rgba(255,255,255,0.7);
 	position: absolute;
@@ -176,186 +177,5 @@ p{
    background-size: 45% 45%;
   background-repeat: no-repeat;
   background-position: 45% 45%;
-
-  
-
-
 }
-
-.headerfull{
-  position: fixed;
-  z-index: 2;
-  top: 0%;
-  left: 15%;
-  right: 0%;
-  width: 85%;
-  height: 8%;
-  background: #E5001B;
-  padding: 0%;
-  }
-
-  .optContainer{
-  	width: 100%;
-  	height: 92%;
-  	top: 8%;
-  	position: fixed;
-  	left: 0;
-  }
-
-  .optp{
-  	top: 10%;
-
-  }
-
-  .optprivacy{
-
-  	top: 65%;
-  	text-align: center;
-  	margin-right: 15%;
-  	text-decoration: underline;
-  }
-
-
- .switchbtn .button-wrap {
- z-index: 1;
-  width: 25%;
-  height: 7%;
-  margin: 0;
-  cursor: pointer;
-  left: 70%;
-  position: absolute;
-}
-.switchbtn .button-bg {
-  width: 100%;
-  height: 88%;
-  background-color: #fff;
-  border: 1px solid #646162;
-  border-radius: 40px;
-  padding: 3px;
-  color:#fff;
-  transition:all 0.2s ease;
-  z-index: 1;
-}
-.switchbtn .button-switch {
-  position:absolute;
-  left:0;
-  width: 50%;
-  height: 100%;
-  border:1px solid #E5001B;
-  background-color: #E5001B;
-  border-radius: 36px;
-  transition:all 0.2s ease;
-  z-index: 2;
-  margin: 0;
-  top: 0;
-  bottom: 0;
-
-}
-.switchbtn .button-active .button-switch { 
-  left:55%; 
-  border-color:#22bb22; 
-  background-color: #22bb22;
-  color: #fff;
-  
-}
-
-.switchbtn .button-in, 
-.switchbtn .button-out {
-  position:absolute; 
-  transition:all 0.2s ease;
-  padding-top:15px;
-  font-size:0.8em;
-  text-transform:uppercase;
-  font-weight:bold;
-
-}
-
-.onbtn{
-	position: absolute;
-	height: 7%;
-	width: 10%;
-	left: 86%;
-	z-index: 2;
-	color: #fff;
-	text-align: center;
-	line-height: 3;
-	top: 5%;
-}
-
-.offbtn{
-	position: absolute;
-	height: 7%;
-	width: 10%;
-	left: 71.5%;
-	z-index: 2;
-	text-align: center;
-	line-height: 3;
-	top: 5%;
-}
-
-#popup {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 3;
-  display: none;
-  background: rgba(255,255,255,0.6);
-  top: 0;
-}
-
-.txtBox{
-
-  height: 60%;
-  width: 80%;
-  top: 20%;
-  left: 10%;
-  z-index: 4;
-  background-color: #fff;
-  position: absolute;
-  font-family: Open Sans, helvetica, arial, serif !important;
-  border: 1px solid #646162;
-  border-radius: 3%;
-  overflow: hidden;
-  text-align: left;
-
-}
-
-.myText{
-  height: 85%;
-  width: 96%;
-  color: #646162;
-  opacity: 1;
-  line-height: 1;
-  font-size: 85%;
-  margin-top: 4%;
-  margin-left: 2%;
-}
-
-.closeBtn{
-  
-  display: block;
-  height: 5%;
-  width: 40%;
-  text-align: center;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  position: fixed;
-  padding: 0;
-  left: 30%;
-  right: 0;
-  bottom: 21%;
-  font-weight: bold;
-  border:#000;
-  border-radius: 5%;
-  font-size: 120%;
-
-}
-
-.btn-default.active{
-  background-color: #E5001B;
-  color: #fff;
-  line-height: 1;
-}
-
 
