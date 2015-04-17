@@ -54,10 +54,11 @@ myApp.config(function ($routeProvider) {
         templateUrl: 'views/news/myNew2.html',
         controller: 'myNewsController2'
       })
+      /*
       .when('/mainReport', {
         templateUrl: 'views/report/mainReport.html',
         controller: 'mainReportController'
-      })
+      })*/
       .when('/ObjReport', {
         templateUrl: 'views/report/ObjReport.html',
         controller: 'ObjReportController'
