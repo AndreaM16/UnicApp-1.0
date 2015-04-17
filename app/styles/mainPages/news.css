@@ -15,19 +15,22 @@
 
 .new1, .new2{
   height: 50%;
+  width: 100%;
   border-bottom: 1px solid #646162;
 }
 
-.pContainer{
-  height: 100%;
-  width: 70%;
-  margin-top: 4%;
 
-}
 
 .new2{
   top: 50%;
 }
+
+.pContainer{
+  
+  position: relative;
+  width: 70%;
+  margin-top: 4%;
+  height: 50% !important;
 
 .p4{
   
@@ -46,6 +49,10 @@
   top: 60%;
   font-style: italic;
 }
+}
+
+
+
 
 
 .img1{
@@ -73,3 +80,4 @@
   left: 70%;
   top: 14.5%;
 }
+

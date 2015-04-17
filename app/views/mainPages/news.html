@@ -7,7 +7,8 @@
 
 			<div class="contentContainer">
 				<div class="subContentSection">
-					<div class="new1" ng-click="go('../#')">
+					<a  ng-href="#myNew1">
+					<div class="new1" ng-href="#myNew1">
 						<div class="img1" style="{{myBackground1}}"></div>
 							<div class="pContainer">
 								<div ng-repeat="par1 in pars1">
@@ -16,15 +17,18 @@
 								
 							</div>
 					</div>
+					</a>
 
+					<a  ng-href="#myNew2">
 					<div class="new2">
-						<div class="img2" style="{{myBackground2}}"></div>
+						<div class="img2" style="{{myBackground2}}" ng-href="#myNew2"></div>
 							<div class="pContainer">
 								<div ng-repeat="par2 in pars2">
             						<p class="{{par2.className}}">{{par2.text}}</p><br>
        							</div>
 							</div>
 					</div>
+					</a>
 				</div>
 			</div>
 
