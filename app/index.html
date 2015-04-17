@@ -15,19 +15,22 @@
         <meta name="{{meta.name}}" content="{{meta.content}}">
     </div>
     
-    <!-- Views Css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- Views CSS -->
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/info.css">
-    <link rel="stylesheet" href="styles/news.css">
-    <link rel="stylesheet" href="styles/report.css">
-    <link rel="stylesheet" href="styles/courses.css">
-    <link rel="stylesheet" href="styles/booking.css">
-    <link rel="stylesheet" href="styles/calendar.css">
-    <link rel="stylesheet" href="styles/events.css">
-    <link rel="stylesheet" href="styles/documents.css">
-    <link rel="stylesheet" href="styles/fullmap.css">
-    <link rel="stylesheet" href="styles/options.css">
+    <link rel="stylesheet" href="styles/mainPages/main.css">
+    <link rel="stylesheet" href="styles/mainPages/info.css">
+    <link rel="stylesheet" href="styles/mainPages/news.css">
+    <link rel="stylesheet" href="styles/mainPages/report.css">
+    <link rel="stylesheet" href="styles/mainPages/courses.css">
+    <link rel="stylesheet" href="styles/mainPages/booking.css">
+    <link rel="stylesheet" href="styles/mainPages/calendar.css">
+    <link rel="stylesheet" href="styles/mainPages/events.css">
+    <link rel="stylesheet" href="styles/mainPages/documents.css">
+    <link rel="stylesheet" href="styles/additionalPages/infos/fullmap.css">
+    <link rel="stylesheet" href="styles/additionalPages/infos/options.css">
+    <link rel="stylesheet" href="styles/additionalPages/news/myNews.css">
+
+    <!-- Modules & Custom CSS-->
     <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
     <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
     
@@ -36,12 +39,11 @@
    </head>
 
   <body>
-
+    
     <!--container contains all the part of the body that has
     to be pushed on the right to open the menu-->
     <div class="container">
         <div class="push">
-            
             
             <!--ng-view to contain all my views-->
                  <div class="Appdoitsize" ng-view="" >
@@ -90,27 +92,29 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
             <div class="customScripts">
-                <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
-                <script src='scripts/modules/lodash.js'></script>
-                <!--<script src='../bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
-                <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>-->             
+                <script src="bower_components/swiper/dist/js/swiper.min.js"></script>     
             </div>
    </div>
 
    <!--App Modules-->
    <script src="scripts/modules/modules.js"></script>
-   <!--App Controllers-->
-   <script src="scripts/controllers/mainController.js"></script>
-   <script src="scripts/controllers/infoController.js"></script>
-   <script src="scripts/controllers/fullMapController.js"></script>
-   <script src="scripts/controllers/optionsController.js"></script>
-   <script src="scripts/controllers/newsController.js"></script>
-   <script src="scripts/controllers/reportController.js"></script>
-   <script src="scripts/controllers/coursesController.js"></script>
-   <script src="scripts/controllers/bookingController.js"></script>
-   <script src="scripts/controllers/calendarController.js"></script>
-   <script src="scripts/controllers/eventsController.js"></script>
-   <script src="scripts/controllers/documentsController.js"></script>
+
+   <!--App Main Pages Controllers-->
+   <script src="scripts/controllers/mainControllers/mainController.js"></script>
+   <script src="scripts/controllers/mainControllers/infoController.js"></script>
+   <script src="scripts/controllers/mainControllers/newsController.js"></script>
+   <script src="scripts/controllers/mainControllers/reportController.js"></script>
+   <script src="scripts/controllers/mainControllers/coursesController.js"></script>
+   <script src="scripts/controllers/mainControllers/bookingController.js"></script>
+   <script src="scripts/controllers/mainControllers/calendarController.js"></script>
+   <script src="scripts/controllers/mainControllers/eventsController.js"></script>
+   <script src="scripts/controllers/mainControllers/documentsController.js"></script>
+
+   <!--Additional Pages Controllers -->
+   <script src="scripts/controllers/additionalPagesControllers/infos/fullMapController.js"></script>
+   <script src="scripts/controllers/additionalPagesControllers/infos/optionsController.js"></script>
+   <script src="scripts/controllers/additionalPagesControllers/news/myNewsController.js"></script>
+
    <!--App Routes-->
    <script src="scripts/routes/routes.js"></script>
   <script type="text/javascript"
