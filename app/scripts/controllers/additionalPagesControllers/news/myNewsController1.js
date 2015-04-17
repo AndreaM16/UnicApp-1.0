@@ -17,4 +17,6 @@ myApp.controller('myNewsController1', function($scope){
           				    della campagna elettorale.';
 
           $scope.nextNew = 'News Successiva';
+
+          $scope.nextArrow = 'background-image: url('+'../../images/nextNew.png'+')';
   });

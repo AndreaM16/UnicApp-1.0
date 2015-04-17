@@ -1,15 +1,21 @@
   
-  <div class="myNew1Header">
-        <span class="myNew1HeaderText">{{myHeaderText}}</span>
+  <div class="myNew2Header">
+        <span class="myNew2HeaderText">{{myHeaderText}}</span>
 
         <a ng-href="#news" class="btn-back" style="{{myBackground}}"></a>
     </div>
 
     <div class="myContainer">
-    	<div class="new1ImageContainer" style="{{new1Background}}">
-    		<div class="textTile">{{textTile}}</div>
-    	</div>
-    			<div class="littleDate">{{littleDate}}</div>
-    				<div class="longText">{{longText}}</div>
-    					<div class="nextNew">{{nextNew}}</div> 	
+        <div class="new2ImageContainer" style="{{new2Background}}"> </div>
+            <div class="textTile"><span>{{textTile}}</span></div>
+                <div class="textContainer">
+                <div class="littleDate">{{littleDate}}</div>
+                    <div class="longText">{{longText}}</div>
+                        <div class="myBorder"></div>
+                            <a ng-href="#myNew1">
+                               <div class="oldNew">{{oldNew}}</div> 
+                                    <div class="oldNewArrow" style="{{oldArrow}}"></div>
+                            </a>
+                </div>          
+                                
     </div>
