@@ -7,4 +7,6 @@
           $scope.writeMeText = 'Scrivi qui il tuo messaggio...';
 
           $scope.sendMeText = 'Invia Richiesta';
+
+          $scope.myBackground = 'background-image: url('+'../../images/nextNew.png'+')';
   });

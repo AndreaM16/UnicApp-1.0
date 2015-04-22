@@ -39,19 +39,19 @@ myApp.config(function ($routeProvider) {
         controller: 'DocumentsController'
       })
       .when('/options', {
-        templateUrl: 'views/infos/options.html',
+        templateUrl: 'views/otherPages/infos/options.html',
         controller: 'OptionsController'
       })
       .when('/fullmap', {
-        templateUrl: 'views/infos/fullmap.html',
+        templateUrl: 'views/otherPages/infos/fullmap.html',
         controller: 'FullmapController'
       })
       .when('/myNew1', {
-        templateUrl: 'views/news/myNew1.html',
+        templateUrl: 'views/otherPages/news/myNew1.html',
         controller: 'myNewsController1'
       })
       .when('/myNew2', {
-        templateUrl: 'views/news/myNew2.html',
+        templateUrl: 'views/otherPages/news/myNew2.html',
         controller: 'myNewsController2'
       })
       /*
@@ -60,47 +60,47 @@ myApp.config(function ($routeProvider) {
         controller: 'mainReportController'
       })*/
       .when('/ObjReport', {
-        templateUrl: 'views/report/ObjReport.html',
+        templateUrl: 'views/otherPages/report/ObjReport.html',
         controller: 'ObjReportController'
       })
       .when('/coursesPage', {
-          templateUrl: 'views/courses/coursesPage.html',
+          templateUrl: 'views/otherPages/courses/coursesPage.html',
           controller: 'coursesPageController'
       })
       .when('/course1', {
-          templateUrl: 'views/courses/course1.html',
+          templateUrl: 'views/otherPages/courses/course1.html',
           controller: 'course1Controller'
       })
       .when('/course2', {
-          templateUrl: 'views/courses/course2.html',
+          templateUrl: 'views/otherPages/courses/course2.html',
           controller: 'course2Controller'
       })
       .when('/book4Me', {
-          templateUrl: 'views/booking/book4Me.html',
+          templateUrl: 'views/otherPages/booking/book4Me.html',
           controller: 'book4MeController'
       })
       .when('/myCalendar', {
-          templateUrl: 'views/calendar/myCalendar.html',
+          templateUrl: 'views/otherPages/calendar/myCalendar.html',
           controller: 'myCalendarController'
       })
       .when('/calendarTime', {
-          templateUrl: 'views/calendar/calendarTime.html',
+          templateUrl: 'views/otherPages/calendar/calendarTime.html',
           controller: 'calendarTimeController'
       })
       .when('/calendarPlace', {
-          templateUrl: 'views/calendar/calendarPlace.html',
+          templateUrl: 'views/otherPages/calendar/calendarPlace.html',
           controller: 'calendarPlaceController'
       })
       .when('/futureEvents', {
-          templateUrl: 'views/events/futureEvents.html',
+          templateUrl: 'views/otherPages/events/futureEvents.html',
           controller: 'futureEventsController'
       })
       .when('/myDocuments', {
-          templateUrl: 'views/documents/myDocuments.html',
+          templateUrl: 'views/otherPages/documents/myDocuments.html',
           controller: 'myDocumentsController'
       })
       .when('/watchDocuments', {
-          templateUrl: 'views/documents/watchDocuments.html',
+          templateUrl: 'views/otherPages/documents/watchDocuments.html',
           controller: 'watchDocumentsController'
       })
       .otherwise({

@@ -1,0 +1,66 @@
+
+.objReportHeader{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 85%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+
+.sendObj{
+
+  height: 8%;
+  width: 90%;
+  left: 5%;
+  top: 90%;
+  position: relative;
+  background: #E5001B;
+  z-index: 1;
+
+}
+
+.sendObj span {
+
+  font-family: Open Sans, helvetica, arial, serif !important;
+   color: #fff;
+   font-weight: bold;
+   text-align: center;
+   position: relative;
+   font-size: 140%;
+   float: center;
+   bottom: 14%;
+   left: 35%;
+   top: 25%;
+   z-index: 3;
+}
+
+.isWhite{
+  width: 90%;
+  left: 5%;
+  height: 6%;
+  background-color: #fff;
+  border: 1px solid #646162;
+  top: 10%;
+  position: fixed;
+  line-height: 3;
+  color: #000;
+}
+
+.goGrey{
+  width: 90%;
+  left: 5%;
+  height: 6%;
+  background-color: rgba(107,107,107,0.2);
+  border: 1px solid #646162;
+  top: 10%;
+  position: fixed;
+  line-height: 3;
+  color: #000;
+  
+}
+
