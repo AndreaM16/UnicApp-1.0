@@ -1,0 +1,66 @@
+ .book4MeHeader{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 85%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+  .book4MeArea{top: 8%; height: 92%; width: 100%; position: fixed;}
+
+  .book4MeSend{height: 8%; width: 90%; left: 5%; top: 90%; background: #E5001B; z-index: 2; position: fixed;}
+  .book4MeSend span{
+      font-family: Open Sans, helvetica, arial, serif !important;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      font-size: 140%;
+      float: center;
+      bottom: 14%;
+      left: 32%;
+      top: 25%;
+      z-index: 3;
+  }
+
+  .box1{
+          color: #000;
+          height: 8%;
+          width: 90%;
+          left: 5%;
+          border: 1px solid #646162;
+          top: 10%;
+          position: fixed;
+          z-index: 2;
+  }
+
+  .box1 span{
+          color: #000;
+          line-height: 3;
+          margin-left: 5%;
+
+  }
+
+  .box2{
+          color: #000;
+          height: 8%;
+          width: 90%;
+          left: 5%;
+          border: 1px solid #646162;
+          border-top: none;
+          top: 18%;
+          position: fixed;
+          z-index: 2;
+  }
+  .box2 span{
+            color: #000;
+            line-height: 3;
+            margin-left: 5%;
+  }
+
+  .box1Background{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000; background-position: 50%; top: 11%; left: 80%;}
+  .box2Background{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000; background-position: 50%; top: 19%; left: 80%;}

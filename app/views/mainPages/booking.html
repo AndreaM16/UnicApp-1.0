@@ -2,8 +2,29 @@
 <!-- Custom header -->
 <div class="bookingHeader">
     <span class="headerText">{{headerText}}</span>
-    <div class="menu-btn" ng-href="#booking"></div>
+    	<div class="menu-btn" ng-href="#booking"></div>
 </div>
+
+			<div class="bookingArea">
+				<div class="bookingBackground" style="{{bookingImage}}"></div>
+					<div class="bookingGhostlyTile"><span>{{ghostlyText}}</span></div>
+
+						<div class="bookingTextarea">
+							<div class="bookingTextTitle"><span>{{bookingTitle}}</span></div>
+
+								<a ng-href="#book4Me">
+									<div class="getCourse"><span>{{courseText}}</span>
+										<div class="courseImage" style="{{courseBackground}}"></div>
+									</div>
+								</a>
+
+									<div class="getWhen"><span>{{whenText}}</span>
+										<div class="whenImage" style="{{whenBackground}}"></div>
+									</div>
+										
+						</div>
+										<div class="sendRequest"><span>{{requestText}}</span></div>
+			</div>
 
 
 <script src="bower_components/pushy/js/pushy.js"></script>

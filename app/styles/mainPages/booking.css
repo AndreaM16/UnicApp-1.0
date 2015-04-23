@@ -10,3 +10,78 @@
   background: #E5001B;
   padding: 0%;
   }
+
+  .bookingArea{width: 100%; height: 92%; top: 8%; position: fixed;}
+
+  .bookingBackground{width: 100%; height: 36%; position: fixed; background-repeat: no-repeat; background-size: cover;}
+
+  .bookingGhostlyTile{z-index: 2; height: 8%; width: 100%; top: 36%; position: fixed; line-height: 3; background: rgba(255,255,255,0.6);}
+
+  .bookingGhostlyTile span{  
+    color: #000;
+    font-size: 135%;
+    padding-left: 8%;
+    padding-right: 0%;
+    bottom: 0;
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    }
+
+    .bookingTextArea{top: 44%; height: 48%; position: fixed;}
+
+    .sendRequest{height: 8%; width: 90%; left: 5%; top: 70%; background: #E5001B; z-index: 2; position: fixed;}
+    .sendRequest span{
+      font-family: Open Sans, helvetica, arial, serif !important;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      font-size: 140%;
+      float: center;
+      bottom: 14%;
+      left: 25%;
+      top: 25%;
+      z-index: 3;
+    }
+
+    .bookingTextTitle{top: 45%; left: 3%; position: fixed;}
+
+    .bookingTextTitle span{font-size: 105%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important;}
+
+    .getCourse{
+      color: #000;
+      height: 8%;
+      width: 90%;
+      left: 5%;
+      border: 1px solid #646162;
+      top: 50%;
+      position: fixed;
+      z-index: 2;
+    }
+
+    .getCourse span{
+      color: #000;
+      line-height: 3;
+      margin-left: 5%;
+  }
+
+  .getWhen{
+      color: #000;
+      height: 8%;
+      width: 90%;
+      left: 5%;
+      border: 1px solid #646162;
+      top: 60%;
+      position: fixed;
+      z-index: 2;
+    }
+
+    .getWhen span{
+      color: #000;
+      line-height: 3;
+      margin-left: 5%;
+  }
+
+  .courseImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000; background-position: 50%; top: 51%; left: 80%;}
+  .whenImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000;  background-position: 50%; top: 61%; left: 80%;}

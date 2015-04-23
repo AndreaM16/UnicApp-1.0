@@ -1,0 +1,33 @@
+.coursesPageHeader{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 85%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+  .coursesPageArea{height: 92%; width: 100%; top: 8%; position: fixed;}
+
+  .course1{height: 46%; width: 100%; border-bottom: 1px solid #646162; top: 8%; position: fixed;}
+
+  .course2{height: 46%; width: 100%; border-bottom: 1px solid #646162; top: 54%; position: fixed;}
+
+  .course1Image{background-repeat: no-repeat; background-size: cover; background-position: 50% center; position: fixed; height: 46%; width: 25%; top: 8%; left: 75%;}
+
+  .course2Image{background-repeat: no-repeat; background-size: cover; background-position: 50% center; position: fixed; height: 46%; width: 25%; top: 54%; left: 75%;}
+
+  .coursesPageTextArea1{height: 12%; width: 65%; top: 27%; left:6%; position: fixed;}
+
+  .coursesPageBigText1{font-size: 123%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important; font-weight: bold;}
+
+  .coursesPageLittleText1{font-size: 115%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important;}
+
+  .coursesPageTextArea2{height: 12%; width: 65%; top: 77%; left:6%; position: fixed;}
+
+  .coursesPageBigText2{font-size: 123%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important; font-weight: bold;}
+
+  .coursesPageLittleText2{font-size: 115%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important;}  

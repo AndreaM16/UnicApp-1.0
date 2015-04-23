@@ -9,3 +9,14 @@
   background: #E5001B;
   padding: 0%;
   }
+
+  .coursesArea{height: 92%; width: 100%; top: 8%; position: fixed;}
+
+  .textArea{height: 30%; width: 50%; top: 50%; left:10%; position: fixed;}
+
+  .coursesBackground{height: 100%; width: 34%; left: 66%; top:4%; position: fixed; background-repeat: no-repeat; background-size: cover;}
+
+  .centralBigText{font-size: 135%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important; font-weight: bold;}
+
+  .centralLittleText{font-size: 115%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important;}
+
