@@ -5,8 +5,13 @@
         <a ng-href="#report" class="btn-back" style="{{myBackground}}"></a>
     </div>	
 
-    		<div ng-class="classy" ng-style="classyBackground" ng-click="changeColor()">{{staticObjText}}</div>
+    		<div ng-class="classy" ng-click="changeColor()">{{staticObjText}}
+    			<div class="CheckingBackground" ng-style="classyBackground"></div>
+    		</div>
 
-    			<div class="sendObj"><span>{{sendObjText}}</span></div>
+    			<a  ng-href="{{whereToGo}}">
+    				<div ng-class="sendObjClass" ng-click="objHasBeenSelected()">
+    					<span>{{sendObjText}}</span></div>	
+    			</a>
 
 

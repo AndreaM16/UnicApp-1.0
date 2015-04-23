@@ -1,4 +1,4 @@
-myApp.controller('ObjReportController', function($scope){
+myApp.controller('ObjReportController', function($scope, sharedProperties){
 	
 
 	$scope.objReportText='Segnalazioni';
@@ -11,22 +11,45 @@ myApp.controller('ObjReportController', function($scope){
 
 	$scope.staticObjText='Problema n.1';
 
-	$scope.classy="isWhite";
+	$scope.classy='isWhite';
 
-	$scope.classyBackground="background-image: url('+'../images/check.png'+')";
+	$scope.sendObjClass='sendObj';
+
+	$scope.sentOrNot='false';
+
+	$scope.whereToGo='#ObjReport';
+
+
+
+	$scope.classyBackground='background-image: url('+'../images/check.png'+')';
 
 	$scope.changeColor = function(){
-        if ($scope.classy == "isWhite"){
-            	$scope.classy = "goGrey";		
+        if ($scope.classy == 'isWhite'){
+            	$scope.classy = 'goGrey';
+            	$scope.sendObjClass='sendObjWhite';		
         }
          else{
-            	$scope.classy = "isWhite";            		
+            	$scope.classy = 'isWhite';
+            	$scope.sendObjClass='sendObj';            		
         }
     };
 
-	/*
-	$('.selectObj').on("click", function(){
-         $(this).parent().css("background-color", "#000");
-        });*/
-	
+    $scope.objHasBeenSelected = function(){
+    	if ($scope.sendObjClass=='sendObjWhite'){
+    			$scope.sentOrNot='true'
+    				$scope.whereToGo='#report';
+
+    					
+    		$scope.setProperty = function(newValue){
+
+    					$scope.gotClicked = sharedProperties.getProperty;
+        				sharedProperties.setProperty(gotClicked);
+    		}
+    	}
+    	else{
+    		$scope.sentOrNot='false';
+    		$scope.whereToGo='#ObjReport';
+    	}
+    };
+
 });
