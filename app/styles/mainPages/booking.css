@@ -83,5 +83,5 @@
       margin-left: 5%;
   }
 
-  .courseImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000; background-position: 50%; top: 51%; left: 80%;}
-  .whenImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000;  background-position: 50%; top: 61%; left: 80%;}
+  .courseImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;  background-position: 50%; top: 51%; left: 80%;}
+  .whenImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;   background-position: 50%; top: 61%; left: 80%;}

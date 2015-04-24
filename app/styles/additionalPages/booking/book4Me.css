@@ -62,5 +62,5 @@
             margin-left: 5%;
   }
 
-  .box1Background{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000; background-position: 50%; top: 11%; left: 80%;}
-  .box2Background{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%; background-color: #000; background-position: 50%; top: 19%; left: 80%;}
+  .box1Background{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;  background-position: 50%; top: 11%; left: 80%;}
+  .box2Background{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;  background-position: 50%; top: 19%; left: 80%;}

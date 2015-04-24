@@ -9,3 +9,21 @@
   background: #E5001B;
   padding: 0%;
   }
+
+  .documentsArea{height: 92%; top: 8%; width: 100%; position: fixed;}
+
+  .mainDocument{height: 15%; width: 100%; position: fixed; top: 8%; border-bottom: 0.1em solid #646162;}
+
+  .mainDocument span{
+                        font-family: Open Sans, helvetica, arial, serif !important;
+                        color: #646162;
+                        font-weight: bold;
+                        text-align: center;
+                        position: fixed;
+                        font-size: 140%;
+                        bottom: 14%;
+                        left: 8%;
+                        top: 13%;
+  }
+
+  .documentBackground{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 30% 30%; background-position: 50%; top: 12%; left: 80%;}

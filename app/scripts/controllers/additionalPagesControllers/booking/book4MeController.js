@@ -9,6 +9,6 @@ myApp.controller('book4MeController', function($scope){
 
 	$scope.book4MeSendText='Conferma';
 
-	$scope.box1Image= 'background-image: url('+'../../images/nextNew.png'+')';
+	$scope.box1Image= 'background-image: url('+'../../images/arrow.png'+')';
 	$scope.box2Image= $scope.box1Image;
 });

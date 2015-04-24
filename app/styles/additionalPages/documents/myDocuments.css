@@ -1,0 +1,41 @@
+.myDocumentsHeader{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 85%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+  .myDocumentsArea{height: 92%; top: 8%; width: 100%; position: fixed;}
+
+  .mainMyDocument{height: 15%; width: 100%; position: fixed; top: 8%; border-bottom: 0.1em solid #646162;}
+
+  .mainMyDocument span{
+                        font-family: Open Sans, helvetica, arial, serif !important;
+                        color: #646162;
+                        font-weight: bold;
+                        text-align: center;
+                        position: fixed;
+                        font-size: 140%;
+                        bottom: 14%;
+                        left: 8%;
+                        top: 13%;
+  }
+
+  .myDocumentBackground{width: 12%; height: 7%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 75% 75%; background-position: 50%; top: 12%; left: 80%;}
+
+  .myDocumentsDownload{ height: 8%; width: 10%; position: fixed; left: 80%; top: 20%;
+                      }
+
+  .myDocumentsDownload span{  font-family: Open Sans, helvetica, arial, serif !important;
+                              color: #646162;
+                              text-align: center;
+                              position: fixed;
+                              font-size: 82%;
+                              left: 79%;
+                              top: 20%;
+                              position: fixed;}

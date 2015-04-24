@@ -20,7 +20,6 @@ myApp.controller('ObjReportController', function($scope, sharedProperties){
 	$scope.whereToGo='#ObjReport';
 
 
-
 	$scope.classyBackground='background-image: url('+'../images/check.png'+')';
 
 	$scope.changeColor = function(){

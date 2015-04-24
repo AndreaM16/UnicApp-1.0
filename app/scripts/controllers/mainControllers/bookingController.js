@@ -15,7 +15,7 @@
 
   	$scope.requestText='Invia Prenotazione';
 
-  	$scope.courseBackground='background-image: url('+'../../images/nextNew.png'+')';
+  	$scope.courseBackground='background-image: url('+'../../images/arrow.png'+')';
     $scope.whenBackground=$scope.courseBackground;
 
   });

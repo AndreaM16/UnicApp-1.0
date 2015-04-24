@@ -8,7 +8,7 @@
 
           $scope.sendMeText = 'Invia Richiesta';
 
-          $scope.myBackground = 'background-image: url('+'../../images/nextNew.png'+')';
+          $scope.myBackground = 'background-image: url('+'../../images/arrow.png'+')';
 
           $scope.getProperty = function(gotClicked){
     			$scope.gotClicked = sharedProperties.getProperty();

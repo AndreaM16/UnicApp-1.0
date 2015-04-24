@@ -1,0 +1,15 @@
+.WatchDocumentsHeader{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 15%;
+  right: 0%;
+  width: 70%;
+  height: 8%;
+  background: #E5001B;
+  padding: 0%;
+  }
+
+  .watchDocumentsArea{height: 92%; top: 8%; width: 100%; position: fixed;}
+
+  .btn-backTwice{left: 85%;}

@@ -1,0 +1,12 @@
+<!-- Custom header -->
+<div class="watchDocumentsHeader">
+    <span class="headerText">{{headerText}}</span>
+    <a class="btn-back" ng-href="#myDocuments" style="{{watchDocumentsBack}}"></a>
+    <a class="btn-backTwice" ng-href="#documents" style="{{watchDocumentsBackTwice}}"></a>
+</div>
+
+		<div class="myDocumentsArea">
+			<button ng-click="prevPage()">&lt;</button>
+			<button ng-click="nextPage()">&gt;</button>
+		  	<pdfviewer src="documents/test.pdf" on-page-load='pageLoaded(page,total)' id="viewer"></pdfviewer>
+		</div>
