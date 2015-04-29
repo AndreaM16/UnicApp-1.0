@@ -18,4 +18,6 @@
   	$scope.courseBackground='background-image: url('+'../../images/arrow.png'+')';
     $scope.whenBackground=$scope.courseBackground;
 
+    
+
   });

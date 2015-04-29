@@ -18,5 +18,5 @@ myApp.controller('myNewsController1', function($scope){
 
           $scope.nextNew = 'News Successiva';
 
-          $scope.nextArrow = 'background-image: url('+'../../images/nextNew.png'+')';
+          $scope.nextArrow = 'background-image: url('+'../../images/arrow.png'+')';
   });

@@ -22,6 +22,7 @@ myApp.controller('ObjReportController', function($scope, sharedProperties){
 
 	$scope.classyBackground='background-image: url('+'../images/check.png'+')';
 
+    
 	$scope.changeColor = function(){
         if ($scope.classy == 'isWhite'){
             	$scope.classy = 'goGrey';

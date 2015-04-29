@@ -10,3 +10,43 @@
   background: #E5001B;
   padding: 0%;
   }
+
+  .eventsArea{height: 92%; top: 8%; width: 100%; position: fixed;}
+
+  .mainEventsArea{height: 7%; width: 100%; position: fixed; top: 8%;}
+
+  .futureEvents{height: 7%; width: 50%; left: 0; position: fixed; top: 8%; background-color: rgba(136,136,136,0.3);}
+
+  .futureEvents span{   font-family: Open Sans, helvetica, arial, serif !important;
+                        color: #000;
+                        height: 5%;
+                        font-weight: bold;
+                        text-align: center;
+                        position: fixed;
+                        font-size: 135%;
+                        float: center;
+                        bottom: 0;
+                        left: 9%;
+                        top: 9%;
+                        z-index: 2;}
+
+  .oldEvents{height: 7%; width: 50%; left: 50%; position: fixed; top: 8%; background-color: rgba(136,136,136,0.3);}
+
+  .oldEvents span{   font-family: Open Sans, helvetica, arial, serif !important;
+                        color: #000;
+                        height: 5%;
+                        font-weight: normal;
+                        text-align: center;
+                        position: fixed;
+                        font-size: 135%;
+                        float: center;
+                        bottom: 0;
+                        left: 58%;
+                        top: 9%;
+                        z-index: 2;}
+
+  .futureTile{height: 0.2em; width: 50%; background-color: #E5001B; top: 14.5%; position: fixed; left: 0;}
+  .oldTile{height: 0.2em; width: 50%; background-color: #E5001B; top: 14.5%; position: fixed; left: 50%;}
+
+
+  

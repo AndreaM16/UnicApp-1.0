@@ -16,7 +16,7 @@ myApp.controller('myNewsController2', function($scope){
 
           $scope.oldNew = 'News Precedente';
 
-          $scope.oldArrow = 'background-image: url('+'../../images/oldNew.png'+')';
+          $scope.oldArrow = 'background-image: url('+'../../images/backArrow.png'+')';
  
   });
 

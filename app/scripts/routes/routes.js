@@ -38,63 +38,66 @@ myApp.config(function ($routeProvider) {
         templateUrl: 'views/mainPages/documents.html',
         controller: 'DocumentsController'
       })
-      .when('/options', {
+
+      /*OP is for Other Pages, I need it to activate viewSwipe plugin*/
+      
+      .when('/OPOptions', {
         templateUrl: 'views/otherPages/infos/options.html',
         controller: 'OptionsController'
       })
-      .when('/fullmap', {
+      .when('/OPFullmap', {
         templateUrl: 'views/otherPages/infos/fullmap.html',
         controller: 'FullmapController'
       })
-      .when('/myNew1', {
+      .when('/OPmyNew1', {
         templateUrl: 'views/otherPages/news/myNew1.html',
         controller: 'myNewsController1'
       })
-      .when('/myNew2', {
+      .when('/OPmyNew2', {
         templateUrl: 'views/otherPages/news/myNew2.html',
         controller: 'myNewsController2'
       })
-      .when('/ObjReport', {
+      .when('/OPObjReport', {
         templateUrl: 'views/otherPages/report/ObjReport.html',
         controller: 'ObjReportController'
       })
-      .when('/coursesPage', {
+      .when('/OPcoursesPage', {
           templateUrl: 'views/otherPages/courses/coursesPage.html',
           controller: 'coursesPageController'
       })
-      .when('/course1', {
+      .when('/OPcourse1', {
           templateUrl: 'views/otherPages/courses/course1.html',
           controller: 'course1Controller'
       })
-      .when('/course2', {
+      .when('/OPcourse2', {
           templateUrl: 'views/otherPages/courses/course2.html',
           controller: 'course2Controller'
       })
-      .when('/book4Me', {
+      .when('/OPbook4Me', {
           templateUrl: 'views/otherPages/booking/book4Me.html',
           controller: 'book4MeController'
       })
-      .when('/myCalendar', {
+      .when('/OPmyCalendar', {
           templateUrl: 'views/otherPages/calendar/myCalendar.html',
           controller: 'myCalendarController'
       })
-      .when('/calendarTime', {
+      .when('/OPcalendarTime', {
           templateUrl: 'views/otherPages/calendar/calendarTime.html',
           controller: 'calendarTimeController'
       })
-      .when('/calendarPlace', {
+      .when('/OPcalendarPlace', {
           templateUrl: 'views/otherPages/calendar/calendarPlace.html',
           controller: 'calendarPlaceController'
       })
-      .when('/futureEvents', {
+      .when('/OPfutureEvents', {
           templateUrl: 'views/otherPages/events/futureEvents.html',
           controller: 'futureEventsController'
       })
-      .when('/myDocuments', {
+      .when('/OPmyDocuments', {
           templateUrl: 'views/otherPages/documents/myDocuments.html',
           controller: 'myDocumentsController'
       })
-      .when('/watchDocuments', {
+      .when('/OPwatchDocuments', {
           templateUrl: 'views/otherPages/documents/watchDocuments.html',
           controller: 'watchDocumentsController'
       })

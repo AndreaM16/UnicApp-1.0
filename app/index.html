@@ -44,6 +44,8 @@
     <!-- Modules & Custom CSS-->
     <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
     <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
+    <link rel="stylesheet" type="text/css" href="styles/plugins/viewSwipe.css">
+
     
 
     <!-- Google Apis -->
@@ -56,9 +58,10 @@
     <div class="container">
         <div class="push">
             
-            <!--ng-view to contain all my views-->
-                 <div class="Appdoitsize" ng-view="" >
 
+            <!--ng-view to contain all my views class="Appdoitsize" -->
+                 <div ng-view="" ng-class="{slide: Appdoitsize }">
+                      
                  </div> 
 
                 <!-- Pushy Menu -->
@@ -103,7 +106,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
             <div class="customScripts">
-                <script src="bower_components/swiper/dist/js/swiper.min.js"></script>     
+                <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+
                     
             </div>
    </div>
@@ -149,6 +153,7 @@
    <script src="scripts/routes/routes.js"></script>
   <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArqKwlqOFydRwfrFSsCnuEqfKeZVNuTeM"></script>
+    <script src="scripts/custom/viewSwipe.js"></script> 
 
 </body>
 
