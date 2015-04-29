@@ -40,11 +40,10 @@ myApp.controller('ObjReportController', function($scope, sharedProperties){
     				$scope.whereToGo='#report';
 
     					
-    		$scope.setProperty = function(newValue){
-
-    					$scope.gotClicked = sharedProperties.getProperty;
-        				sharedProperties.setProperty(gotClicked);
-    		}
+    		
+    					$scope.gotClicked = $scope.staticObjText;
+        				sharedProperties.setProperty($scope.gotClicked);
+    		
     	}
     	else{
     		$scope.sentOrNot='false';

@@ -1,5 +1,5 @@
 
-myApp.service('sharedProperties', function () {
+myApp.factory('sharedProperties', [function () {
         var gotClicked = '';
 
         return {
@@ -8,6 +8,19 @@ myApp.service('sharedProperties', function () {
             },
             setProperty: function(value) {
                 gotClicked = value;
+                return gotClicked;
             }
         };
-    });
+    }]);
+
+/*
+ angular.module('bi.services')
+.factory('bi.AccessService', [function(){
+ var accessMap = {};
+ 
+ return {
+  setAccessMap: function(newAccessMap){ accessMap = newAccessMap; },
+  getAccessMap: function(){ return accessMap; },
+  
+ }
+}]);*/

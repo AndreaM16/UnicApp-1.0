@@ -10,14 +10,15 @@
 
           $scope.myBackground = 'background-image: url('+'../../images/arrow.png'+')';
 
-          $scope.getProperty = function(gotClicked){
-    			$scope.gotClicked = sharedProperties.getProperty();
+          $scope.objectText =  sharedProperties.getProperty();
 
-    			if ($scope.gotClicked=='Problema n.1'){
-    					$scope.choseObjtext=$scope.gotClicked;
-    			}
-    			else{
-    					$scope.choseObjtext = 'Scegli l\'oggetto della tua richiesta';
-    			}
-    		}
+          
+
+          if ($scope.objectText=='Problema n.1'){
+              $scope.choseObjtext=$scope.objectText;
+          }
+          else{
+              $scope.choseObjtext = 'Scegli l\'oggetto della tua richiesta';
+          }
+        
   });
