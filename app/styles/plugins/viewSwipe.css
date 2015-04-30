@@ -15,7 +15,6 @@
 .slide.ng-enter-active{
   transition:0.15s linear all;
   right:0;
-  
   position:relative;
 }
 

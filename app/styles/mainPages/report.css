@@ -53,7 +53,7 @@
 }
 
 
-.sendMe{
+.reportSendMe{
 
   height: 8%;
   width: 90%;
@@ -66,10 +66,9 @@
 
 }
 
-.sendMe span {
+.reportSendMe span {
 
   font-family: Open Sans, helvetica, arial, serif !important;
-   color: #fff;
    font-weight: bold;
    text-align: center;
    position: relative;

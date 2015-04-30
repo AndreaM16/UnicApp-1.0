@@ -7,15 +7,17 @@
 
 			<div class="book4MeArea">
 
-					<div class="box1"><span>{{box1Text}}</span>
+					<div class="box1" ng-click="boxClick1()"><span>{{box1Text}}</span>
 						<div class="box1Background" style="{{box1Image}}"></div>	
 					</div>
 
-						<div class="box2"><span>{{box2Text}}</span>
+						<div class="box2" ng-click="boxClick2()"><span>{{box2Text}}</span>
 							<div class="box2Background" style="{{box2Image}}"></div>	
 						</div>
 
+							<a ng-href="{{goBack}}">
 								<div class="book4MeSend">
 									<span>{{book4MeSendText}}</span>
 								</div>
+							</a>
 			</div>

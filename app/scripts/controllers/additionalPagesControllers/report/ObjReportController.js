@@ -1,4 +1,5 @@
-myApp.controller('ObjReportController', function($scope, sharedProperties){
+myApp.controller("ObjReportController", ["$scope", "sharedProperties", 
+    function($scope,sharedProperties){
 	
 
 	$scope.objReportText='Segnalazioni';
@@ -39,11 +40,8 @@ myApp.controller('ObjReportController', function($scope, sharedProperties){
     			$scope.sentOrNot='true'
     				$scope.whereToGo='#report';
 
-    					
-    		
     					$scope.gotClicked = $scope.staticObjText;
         				sharedProperties.setProperty($scope.gotClicked);
-    		
     	}
     	else{
     		$scope.sentOrNot='false';
@@ -51,4 +49,4 @@ myApp.controller('ObjReportController', function($scope, sharedProperties){
     	}
     };
 
-});
+}]);

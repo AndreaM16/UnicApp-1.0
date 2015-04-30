@@ -13,14 +13,20 @@ myApp.factory('sharedProperties', [function () {
         };
     }]);
 
-/*
- angular.module('bi.services')
-.factory('bi.AccessService', [function(){
- var accessMap = {};
- 
- return {
-  setAccessMap: function(newAccessMap){ accessMap = newAccessMap; },
-  getAccessMap: function(){ return accessMap; },
-  
- }
-}]);*/
+myApp.factory('bookingSharer', [function () {
+        var myField = 'Corsi';
+
+        return {
+            getProperty: function() {
+                return myField;
+            },
+            setProperty: function(value) {
+                myField = value;
+                return myField;
+            }
+        };
+    }]);
+
+
+
+
