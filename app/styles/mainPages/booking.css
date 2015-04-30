@@ -33,7 +33,7 @@
     .sendRequest{height: 8%; width: 90%; left: 5%; top: 70%; background: #E5001B; z-index: 2; position: fixed;}
     .sendRequest span{
       font-family: Open Sans, helvetica, arial, serif !important;
-      color: #fff;
+      color: grey;
       font-weight: bold;
       text-align: center;
       position: relative;
@@ -85,3 +85,16 @@
 
   .courseImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;  background-position: 50%; top: 51%; left: 80%;}
   .whenImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;   background-position: 50%; top: 61%; left: 80%;}
+
+  .form-horizontal{width:65%; position: fixed; top: 50%; display: none; left: 17.5%; z-index: 3;}
+
+  .poppy{z-index: 2; position: fixed; background-color: rgba(000,000,000,0.7); height: 100%; width: 100%; display: none; top: 0;}
+
+  .input-group-btn{height: 5.5%; width: 12%; left: 75%; position: fixed;}
+
+  .btn {height: 98%; width: 100%;}
+
+/*
+  .dropdown-menu{position: fixed; height: 100%; width: 100%;}*/
+
+  .btn-info{height: 30%; width: 30%;}

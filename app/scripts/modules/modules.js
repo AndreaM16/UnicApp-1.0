@@ -8,5 +8,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngPDFViewer'
+    'ngPDFViewer',
+    'ui.bootstrap', 
+    'ui.bootstrap.datetimepicker'
+
   ]);
