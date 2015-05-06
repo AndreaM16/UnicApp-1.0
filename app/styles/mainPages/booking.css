@@ -1,5 +1,4 @@
-
- .bookingHeader{
+.bookingHeader {
   position: fixed;
   z-index: 2;
   top: 0%;
@@ -9,92 +8,181 @@
   height: 8%;
   background: #E5001B;
   padding: 0%;
-  }
-
-  .bookingArea{width: 100%; height: 92%; top: 8%; position: fixed;}
-
-  .bookingBackground{width: 100%; height: 36%; position: fixed; background-repeat: no-repeat; background-size: cover;}
-
-  .bookingGhostlyTile{z-index: 2; height: 8%; width: 100%; top: 36%; position: fixed; line-height: 3; background: rgba(255,255,255,0.6);}
-
-  .bookingGhostlyTile span{  
-    color: #000;
-    font-size: 135%;
-    padding-left: 8%;
-    padding-right: 0%;
-    bottom: 0;
-    height: 100%;
-    margin-bottom: 0;
-    margin-top: 0;
-    }
-
-    .bookingTextArea{top: 44%; height: 48%; position: fixed;}
-
-    .sendRequest{height: 8%; width: 90%; left: 5%; top: 70%; background: #E5001B; z-index: 2; position: fixed;}
-    .sendRequest span{
-      font-family: Open Sans, helvetica, arial, serif !important;
-      color: grey;
-      font-weight: bold;
-      text-align: center;
-      position: relative;
-      font-size: 140%;
-      float: center;
-      bottom: 14%;
-      left: 25%;
-      top: 25%;
-      z-index: 3;
-    }
-
-    .bookingTextTitle{top: 45%; left: 3%; position: fixed;}
-
-    .bookingTextTitle span{font-size: 105%; color: #646162; font-family: Open Sans, helvetica, arial, serif !important;}
-
-    .getCourse{
-      color: #000;
-      height: 8%;
-      width: 90%;
-      left: 5%;
-      border: 1px solid #646162;
-      top: 50%;
-      position: fixed;
-      z-index: 2;
-    }
-
-    .getCourse span{
-      color: #000;
-      line-height: 3;
-      margin-left: 5%;
-  }
-
-  .getWhen{
-      color: #000;
-      height: 8%;
-      width: 90%;
-      left: 5%;
-      border: 1px solid #646162;
-      top: 60%;
-      position: fixed;
-      z-index: 2;
-    }
-
-    .getWhen span{
-      color: #000;
-      line-height: 3;
-      margin-left: 5%;
-  }
-
-  .courseImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;  background-position: 50%; top: 51%; left: 80%;}
-  .whenImage{width: 8%; height: 6%; position: fixed; z-index: 3; background-repeat: no-repeat; background-size: 35% 35%;   background-position: 50%; top: 61%; left: 80%;}
-
-  .form-horizontal{width:65%; position: fixed; top: 50%; display: none; left: 17.5%; z-index: 3;}
-
-  .poppy{z-index: 2; position: fixed; background-color: rgba(000,000,000,0.7); height: 100%; width: 100%; display: none; top: 0;}
-
-  .input-group-btn{height: 5.5%; width: 12%; left: 75%; position: fixed;}
-
-  .btn {height: 98%; width: 100%;}
-
-/*
-  .dropdown-menu{position: fixed; height: 100%; width: 100%;}*/
-
-  .btn-info{height: 30%; width: 30%;}
+}
+.bookingArea {
+  width: 100%;
+  height: 92%;
+  top: 8%;
+  position: fixed;
+}
+.bookingBackground {
+  width: 100%;
+  height: 36%;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bookingGhostlyTile {
+  z-index: 2;
+  height: 8%;
+  width: 100%;
+  top: 36%;
+  position: fixed;
+  line-height: 3;
+  background: rgba(255, 255, 255, 0.6);
+}
+.bookingGhostlyTile span {
+  color: #000;
+  font-size: 135%;
+  padding-left: 8%;
+  padding-right: 0%;
+  bottom: 0;
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.bookingTextArea {
+  top: 44%;
+  height: 48%;
+  position: fixed;
+}
+.sendRequest {
+  height: 8%;
+  width: 90%;
+  left: 5%;
+  top: 70%;
+  background: #E5001B;
+  z-index: 2;
+  position: fixed;
+}
+.sendRequest span {
+  font-family: Open Sans, helvetica, arial, serif !important;
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  font-size: 140%;
+  float: center;
+  bottom: 14%;
+  left: 25%;
+  top: 25%;
+  z-index: 3;
+}
+.bookingTextTitle {
+  top: 45%;
+  left: 3%;
+  position: fixed;
+}
+.bookingTextTitle span {
+  font-size: 105%;
+  color: #646162;
+  font-family: Open Sans, helvetica, arial, serif !important;
+}
+.getCourse {
+  color: #000;
+  height: 8%;
+  width: 90%;
+  left: 5%;
+  border: 1px solid #646162;
+  top: 50%;
+  position: fixed;
+  z-index: 2;
+}
+.getCourse span {
+  color: #000;
+  line-height: 3;
+  margin-left: 5%;
+}
+.getWhen {
+  color: #000;
+  height: 8%;
+  width: 90%;
+  left: 5%;
+  border: 1px solid #646162;
+  top: 60%;
+  position: fixed;
+  z-index: 2;
+}
+.getWhen span {
+  color: #000;
+  line-height: 3;
+  margin-left: 5%;
+}
+.courseImage {
+  width: 8%;
+  height: 6%;
+  position: fixed;
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: 35% 35%;
+  background-position: 50%;
+  top: 51%;
+  left: 80%;
+}
+.whenImage {
+  width: 8%;
+  height: 6%;
+  position: fixed;
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: 35% 35%;
+  background-position: 50%;
+  top: 61%;
+  left: 80%;
+}
+.form-horizontal {
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  display: none;
+  left: 10%;
+  z-index: 3;
+}
+.input-group {
+  top: 0;
+  position: fixed !important;
+  left: 0;
+  width: 100% !important;
+}
+.form-control {
+  top: 30%;
+  position: fixed !important;
+  left: 10%;
+  width: 65% !important;
+}
+.poppy {
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(000, 000, 000, 0.7);
+  height: 100%;
+  width: 100%;
+  display: none;
+  top: 0;
+}
+.input-group-btn {
+  height: 5.5%;
+  width: 12%;
+  left: 75%;
+  position: fixed;
+  top: 30%;
+}
+.btn {
+  height: 98%;
+  width: 100%;
+}
+.dropdown-menu {
+  position: fixed !important;
+  height: 45% !important;
+  width: 90% !important;
+  left: 5% !important;
+  top: 40% !important;
+}
+.btn-info {
+  height: 30%;
+  width: 30%;
+}
+.btn-default {
+  line-height: 2;
+  background-color: #fff;
+  color: #000;
+}
