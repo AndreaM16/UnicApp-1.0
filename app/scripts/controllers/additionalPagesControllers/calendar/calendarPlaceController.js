@@ -1,10 +1,12 @@
 myApp.controller("calendarPlaceController", ["$scope", "$http", function($scope, $http){
 
+	$scope.initGetRequestCalendarPlace = function(){
 		$http.get('data/otherPages/calendarPlaceJSON.json').success(function(data){
 
 
 			$scope.data=data;
 
 		})
+	}
 	
 }]);

@@ -1,12 +1,13 @@
 myApp.controller("myNewsController2", ["$scope","$http",function($scope,$http){
 
-     $http.get('data/otherPages/news/myNew2JSON.json').success(function(data){
+  $scope.initGetRequestMyNews2 = function(){
+   $http.get('data/otherPages/news/myNew2JSON.json').success(function(data){
 
-          $scope.data=data;
-     })
-          
-          
-  }]);
+    $scope.data=data;
+  })
+ }
+
+}]);
 
 /*premio destinato a finanziare progetti di \
                                     ricerca innovativi nell\’ambito dell\’ICT con lo scopo dichiarato di sostenere il lavoro \

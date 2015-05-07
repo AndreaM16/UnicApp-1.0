@@ -1,20 +1,22 @@
 
-  myApp.controller("BookingController", ["$scope", "$http","bookingSharer",function($scope, $http, bookingSharer){
+myApp.controller("BookingController", ["$scope", "$http","bookingSharer",function($scope, $http, bookingSharer){
 
+  $scope.initGetRequestBooking = function(){
     $http.get('data/mainPages/bookingJSON.json').success(function(data){
-        
-        $scope.data=data;
-        data.courseText=bookingSharer.getProperty();
+      
+      $scope.data=data;
+      data.courseText=bookingSharer.getProperty();
 
-        if (data.courseText!='Corsi'){
+      if (data.courseText!='Corsi'){
 
-            angular.element('.sendRequest span').css('color','#fff');
-        }
-          else if (data.courseText=='Corsi'){
-              angular.element('.sendRequest span').css('color','#grey');
-          }
+        angular.element('.sendRequest span').css('color','#fff');
+      }
+      else if (data.courseText=='Corsi'){
+        angular.element('.sendRequest span').css('color','#grey');
+      }
 
     })
+  }
 
           /*
             $scope.datePicker=function(){
@@ -83,4 +85,4 @@
     }
   }, true);*/
 
-  }]);
+}]);

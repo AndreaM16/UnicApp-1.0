@@ -1,9 +1,10 @@
 myApp.controller("coursesPageController", ["$scope","$http",function($scope,$http){
 
-	$http.get('data/otherPages/courses/coursesPageJSON.json').success(function(data){
+	$scope.initGetRequestCoursesPage = function(){
+		$http.get('data/otherPages/courses/coursesPageJSON.json').success(function(data){
 
-		$scope.data=data;
+			$scope.data=data;
 
-	})
-	
+		})
+	}
 }]);

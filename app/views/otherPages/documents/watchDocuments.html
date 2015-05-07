@@ -1,12 +1,14 @@
-<!-- Custom header -->
-<div class="watchDocumentsHeader">
-    <span class="headerText">{{data.headerText}}</span>
-    <a class="btn-back" ng-href="#OPmyDocuments" style="{{data.watchDocumentsBack}}"></a>
-    <a class="btn-backTwice" ng-href="#documents" style="{{data.watchDocumentsBackTwice}}"></a>
-</div>
+<div ng-init="initGetRequestWatchDocuments()">
+	<!-- Custom header -->
+	<div class="watchDocumentsHeader">
+		<span class="headerText">{{data.headerText}}</span>
+		<a class="btn-back" ng-href="#OPmyDocuments" style="{{data.watchDocumentsBack}}"></a>
+		<a class="btn-backTwice" ng-href="#documents" style="{{data.watchDocumentsBackTwice}}"></a>
+	</div>
 
-		<div class="myDocumentsArea">
-			<button ng-click="prevPage()">&lt;</button>
-			<button ng-click="nextPage()">&gt;</button>
-		  	<pdfviewer src="documents/test.pdf" on-page-load='pageLoaded(page,total)' id="viewer"></pdfviewer>
-		</div>
+	<div class="myDocumentsArea">
+		<button ng-click="prevPage()">&lt;</button>
+		<button ng-click="nextPage()">&gt;</button>
+		<pdfviewer src="documents/test.pdf" on-page-load='pageLoaded(page,total)' id="viewer"></pdfviewer>
+	</div>
+</div>

@@ -1,7 +1,7 @@
 myApp.controller("ObjReportController", ["$scope","$http", "sharedProperties", function($scope,$http,sharedProperties){
-       
-
-       $http.get('data/otherPages/report/objReportJSON.json').success(function(data){
+ 
+    $scope.initGetRequestObjReport = function(){
+     $http.get('data/otherPages/report/objReportJSON.json').success(function(data){
 
         $scope.data=data;
 
@@ -35,6 +35,6 @@ myApp.controller("ObjReportController", ["$scope","$http", "sharedProperties", f
 
     })
 
-       
-
+     
+ }
 }]);

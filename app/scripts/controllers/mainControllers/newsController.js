@@ -1,11 +1,11 @@
   
-  myApp.controller('NewsController', ["$scope","$http",function($scope, $http){
-              
-    $http.get('data/mainPages/newsJSON.json').success(function(data){
-        
-        $scope.data=data;
+myApp.controller('NewsController', ["$scope","$http",function($scope, $http){
+	
+	
+	$scope.initGetRequestNews = function(){
 
-    })
-
-  }]);
-          
+		$http.get('data/mainPages/newsJSON.json').success(function(newsItems){
+			$scope.newsItems=newsItems;
+		})  
+	}
+}]);

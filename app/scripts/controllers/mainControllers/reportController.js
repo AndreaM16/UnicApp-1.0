@@ -1,39 +1,40 @@
   
 myApp.controller("ReportController", ["$scope", "$http","sharedProperties",  function($scope,$http, sharedProperties){
 
-  $http.get('data/mainPages/reportJSON.json').success(function(data){
+  $scope.initGetRequestReport = function(){
+    $http.get('data/mainPages/reportJSON.json').success(function(data){
 
-    $scope.data=data;
+      $scope.data=data;
 
-    data.objectText =  sharedProperties.getProperty();
+      data.objectText =  sharedProperties.getProperty();
 
-    if (data.objectText!=''){
-              data.choseObjtext=data.objectText;
-              
+      if (data.objectText!=''){
+        data.choseObjtext=data.objectText;
+        
 
-                angular.element('.writeMe').keyup(function(){
-                        
-                        
-                        if(data.ngTextBox!=''){
+        angular.element('.writeMe').keyup(function(){
+          
+          
+          if(data.ngTextBox!=''){
 
-                          angular.element('.reportSendMe span').css('color', 'white');
+            angular.element('.reportSendMe span').css('color', 'white');
 
-                        }
-                        else {
-                          angular.element('.reportSendMe span').css('color', 'grey');
-                        }
-                      
-                });
-                
           }
           else {
-              data.choseObjtext = 'Scegli l\'oggetto della tua richiesta';
-              angular.element('.reportSendMe span').css('color', 'grey');
-              
+            angular.element('.reportSendMe span').css('color', 'grey');
           }
+          
+        });
         
+      }
+      else {
+        data.choseObjtext = 'Scegli l\'oggetto della tua richiesta';
+        angular.element('.reportSendMe span').css('color', 'grey');
+        
+      }
+      
     })
-
+  }
 }]);
 
 

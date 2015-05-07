@@ -1,23 +1,25 @@
 
-<div class="book4MeHeader">
-    <span class="headerText">{{data.book4MeHeaderText}}</span>
-    	<a class="btn-back" ng-href="#booking" style="{{data.book4MeBackground}}"></a>
-</div>
+<div data-ng-init="initGetRequestBook4Me()">
+	<div class="book4MeHeader">
+		<span class="headerText">{{data.book4MeHeaderText}}</span>
+		<a class="btn-back" ng-href="#booking" style="{{data.book4MeBackground}}"></a>
+	</div>
 
 
-			<div class="book4MeArea">
+	<div class="book4MeArea">
 
-					<div class="box1" ng-click="boxClick1()"><span>{{data.box1Text}}</span>
-						<div class="box1Background" style="{{data.box1Image}}"></div>	
-					</div>
+		<div class="box1" ng-click="boxClick1()"><span>{{data.box1Text}}</span>
+			<div class="box1Background" style="{{data.box1Image}}"></div>	
+		</div>
 
-						<div class="box2" ng-click="boxClick2()"><span>{{data.box2Text}}</span>
-							<div class="box2Background" style="{{data.box2Image}}"></div>	
-						</div>
+		<div class="box2" ng-click="boxClick2()"><span>{{data.box2Text}}</span>
+			<div class="box2Background" style="{{data.box2Image}}"></div>	
+		</div>
 
-							<a ng-href="{{data.goBack}}">
-								<div class="book4MeSend">
-									<span>{{data.book4MeSendText}}</span>
-								</div>
-							</a>
+		<a ng-href="{{data.goBack}}">
+			<div class="book4MeSend">
+				<span>{{data.book4MeSendText}}</span>
 			</div>
+		</a>
+	</div>
+</div>

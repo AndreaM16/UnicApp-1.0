@@ -1,15 +1,18 @@
-<!-- Custom header -->
-<div class="myDocumentsHeader">
-    <span class="headerText">{{data.headerText}}</span>
-    <a class="btn-back" ng-href="#documents" style="{{data.myDocumentsBack}}"></a>
-</div>
+<div ng-init="initGetRequestMyDocuments()">
 
-		<div class="myDocumentsArea">
-		  <a ng-href="#OPwatchDocuments">
+	<!-- Custom header -->
+	<div class="myDocumentsHeader">
+		<span class="headerText">{{data.headerText}}</span>
+		<a class="btn-back" ng-href="#documents" style="{{data.myDocumentsBack}}"></a>
+	</div>
+
+	<div class="myDocumentsArea">
+		<a ng-href="#OPwatchDocuments">
 			<div class="mainMyDocument">
 				<span>{{data.documentText}}</span>
-					<div class="myDocumentBackground" style="{{data.documentImage}}"></div>
-						<div class="myDocumentsDownload"><span>{{data.downloadText}}</span></div>
+				<div class="myDocumentBackground" style="{{data.documentImage}}"></div>
+				<div class="myDocumentsDownload"><span>{{data.downloadText}}</span></div>
 			</div>
-			</a>
-		</div>
+		</a>
+	</div>
+</div>

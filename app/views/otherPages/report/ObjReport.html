@@ -1,17 +1,18 @@
-    
+<div ng-init="initGetRequestObjReport()">    
     <div class="objReportHeader">
         <span class="headerText">{{data.objReportText}}</span>
 
         <a ng-href="#report" class="btn-back" style="{{data.myBackground}}"></a>
     </div>	
 
-            <div class="{{data.classy}}" ng-click="changeColor()">{{data.staticObjText}}
-    			<div  class="CheckingBackground" style="{{data.classyBackground}}"></div>
-    		</div>
+    <div class="{{data.classy}}" ng-click="changeColor()">{{data.staticObjText}}
+     <div  class="CheckingBackground" style="{{data.classyBackground}}"></div>
+ </div>
 
-    			<a  ng-href="{{data.whereToGo}}">
-    				<div class="{{data.sendObjClass}}" ng-click="objHasBeenSelected()">
-    					<span>{{data.sendObjText}}</span></div>	
-    			</a>
+ <a  ng-href="{{data.whereToGo}}">
+    <div class="{{data.sendObjClass}}" ng-click="objHasBeenSelected()">
+       <span>{{data.sendObjText}}</span></div>	
+   </a>
 
 
+</div>

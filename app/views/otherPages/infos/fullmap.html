@@ -1,14 +1,16 @@
 
+<div ng-init="initGetRequestFullMap()">
+	<div class="fullmapHeader">
+		<span class="fullmapHeaderText">{{data.myHeaderText}}</span>
 
-<div class="fullmapHeader">
-    <span class="fullmapHeaderText">{{data.myHeaderText}}</span>
+		<a ng-href="#info" class="btn-back" style="{{data.myBackground}}"></a>
+	</div>
 
-    <a ng-href="#info" class="btn-back" style="{{data.myBackground}}"></a>
+	<div class="fullmapContainer">
+		<div id="fullmap-canvas"></div>
+	</div>
+
+<script src="../scripts/custom/infos/google-maps/myDynamicMap.js"></script>	
+	
 </div>
 
-<div class="fullmapContainer">
-    <div id="fullmap-canvas"></div>
-</div>
-
-    
-<script src="../scripts/custom/infos/google-maps/myDynamicMap.js"></script>

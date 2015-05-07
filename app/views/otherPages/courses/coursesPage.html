@@ -1,25 +1,28 @@
-<!-- Custom header -->
-<div class="coursesPageHeader">
-    <span class="headerText">{{data.headerText}}</span>
-    	<a class="btn-back" ng-href="#courses" style="{{data.myBackground}}"></a>
-</div>
+
+<div ng-init="initGetRequestCoursesPage()">
+	<!-- Custom header -->
+	<div class="coursesPageHeader">
+		<span class="headerText">{{data.headerText}}</span>
+		<a class="btn-back" ng-href="#courses" style="{{data.myBackground}}"></a>
+	</div>
 
 
 	<div class="coursesPageArea">
 		<a class="course1" ng-href="#OPcourse1">
 			<div class="coursesPageTextArea1">
 				<div class="coursesPageBigText1">{{data.bigText1}}</div>
-					<div class="coursesPageLittleText1">{{data.littleText1}}</div>
+				<div class="coursesPageLittleText1">{{data.littleText1}}</div>
 			</div>
-						<div class="course1Image" style="{{data.course1Background}}"><div>
+			<div class="course1Image" style="{{data.course1Background}}"><div>
 
-		</a>			
+			</a>			
 
-		<a class="course2" ng-href="#OPcourse2">
-			<div class="coursesPageTextArea2">
-				<div class="coursesPageBigText2">{{data.bigText2}}</div>
+			<a class="course2" ng-href="#OPcourse2">
+				<div class="coursesPageTextArea2">
+					<div class="coursesPageBigText2">{{data.bigText2}}</div>
 					<div class="coursesPageLittleText2">{{data.littleText2}}</div>
+				</div>
+				<div class="course2Image" style="{{data.course2Background}}"><div>
+				</a>
 			</div>
-						<div class="course2Image" style="{{data.course2Background}}"><div>
-		</a>
-	</div>
+		</div>

@@ -1,4 +1,4 @@
-
+<div ng-init="initGetRequestMyNews1()">
     <div class="myNew1Header">
         <span class="myNew1HeaderText">{{data.myHeaderText}}</span>
 
@@ -7,15 +7,16 @@
 
     <div class="myContainer">
     	<div class="new1ImageContainer" style="{{data.new1Background}}">	</div>
-            <div class="textTile"><span>{{data.textTile}}</span></div>
-                <div class="textContainer">
-    			<div class="littleDate">{{data.littleDate}}</div>
-    				<div class="longText">{{data.longText}}</div>
-                        <div class="myBorder"></div>
-                            <a ng-href="#OPmyNew2">
-    					       <div class="nextNew">{{data.nextNew}}</div> 
-                                    <div class="nextNewArrow" style="{{data.nextArrow}}"></div>
-                            </a>
-                </div>        	
-                                
+        <div class="textTile"><span>{{data.textTile}}</span></div>
+        <div class="textContainer">
+           <div class="littleDate">{{data.littleDate}}</div>
+           <div class="longText">{{data.longText}}</div>
+           <div class="myBorder"></div>
+           <a ng-href="#OPmyNew2">
+            <div class="nextNew">{{data.nextNew}}</div> 
+            <div class="nextNewArrow" style="{{data.nextArrow}}"></div>
+            </a>
+        </div>        	
+    
     </div>
+</div>

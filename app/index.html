@@ -2,85 +2,87 @@
 <!--JS supported-->
 <html ng-app ="appdoitApp" ng-controller="MainController">
 
-  <head>
+<head>
 
-    <!--HTML5-->
-    <meta charset="utf-8">
-    <!--Page's Title-->
-    <title>{{data.myTitle}}</title>
+  <!--HTML5-->
+  <meta charset="utf-8">
+  <!--Page's Title-->
+  <title>{{data.myTitle}}</title>
     <!--Description of the aiming of the App
         and
         enabling different devices to fit our App for their own resolution-->
-    <div ng-repeat='meta in data.metas'>
-        <meta name="{{meta.name}}" content="{{meta.content}}">
-    </div>
-    
-    <!-- Views CSS -->
-    <link rel="stylesheet" href="styles/mainPages/main.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/mainPages/info.css">
-    <link rel="stylesheet" href="styles/mainPages/news.css">
-    <link rel="stylesheet" href="styles/mainPages/report.css">
-    <link rel="stylesheet" href="styles/mainPages/courses.css">
-    <link rel="stylesheet" href="styles/mainPages/booking.css">
-    <link rel="stylesheet" href="styles/mainPages/calendar.css">
-    <link rel="stylesheet" href="styles/mainPages/events.css">
-    <link rel="stylesheet" href="styles/mainPages/documents.css">
-    <link rel="stylesheet" href="styles/additionalPages/infos/fullmap.css">
-    <link rel="stylesheet" href="styles/additionalPages/infos/options.css">
-    <link rel="stylesheet" href="styles/additionalPages/news/myNews.css">
-    <link rel="stylesheet" href="styles/additionalPages/courses/coursesPage.css">
-    <link rel="stylesheet" href="styles/additionalPages/courses/course1.css">
-    <link rel="stylesheet" href="styles/additionalPages/courses/course2.css">
-    <link rel="stylesheet" href="styles/additionalPages/booking/book4Me.css">
-    <link rel="stylesheet" href="styles/additionalPages/calendar/myCalendar.css">
-    <link rel="stylesheet" href="styles/additionalPages/calendar/calendarTime.css">
-    <link rel="stylesheet" href="styles/additionalPages/calendar/calendarPlace.css">
-    <link rel="stylesheet" href="styles/additionalPages/events/futureEvents.css">
-    <link rel="stylesheet" href="styles/additionalPages/documents/myDocuments.css">
-    <link rel="stylesheet" href="styles/additionalPages/documents/watchDocuments.css">
-    <link rel="stylesheet" href="styles/additionalPages/report/objReport.css">
+        <div ng-repeat='meta in data.metas'>
+          <meta name="{{meta.name}}" content="{{meta.content}}">
+        </div>
 
-    <!-- Modules & Custom CSS-->
-    <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
-    <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
-    <link rel="stylesheet" type="text/css" href="styles/plugins/viewSwipe.css">
+        <!-- Views CSS -->
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/mainPages/main.css">
+        <link rel="stylesheet" href="styles/mainPages/info.css">
+        <link rel="stylesheet" href="styles/mainPages/news.css">
+        <link rel="stylesheet" href="styles/mainPages/report.css">
+        <link rel="stylesheet" href="styles/mainPages/courses.css">
+        <link rel="stylesheet" href="styles/mainPages/booking.css">
+        <link rel="stylesheet" href="styles/mainPages/calendar.css">
+        <link rel="stylesheet" href="styles/mainPages/events.css">
+        <link rel="stylesheet" href="styles/mainPages/documents.css">
+        <link rel="stylesheet" href="styles/additionalPages/infos/fullmap.css">
+        <link rel="stylesheet" href="styles/additionalPages/infos/options.css">
+        <link rel="stylesheet" href="styles/additionalPages/news/myNews.css">
+        <link rel="stylesheet" href="styles/additionalPages/courses/coursesPage.css">
+        <link rel="stylesheet" href="styles/additionalPages/courses/course1.css">
+        <link rel="stylesheet" href="styles/additionalPages/courses/course2.css">
+        <link rel="stylesheet" href="styles/additionalPages/booking/book4Me.css">
+        <link rel="stylesheet" href="styles/additionalPages/calendar/myCalendar.css">
+        <link rel="stylesheet" href="styles/additionalPages/calendar/calendarTime.css">
+        <link rel="stylesheet" href="styles/additionalPages/calendar/calendarPlace.css">
+        <link rel="stylesheet" href="styles/additionalPages/events/futureEvents.css">
+        <link rel="stylesheet" href="styles/additionalPages/documents/myDocuments.css">
+        <link rel="stylesheet" href="styles/additionalPages/documents/watchDocuments.css">
+        <link rel="stylesheet" href="styles/additionalPages/report/objReport.css">
 
-    
+        <!-- Modules & Custom CSS-->
+        <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
+        <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
+        <link rel="stylesheet" type="text/css" href="styles/plugins/viewSwipe.css">
 
-    <!-- Google Apis -->
-   </head>
 
-  <body>
-    
+
+        <!-- Google Apis -->
+      </head>
+
+      <body>
+
+        <div ng-init="initGetRequestMain()">
     <!--container contains all the part of the body that has
     to be pushed on the right to open the menu-->
     <div class="container">
-        <div class="push">
-            
+      <div class="push">
 
-            <!--ng-view to contain all my views class="Appdoitsize" -->
-                 <div ng-view="" ng-class="{slide: Appdoitsize }">
-                      
-                 </div> 
 
-                <!-- Pushy Menu -->
-                <div class="pushy pushy-left">
-                    <div class="welcome">{{data.myTitle}}</div>
-                        <div class="menuList">
-                            <div ng-repeat='item in data.items'>
-                                <a ng-href="{{item.link}}" class="{{item.imgClass}}" style="{{item.backgroundImage}}">{{item.title}}</a>
-                            </div>
-                        </div>
-                </div>
-                       
+        <!--ng-view to contain all my views class="Appdoitsize" -->
+        <div ng-view="" ng-class="{slide: Appdoitsize }">
+
+        </div> 
+
+        <!-- Pushy Menu -->
+        <div class="pushy pushy-left">
+          <div class="welcome">{{data.myTitle}}</div>
+          <div class="menuList">
+            <div ng-repeat='item in data.items'>
+              <a ng-href="{{item.link}}" class="{{item.imgClass}}" style="{{item.backgroundImage}}">{{item.title}}</a>
+            </div>
           </div>
+        </div>
+
       </div>
-    
-    
-    
-    
-    
+    </div>
+  </div>
+
+
+
+
+
   <div class="scriptsContainer"> 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -105,57 +107,61 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-            <div class="customScripts">
-                <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
-                <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
-                
-            </div>
-   </div>
+    <div class="customScripts">
+      <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+      <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
 
-   <!--App Modules-->
-   <script src="scripts/modules/modules.js"></script>
-   <script src="scripts/services/services.js"></script>
-   <script src="scripts/custom/pdfViewer/ng-pdfviewer.js"></script>
-   <script src="scripts/custom/pdfViewer/pdf.js"></script>
-   <script src="scripts/custom/pdfViewer/pdf.compat.js"></script>
+    </div>
+  </div>
 
-   <!--App Main Pages Controllers-->
-   <script src="scripts/controllers/mainControllers/mainController.js"></script>
-   <script src="scripts/controllers/mainControllers/infoController.js"></script>
-   <script src="scripts/controllers/mainControllers/newsController.js"></script>
-   <script src="scripts/controllers/mainControllers/reportController.js"></script>
-   <script src="scripts/controllers/mainControllers/coursesController.js"></script>
-   <script src="scripts/controllers/mainControllers/bookingController.js"></script>
-   <script src="scripts/controllers/mainControllers/calendarController.js"></script>
-   <script src="scripts/controllers/mainControllers/eventsController.js"></script>
-   <script src="scripts/controllers/mainControllers/documentsController.js"></script>
+  <!--App Modules-->
+  <script src="scripts/modules/modules.js"></script>
+  <script src="scripts/custom/pdfViewer/ng-pdfviewer.js"></script>
+  <script src="scripts/custom/pdfViewer/pdf.js"></script>
+  <script src="scripts/custom/pdfViewer/pdf.compat.js"></script>
 
-   <!--Additional Pages Controllers -->
-   <script src="scripts/controllers/additionalPagesControllers/infos/fullMapController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/infos/optionsController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/news/myNewsController1.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/news/myNewsController2.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/report/ObjReportController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/courses/coursesPageController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/courses/course1Controller.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/courses/course2Controller.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/booking/book4MeController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/calendar/myCalendarController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/calendar/calendarTimeController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/calendar/calendarPlaceController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/events/futureEventsController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/documents/myDocumentsController.js"></script>
-   <script src="scripts/controllers/additionalPagesControllers/documents/watchDocumentsController.js"></script>
-   
+  <!-- App services -->
+
+  <script src="scripts/services/booking/book4MeServices.js"></script>
+  <script src="scripts/services/report/reportServices.js"></script>
+
+  <!--App Main Pages Controllers-->
+  <script src="scripts/controllers/mainControllers/mainController.js"></script>
+  <script src="scripts/controllers/mainControllers/infoController.js"></script>
+  <script src="scripts/controllers/mainControllers/newsController.js"></script>
+  <script src="scripts/controllers/mainControllers/reportController.js"></script>
+  <script src="scripts/controllers/mainControllers/coursesController.js"></script>
+  <script src="scripts/controllers/mainControllers/bookingController.js"></script>
+  <script src="scripts/controllers/mainControllers/calendarController.js"></script>
+  <script src="scripts/controllers/mainControllers/eventsController.js"></script>
+  <script src="scripts/controllers/mainControllers/documentsController.js"></script>
+
+  <!--Additional Pages Controllers -->
+  <script src="scripts/controllers/additionalPagesControllers/infos/fullMapController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/infos/optionsController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/news/myNewsController1.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/news/myNewsController2.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/report/ObjReportController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/courses/coursesPageController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/courses/course1Controller.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/courses/course2Controller.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/booking/book4MeController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/calendar/myCalendarController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/calendar/calendarTimeController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/calendar/calendarPlaceController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/events/futureEventsController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/documents/myDocumentsController.js"></script>
+  <script src="scripts/controllers/additionalPagesControllers/documents/watchDocumentsController.js"></script>
 
 
-   <!--App Routes-->
-   <script src="scripts/routes/routes.js"></script>
+
+  <!--App Routes-->
+  <script src="scripts/routes/routes.js"></script>
   <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArqKwlqOFydRwfrFSsCnuEqfKeZVNuTeM"></script>
-    <script src="scripts/custom/main/viewSwipe.js"></script>
-    <script src="scripts/custom/booking/datetime-picker.js"></script>
-    <script src="scripts/custom/booking/ui-bootstrap.tpls.js"></script>
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArqKwlqOFydRwfrFSsCnuEqfKeZVNuTeM"></script>
+  <script src="scripts/custom/main/viewSwipe.js"></script>
+  <script src="scripts/custom/booking/datetime-picker.js"></script>
+  <script src="scripts/custom/booking/ui-bootstrap.tpls.js"></script>
 
 
 </body>

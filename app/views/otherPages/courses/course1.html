@@ -1,16 +1,18 @@
 
-<div class="course1PageHeader">
-    <span class="headerText">{{data.headerText}}</span>
-    	<a class="btn-back" ng-href="#OPcoursesPage" style="{{data.myBackground1}}"></a>
-    		<a class="btn-backTwice" ng-href="#courses" style="{{data.myBackground2}}"></a>
+<div ng-init="initGetRequestCourse1()">
+	<div class="course1PageHeader">
+		<span class="headerText">{{data.headerText}}</span>
+		<a class="btn-back" ng-href="#OPcoursesPage" style="{{data.myBackground1}}"></a>
+		<a class="btn-backTwice" ng-href="#courses" style="{{data.myBackground2}}"></a>
+	</div>
+
+
+	<div class="course1Area">
+		<div class="course1Background" style="{{data.course1Image}}"></div>
+		<div class="ghostlyTile1"><span>{{data.ghostText1}}</span></div>
+		<div class="course1TextArea">
+			<div class="course1Title"><span>{{data.Title1}}</span></div>
+			<div class="course1Text"><span>{{data.Text1}}</span></div>
+		</div>
+	</div>
 </div>
-
-
-				<div class="course1Area">
-					<div class="course1Background" style="{{data.course1Image}}"></div>
-						<div class="ghostlyTile1"><span>{{data.ghostText1}}</span></div>
-							<div class="course1TextArea">
-								<div class="course1Title"><span>{{data.Title1}}</span></div>
-									<div class="course1Text"><span>{{data.Text1}}</span></div>
-							</div>
-				</div>

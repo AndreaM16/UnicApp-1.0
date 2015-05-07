@@ -12,7 +12,8 @@
 
   .myDocumentsArea{height: 92%; top: 8%; width: 100%; position: fixed;}
 
-  .mainMyDocument{height: 15%; width: 100%; position: fixed; top: 8%; border-bottom: 0.1em solid #646162;}
+  
+  .mainMyDocument{border-bottom: 0.1em solid #646162 !important; height: 15%; width: 100%; position: fixed; top: 8%; }
 
   .mainMyDocument span{
                         font-family: Open Sans, helvetica, arial, serif !important;
@@ -39,3 +40,4 @@
                               left: 79%;
                               top: 20%;
                               position: fixed;}
+

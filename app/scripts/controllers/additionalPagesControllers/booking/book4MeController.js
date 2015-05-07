@@ -1,5 +1,6 @@
 myApp.controller("book4MeController", ["$scope", "$http","bookingSharer",  function($scope, $http, bookingSharer){
 
+    $scope.initGetRequestBook4Me = function(){
 	$http.get('data/otherPages/booking/book4MeJSON.json').success(function(data){
 
 
@@ -42,5 +43,5 @@ myApp.controller("book4MeController", ["$scope", "$http","bookingSharer",  funct
     
 
     })
-    
+    }
 }]);

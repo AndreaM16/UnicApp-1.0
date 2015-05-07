@@ -1,48 +1,49 @@
-
-   
+<div ng-init="initGetRequestOptions()">
+ 
     <div class="headerfull">
         <span class="headerText">{{data.headerText}}</span>
         <a href="#info"class="btn-back" style="{{data.myBackground}}"></a></div>
 
-    <div class="optContainer">
-        <p class="optp">{{data.optionsText1}}</p><br>
-        
-        <p class="optprivacy" onclick="show()">
-            {{data.optionsText2}}
-        </p>
-         
-         <div class="switchbtn">
+        <div class="optContainer">
+            <p class="optp">{{data.optionsText1}}</p><br>
+            
+            <p class="optprivacy" onclick="show()">
+                {{data.optionsText2}}
+            </p>
+            
+            <div class="switchbtn">
                 <div class="button-wrap">
-                <div class="button-bg">
-                <div class="button-out"></div>
-                <div class="button-in"></div>
-                <div class="button-switch"></div>
+                    <div class="button-bg">
+                        <div class="button-out"></div>
+                        <div class="button-in"></div>
+                        <div class="button-switch"></div>
+                    </div>
                 </div>
-                </div>
+            </div>
+            
+            <div class="onbtn" style="color: #000">ON</div>
+            <div class="offbtn" style="color: #000">OFF</div>
+
         </div>
-        
-        <div class="onbtn" style="color: #000">ON</div>
-        <div class="offbtn" style="color: #000">OFF</div>
 
-    </div>
-
-    <div id="popup">
-        <div class="txtBox"> 
-            <div class="myText">{{data.privacyText}}</div>
- 
-            <button class="{{data.privacyButton}}"
-                    onclick="show()">
-            <span>CHIUDI</span>
-            <i class="" style="{{data.privacyButtonStyle}}"></i>
+        <div id="popup">
+            <div class="txtBox"> 
+                <div class="myText">{{data.privacyText}}</div>
+                
+                <button class="{{data.privacyButton}}"
+                onclick="show()">
+                <span>CHIUDI</span>
+                <i class="" style="{{data.privacyButtonStyle}}"></i>
             </button>
         </div>
     </div>
 
     
-  
+    
     <script src="../../../bower_components/jquery/dist/jquery.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <!--Custom Scripts-->
     <script src="../../scripts/custom/infos/options/infoBtn.js"></script>
     <script src="../../scripts/custom/infos/options/privacyPopUp.js"></script>
+</div>
