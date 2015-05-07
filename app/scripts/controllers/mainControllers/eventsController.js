@@ -1,43 +1,41 @@
  
-  myApp.controller('EventsController', function($scope){
+  myApp.controller('EventsController', ["$scope","$http",function($scope,$http){
 
-  	$scope.headerText='Eventi';
+  	$http.get('data/mainPages/eventsJSON.json').success(function(data){
 
-  	$scope.futureEvent='Eventi futuri';
+      $scope.data=data;
 
-  	$scope.oldEvent='Eventi passati';
-
-  	$scope.tileStyle = 'futureTile';
-
-  
-  	$scope.changeEventFromPast = function(){
+      $scope.changeEventFromPast = function(){
         if ($scope.tileStyle == 'futureTile'){
-            	$scope.tileStyle = 'oldTile';
-            	angular.element('.oldEvents span').css('font-weight', 'bold');
-            	angular.element('.futureEvents span').css('font-weight', 'normal');		
+              $scope.tileStyle = 'oldTile';
+              angular.element('.oldEvents span').css('font-weight', 'bold');
+              angular.element('.futureEvents span').css('font-weight', 'normal');   
         }
          else{
-            	$scope.tileStyle = 'oldTile';
-            	angular.element('.oldEvents span').css('font-weight', 'bold');
-            	angular.element('.futureEvents span').css('font-weight', 'normal');
-            	            		
+              $scope.tileStyle = 'oldTile';
+              angular.element('.oldEvents span').css('font-weight', 'bold');
+              angular.element('.futureEvents span').css('font-weight', 'normal');
+                              
         }
     };
 
     $scope.changeEventFromFuture= function(){
         if ($scope.tileStyle == 'oldTile'){
-            	$scope.tileStyle = 'futureTile';
-            	angular.element('.futureEvents span').css('font-weight', 'bold');
-            	angular.element('.oldEvents span').css('font-weight', 'normal');
-            			
+              $scope.tileStyle = 'futureTile';
+              angular.element('.futureEvents span').css('font-weight', 'bold');
+              angular.element('.oldEvents span').css('font-weight', 'normal');
+                  
         }
          else{
-            	$scope.tileStyle = 'futureTile';
-            	angular.element('.futureEvents span').css('font-weight', 'bold');
-            	angular.element('.oldEvents span').css('font-weight', 'normal');
-            	            		
+              $scope.tileStyle = 'futureTile';
+              angular.element('.futureEvents span').css('font-weight', 'bold');
+              angular.element('.oldEvents span').css('font-weight', 'normal');
+                              
         }
     };
-	
+
+    })
+  
+  		
           
-  });
+  }]);

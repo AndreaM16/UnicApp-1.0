@@ -1,20 +1,20 @@
 
 <!-- Custom header -->
 <div class="reportHeader">
-    <span class="headerText">{{headerText}}</span>
+    <span class="headerText">{{data.headerText}}</span>
     	<div class="menu-btn" ng-href="#report" ></div>
 </div>
 	
 			<div class="reportContainer">
 				<a ng-href="#OPObjReport">
 					<div class="choseObj">
-						<div class="addObj" style="{{myBackground}}"></div>
-						<span>{{choseObjtext}}</span>
+						<div class="addObj" style="{{data.myBackground}}"></div>
+						<span>{{data.choseObjtext}}</span>
 					</div>
 				</a>		
 							
-							<textarea class="writeMe" placeholder="{{writeMeText}}" ng-model="ngTextBox"/> 
-								<div class="reportSendMe"><span>{{sendMeText}}</span></div>
+							<textarea class="writeMe" placeholder="{{data.writeMeText}}" ng-model="ngTextBox"/> 
+								<div class="reportSendMe"><span>{{data.sendMeText}}</span></div>
 			</div>
 
 <script src="bower_components/pushy/js/pushy.js"></script>

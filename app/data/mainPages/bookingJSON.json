@@ -1,0 +1,14 @@
+{
+	
+		"headerText": "Prenotazione",
+		"bookingImage":"background-image: url(../images/bookingBook.png)",
+		"ghostlyText":"Colloqui",
+		"bookingTitle":"Scegli il corso e l'orario gradito.",
+		"whenText":"Quando?",
+		"requestText":"Invia Prenotazione",
+		"datePickerState":"on",
+		"courseBackground":"background-image: url(../images/arrow.png)",
+		"whenBackground":"courseBackground"
+		
+		
+}

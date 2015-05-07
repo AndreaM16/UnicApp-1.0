@@ -1,15 +1,9 @@
-myApp.controller('course1Controller', function($scope){
+myApp.controller('course1Controller', function($scope, $http){
 	
-	$scope.headerText='Corsi 2014/2015';
+	$http.get('data/otherPages/courses/course1JSON.json').success(function(data){
 
-	$scope.myBackground1='background-image: url('+'../images/back.png'+')';
-	$scope.myBackground2='background-image: url('+'../images/backTwice.png'+')';
+		$scope.data=data;
 
-	$scope.course1Image='background-image: url('+'../images/science.png'+')';
-
-	$scope.ghostText1='Corso di studi in Informatica';
-
-	$scope.Title1='Informatica';
-
-	$scope.Text1='.......................';
+	})
+	
 });

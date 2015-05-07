@@ -1,24 +1,12 @@
-myApp.controller('myNewsController2', function($scope){
-                
-          $scope.myHeaderText = 'Ultime Notizie';
+myApp.controller("myNewsController2", ["$scope","$http",function($scope,$http){
 
-          $scope.myBackground = 'background-image: url('+'../../images/back.png'+')';
+     $http.get('data/otherPages/news/myNew2JSON.json').success(function(data){
 
-          $scope.new2Background = 'background-image: url('+'../../images/atzori.png'+')';
-
-          $scope.textTile = 'Atzori vince premio Google';
-
-          $scope.littleDate = '3-Marzo 2015';
-
-          $scope.longText = 'Cagliari, 3 marzo 2015 - È stato assegnato a Maurizio Atzori(nella foto a destra), \
-          					 ricercatore del Dipartimento di Matematica ed Informatica dell\’Università di Cagliari,\
-          					 un prestigioso Google Faculty Research Award, ';
-
-          $scope.oldNew = 'News Precedente';
-
-          $scope.oldArrow = 'background-image: url('+'../../images/backArrow.png'+')';
- 
-  });
+          $scope.data=data;
+     })
+          
+          
+  }]);
 
 /*premio destinato a finanziare progetti di \
                                     ricerca innovativi nell\’ambito dell\’ICT con lo scopo dichiarato di sostenere il lavoro \

@@ -7,11 +7,11 @@
     <!--HTML5-->
     <meta charset="utf-8">
     <!--Page's Title-->
-    <title>{{myTitle}}</title>
+    <title>{{data.myTitle}}</title>
     <!--Description of the aiming of the App
         and
         enabling different devices to fit our App for their own resolution-->
-    <div ng-repeat='meta in metas'>
+    <div ng-repeat='meta in data.metas'>
         <meta name="{{meta.name}}" content="{{meta.content}}">
     </div>
     
@@ -66,9 +66,9 @@
 
                 <!-- Pushy Menu -->
                 <div class="pushy pushy-left">
-                    <div class="welcome">{{myTitle}}</div>
+                    <div class="welcome">{{data.myTitle}}</div>
                         <div class="menuList">
-                            <div ng-repeat='item in items'>
+                            <div ng-repeat='item in data.items'>
                                 <a ng-href="{{item.link}}" class="{{item.imgClass}}" style="{{item.backgroundImage}}">{{item.title}}</a>
                             </div>
                         </div>

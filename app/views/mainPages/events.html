@@ -1,15 +1,15 @@
 
 <!-- Custom header -->
 <div class="eventsHeader">
-    <span class="headerText">{{headerText}}</span>
+    <span class="headerText">{{data.headerText}}</span>
     	<div class="menu-btn" ng-href="#events"></div>
 </div>
 
 		<div class="eventsArea">
 				<div class="mainEventsArea">
-					<div class="futureEvents" ng-click="changeEventFromFuture()"><span>{{futureEvent}}</span></div>
-					<div class="oldEvents" ng-click="changeEventFromPast()"><span>{{oldEvent}}</span></div>
-						<div class="{{tileStyle}}"></div>
+					<div class="futureEvents" ng-click="changeEventFromFuture()"><span>{{data.futureEvent}}</span></div>
+					<div class="oldEvents" ng-click="changeEventFromPast()"><span>{{data.oldEvent}}</span></div>
+						<div class="{{data.tileStyle}}"></div>
 							<div class="selectedEventsArea"></div>
 				</div>
 		</div>

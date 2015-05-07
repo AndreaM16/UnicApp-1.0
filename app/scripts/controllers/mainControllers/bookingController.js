@@ -1,33 +1,22 @@
 
-  myApp.controller("BookingController", ["$scope", "bookingSharer",function($scope, bookingSharer){
+  myApp.controller("BookingController", ["$scope", "$http","bookingSharer",function($scope, $http, bookingSharer){
 
-  	$scope.headerText="Prenotazione";
+    $http.get('data/mainPages/bookingJSON.json').success(function(data){
+        
+        $scope.data=data;
+        data.courseText=bookingSharer.getProperty();
 
-  	$scope.bookingImage= 'background-image: url('+'../../images/bookingBook.png'+')';
-
-  	$scope.ghostlyText='Colloqui';
-
-  	$scope.bookingTitle='Scegli il corso e l\'orario gradito.';
-
-  	$scope.whenText='Quando?';
-
-  	$scope.requestText='Invia Prenotazione';
-
-    $scope.datePickerState='on';
-
-  	$scope.courseBackground='background-image: url('+'../../images/arrow.png'+')';
-    $scope.whenBackground=$scope.courseBackground;
-
-    $scope.courseText=bookingSharer.getProperty();
-
-        if ($scope.courseText!='Corsi'){
+        if (data.courseText!='Corsi'){
 
             angular.element('.sendRequest span').css('color','#fff');
         }
-          else if ($scope.courseText=='Corsi'){
+          else if (data.courseText=='Corsi'){
               angular.element('.sendRequest span').css('color','#grey');
           }
 
+    })
+
+          /*
             $scope.datePicker=function(){
 
               if ($scope.datePickerState=='on') {
@@ -42,8 +31,8 @@
                   $scope.datePickerState='on';
               }
               
-            }
-
+            }*/
+    /*
           $scope.dates = {
     date1: new Date('01 Mar 2015 00:00:00.000'),
     date2: new Date(),
@@ -92,6 +81,6 @@
     } else {
       $scope.dayRange = 'n/a';
     }
-  }, true);
+  }, true);*/
 
   }]);

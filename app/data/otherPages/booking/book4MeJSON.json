@@ -1,0 +1,12 @@
+{
+	"book4MeBackground":"background-image: url(../../images/back.png)",
+	"book4MeHeaderText":"Prenotazione",
+	"box1Text":"Automi e Linguaggi Formali",
+	"box2Text":"Reti di Calcolatori",
+	"book4MeSendText":"Conferma",
+	"box1Image":"background-image: url(../../images/check.png)",
+	"box2Image":"background-image: url(../../images/check.png)",
+	"goBack":"#OPbook4Me"
+
+
+}

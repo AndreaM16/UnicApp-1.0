@@ -1,12 +1,10 @@
  
-  myApp.controller('CoursesController', function($scope){
+  myApp.controller("CoursesController", ["$scope","$http",function($scope, $http){
 
-  		$scope.headerText='Corsi';
+  		$http.get('data/mainPages/coursesJSON.json').success(function(data){
+        
+        $scope.data=data;
 
-  		$scope.bigText='Corsi 2014/2015';
-
-  		$scope.littleText=$scope.headerText;
-
-  		$scope.coursesImage= 'background-image: url('+'../images/img3.jpg'+')';
+    })
           
-  });
+  }]);

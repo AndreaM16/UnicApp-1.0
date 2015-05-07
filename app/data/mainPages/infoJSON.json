@@ -1,0 +1,12 @@
+{
+	"myHeaderText":"Info & Contatti",
+	"mySettingsImage":"background-image: url(../images/settings.png)",
+	"myZoomImage":"background-image: url(../images/zoom.png)",
+
+	"pars":[
+				{"className":"p1", "text":"Sergio Melchiorre"},
+				{"className":"p2", "text":"Segretario generale Università"},
+				{"className":"p3", "text":"Via Roma 09010, Cagliari"}
+	]
+
+}

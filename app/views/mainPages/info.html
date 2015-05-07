@@ -2,9 +2,9 @@
  
 
     <div class="header">
-        <span class="headerText">{{myHeaderText}}</span>
+        <span class="headerText">{{data.myHeaderText}}</span>
         <div class="menu-btn"></div>
-        <a ng-href="#OPOptions" class="menu-btn2" style="{{mySettingsImage}}" ></a>
+        <a ng-href="#OPOptions" class="menu-btn2" style="{{data.mySettingsImage}}" ></a>
     </div>
 
     <div class="mapContainer">
@@ -12,13 +12,13 @@
         <div id="map-canvas"></div>
 
         <a ng-href="#OPFullmap" class="zoomy" 
-           style="{{myZoomImage}}">
+           style="{{data.myZoomImage}}">
        </a>
 
     </div>
 
     <div class="infoContainer">
-        <div ng-repeat="par in pars">
+        <div ng-repeat="par in data.pars">
             <p class="{{par.className}}">{{par.text}}</p><br>
         </div>
     </div>

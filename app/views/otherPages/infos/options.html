@@ -1,14 +1,14 @@
 
    
     <div class="headerfull">
-        <span class="headerText">{{headerText}}</span>
-        <a href="#info"class="btn-back" style="{{myBackground}}"></a></div>
+        <span class="headerText">{{data.headerText}}</span>
+        <a href="#info"class="btn-back" style="{{data.myBackground}}"></a></div>
 
     <div class="optContainer">
-        <p class="optp">{{optionsText1}}</p><br>
+        <p class="optp">{{data.optionsText1}}</p><br>
         
         <p class="optprivacy" onclick="show()">
-            {{optionsText2}}
+            {{data.optionsText2}}
         </p>
          
          <div class="switchbtn">
@@ -28,12 +28,12 @@
 
     <div id="popup">
         <div class="txtBox"> 
-            <div class="myText">{{privacyText}}</div>
+            <div class="myText">{{data.privacyText}}</div>
  
-            <button class="{{privacyButton}}"
+            <button class="{{data.privacyButton}}"
                     onclick="show()">
             <span>CHIUDI</span>
-            <i class="" style="{{privacyButtonStyle}}"></i>
+            <i class="" style="{{data.privacyButtonStyle}}"></i>
             </button>
         </div>
     </div>

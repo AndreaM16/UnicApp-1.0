@@ -1,24 +1,24 @@
-myApp.controller('watchDocumentsController', [ '$scope', 'PDFViewerService', function($scope, pdf){
-		
-		$scope.viewer = pdf.Instance("viewer");
-		
-		$scope.headerText='JustAPdf';
+myApp.controller("watchDocumentsController", [ "$scope","$http", "PDFViewerService", function($scope,$http, pdf){
 
-  		$scope.watchDocumentsBack='background-image:url('+'../../images/back.png'+')';
+    $http.get('data/otherPages/documents/watchDocumentsJSON.json').success(function(data){
 
-  		$scope.watchDocumentsBackTwice='background-image:url('+'../../images/backTwice.png'+')';
+        $scope.data=data;
 
-    	$scope.nextPage = function() {
-        $scope.viewer.nextPage();
-    };
+        $scope.viewer = pdf.Instance("viewer");
 
-    $scope.prevPage = function() {
-        $scope.viewer.prevPage();
-    };
+        $scope.nextPage = function() {
+            data.viewer.nextPage();
+        };
 
-    $scope.pageLoaded = function(curPage, totalPages) {
-        $scope.currentPage = curPage;
-        $scope.totalPages = totalPages;
-    };	
+        $scope.prevPage = function() {
+            data.viewer.prevPage();
+        };
+
+        $scope.pageLoaded = function(curPage, totalPages) {
+            data.currentPage = curPage;
+            data.totalPages = totalPages;
+        };  
+
+    })
 
 }]);

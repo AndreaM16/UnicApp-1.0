@@ -1,52 +1,40 @@
-myApp.controller("ObjReportController", ["$scope", "sharedProperties", 
-    function($scope,sharedProperties){
-	
+myApp.controller("ObjReportController", ["$scope","$http", "sharedProperties", function($scope,$http,sharedProperties){
+       
 
-	$scope.objReportText='Segnalazioni';
+       $http.get('data/otherPages/report/objReportJSON.json').success(function(data){
 
-	$scope.myBackground='background-image: url('+'../images/back.png'+')';
+        $scope.data=data;
 
-	$scope.selectObjPlaceholder='Altro';
+        $scope.changeColor = function(){
+            
+            if (data.classy == 'isWhite'){
+                data.classy = 'goGrey';
+                data.sendObjClass='sendObjWhite';     
+            }
+            else{
+                data.classy = 'isWhite';
+                data.sendObjClass='sendObj';                  
+            }
+        };
 
-	$scope.sendObjText='Conferma';
+        $scope.objHasBeenSelected = function(){
+            
+            if (data.sendObjClass=='sendObjWhite'){
+                data.sentOrNot='true'
+                data.whereToGo='#report';
 
-	$scope.staticObjText='Problema n.1';
+                data.gotClicked = data.staticObjText;
+                sharedProperties.setProperty(data.gotClicked);
+            }
+            else{
+                data.sentOrNot='false';
+                data.whereToGo='#ObjReport';
+            }
+        };
+        
 
-	$scope.classy='isWhite';
+    })
 
-	$scope.sendObjClass='sendObj';
-
-	$scope.sentOrNot='false';
-
-	$scope.whereToGo='#ObjReport';
-
-
-	$scope.classyBackground='background-image: url('+'../images/check.png'+')';
-
-    
-	$scope.changeColor = function(){
-        if ($scope.classy == 'isWhite'){
-            	$scope.classy = 'goGrey';
-            	$scope.sendObjClass='sendObjWhite';		
-        }
-         else{
-            	$scope.classy = 'isWhite';
-            	$scope.sendObjClass='sendObj';            		
-        }
-    };
-
-    $scope.objHasBeenSelected = function(){
-    	if ($scope.sendObjClass=='sendObjWhite'){
-    			$scope.sentOrNot='true'
-    				$scope.whereToGo='#report';
-
-    					$scope.gotClicked = $scope.staticObjText;
-        				sharedProperties.setProperty($scope.gotClicked);
-    	}
-    	else{
-    		$scope.sentOrNot='false';
-    		$scope.whereToGo='#ObjReport';
-    	}
-    };
+       
 
 }]);

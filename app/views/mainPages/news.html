@@ -1,7 +1,7 @@
 
 <!-- Custom header -->
 <div class="headerfull">
-    <span class="headerText">{{headerText}}</span>
+    <span class="headerText">{{data.headerText}}</span>
     	<div class="menu-btn" ng-href="#news" ></div>
 </div>
 
@@ -9,9 +9,9 @@
 				<div class="subContentSection">
 					<a  ng-href="#OPmyNew1">
 					<div class="new1" ng-href="#myNew1">
-						<div class="img1" style="{{myBackground1}}"></div>
+						<div class="img1" style="{{data.myBackground1}}"></div>
 							<div class="pContainer">
-								<div ng-repeat="par1 in pars1">
+								<div ng-repeat="par1 in data.pars1">
             						<p class="{{par1.className}}">{{par1.text}}</p><br>
        							</div>
 								
@@ -21,9 +21,9 @@
 
 					<a  ng-href="#OPmyNew2">
 					<div class="new2">
-						<div class="img2" style="{{myBackground2}}" ng-href="#myNew2"></div>
+						<div class="img2" style="{{data.myBackground2}}" ng-href="#myNew2"></div>
 							<div class="pContainer">
-								<div ng-repeat="par2 in pars2">
+								<div ng-repeat="par2 in data.pars2">
             						<p class="{{par2.className}}">{{par2.text}}</p><br>
        							</div>
 							</div>

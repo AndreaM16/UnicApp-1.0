@@ -1,0 +1,11 @@
+{
+	"myHeaderText":"Ultime Notizie",
+	"myBackground":"background-image:url(../../images/back.png)",
+	"new2Background":"background-image:url(../../images/atzori.png)",
+	"textTile":"Atzori vince premio Google",
+	"littleDate":"3-Marzo 2015",
+	"longText":"Cagliari, 3 marzo 2015 - È stato assegnato a Maurizio Atzori(nella foto a destra), ricercatore del Dipartimento di Matematica ed Informatica dell’Università di Cagliari, un prestigioso Google Faculty Research Award.",
+	"oldNew":"News Precedente",
+	"oldArrow":"background-image:url(../../images/backArrow.png)"
+
+}

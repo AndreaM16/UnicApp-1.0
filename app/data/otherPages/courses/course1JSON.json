@@ -1,0 +1,10 @@
+{
+	"myBackground1":"background-image: url(../images/back.png)",
+	"myBackground2":"background-image: url(../images/backTwice.png)",
+	"course1Image":"background-image: url(../images/science.png)",
+	"ghostText1":"Corso di studi in Informatica",
+	"Title1":"Informatica",
+	"Text1":".......................",
+	"headerText":"Corsi 2014/2015"
+
+}

@@ -1,29 +1,29 @@
 
 <!-- Custom header -->
 <div class="bookingHeader">
-    <span class="headerText">{{headerText}}</span>
+    <span class="headerText">{{data.headerText}}</span>
     	<div class="menu-btn" ng-href="#booking"></div>
 </div>
 
 			<div class="bookingArea">
-				<div class="bookingBackground" style="{{bookingImage}}"></div>
-					<div class="bookingGhostlyTile"><span>{{ghostlyText}}</span></div>
+				<div class="bookingBackground" style="{{data.bookingImage}}"></div>
+					<div class="bookingGhostlyTile"><span>{{data.ghostlyText}}</span></div>
 
 						<div class="bookingTextarea">
-							<div class="bookingTextTitle"><span>{{bookingTitle}}</span></div>
+							<div class="bookingTextTitle"><span>{{data.bookingTitle}}</span></div>
 
 								<a ng-href="#OPbook4Me">
-									<div class="getCourse"><span>{{courseText}}</span>
-										<div class="courseImage" style="{{courseBackground}}"></div>
+									<div class="getCourse"><span>{{data.courseText}}</span>
+										<div class="courseImage" style="{{data.courseBackground}}"></div>
 									</div>
 								</a>
 
-									<div class="getWhen" ng-click="datePicker()"><span>{{whenText}}</span>
-										<div class="whenImage" style="{{whenBackground}}"></div>
+									<div class="getWhen" ng-click="datePicker()"><span>{{data.whenText}}</span>
+										<div class="whenImage" style="{{data.whenBackground}}"></div>
 									</div>
 										
 						</div>
-										<div class="sendRequest"><span>{{requestText}}</span></div>
+										<div class="sendRequest"><span>{{data.requestText}}</span></div>
 	
 	<form class="form-horizontal">
         <div class="form-group">

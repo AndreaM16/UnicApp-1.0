@@ -1,0 +1,13 @@
+{
+	"objReportText":"Segnalazioni",
+	"myBackground":"background-image:url(../images/back.png)",
+	"selectObjPlaceholder":"Altro",
+	"sendObjText":"Conferma",
+	"staticObjText":"Problema n.1",
+	"classy":"isWhite",
+	"sendObjClass":"sendObj",
+	"sentOrNot":"false",
+	"whereToGo":"#ObjReport",
+	"classyBackground":"background-image: url(../images/check.png)"
+
+}

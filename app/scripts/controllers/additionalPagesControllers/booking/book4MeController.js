@@ -1,20 +1,12 @@
-myApp.controller("book4MeController", ["$scope", "bookingSharer",  function($scope, bookingSharer){
+myApp.controller("book4MeController", ["$scope", "$http","bookingSharer",  function($scope, $http, bookingSharer){
 
-	$scope.book4MeBackground= 'background-image: url('+'../../images/back.png'+')';
+	$http.get('data/otherPages/booking/book4MeJSON.json').success(function(data){
 
-	$scope.book4MeHeaderText='Prenotazione';
 
-	$scope.box1Text='Automi e Linguaggi Formali';
-	$scope.box2Text='Reti di Calcolatori';
+        $scope.data=data;
 
-	$scope.book4MeSendText='Conferma';
 
-	$scope.box1Image= 'background-image: url('+'../../images/check.png'+')';
-	$scope.box2Image= $scope.box1Image;
-
-	$scope.goBack='#OPbook4Me';
-
-	$scope.boxClick1 = function(){
+        $scope.boxClick1 = function(){
         
             
             angular.element('.box1').css('background-color', 'rgba(107,107,107,0.2)');
@@ -25,10 +17,10 @@ myApp.controller("book4MeController", ["$scope", "bookingSharer",  function($sco
 
             angular.element('.book4MeSend span').css('color', '#fff');
 
-            $scope.goBack='#booking';
+            data.goBack='#booking';
 
-            $scope.myField=$scope.box1Text;
-            bookingSharer.setProperty($scope.myField);
+            data.myField=data.box1Text;
+            bookingSharer.setProperty(data.myField);
         }
 
      $scope.boxClick2 = function(){
@@ -42,11 +34,13 @@ myApp.controller("book4MeController", ["$scope", "bookingSharer",  function($sco
 
             angular.element('.book4MeSend span').css('color', '#fff');
 
-            $scope.goBack='#booking';
+            data.goBack='#booking';
 
-            $scope.myField=$scope.box2Text;
-            bookingSharer.setProperty($scope.myField);
+            data.myField=data.box2Text;
+            bookingSharer.setProperty(data.myField);    
         }
-            	        	        		        	   
+    
+
+    })
     
 }]);

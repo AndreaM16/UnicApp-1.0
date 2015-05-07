@@ -1,0 +1,10 @@
+{
+	"headerText":"Corsi 2014/2015",
+	"myBackground":"background-image: url(../images/back.png)",
+	"course1Background":"background-image: url(../images/science.png)",
+	"course2Background":"background-image: url(../images/garden.png)",
+	"bigText1":"Corso di studi in Informatica",
+	"littleText1":"Informatica",
+	"bigText2":"Corso di studi in Medicina",
+	"littleText2":"Medicina"
+}

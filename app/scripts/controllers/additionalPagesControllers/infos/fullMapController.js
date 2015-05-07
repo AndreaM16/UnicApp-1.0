@@ -1,6 +1,8 @@
- myApp.controller('FullmapController', function($scope){
-          
-          $scope.myHeaderText = 'Info & Dettagli';
+ myApp.controller("FullmapController", ["$scope","$http",function($scope,$http){
 
-          $scope.myBackground = 'background-image: url('+'../../images/back.png'+')';
-  });
+ 	$http.get('data/otherPages/infos/fullMapJSON.json').success(function(data){
+
+ 		$scope.data=data;
+ 	})
+          
+  }]);

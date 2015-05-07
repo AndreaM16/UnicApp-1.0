@@ -1,5 +1,10 @@
- myApp.controller('CalendarController', function($scope){
+ myApp.controller("CalendarController", [ "$scope", "$http",function($scope,$http){
 
- 	$scope.headerText='Calendario & Attività';
+ 	$http.get('data/mainPages/calendarJSON.json').success(function(data){
+        
+        $scope.data=data;
+
+    })
+
           
-  });
+  }]);

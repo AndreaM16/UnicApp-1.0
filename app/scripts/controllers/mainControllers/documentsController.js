@@ -1,9 +1,9 @@
 
-  myApp.controller('DocumentsController', function($scope){
+  myApp.controller('DocumentsController', ["$scope","$http", function($scope, $http){
 
-  		$scope.headerText='Documenti utili';
+  	$http.get('data/mainPages/documentsJSON.json').success(function(data){
 
-  		$scope.documentText='JustAPdf';
+  		$scope.data=data;
+  	})
 
-  		$scope.documentImage='background-image:url('+'../../images/arrow.png'+')';
-  });
+  }]);

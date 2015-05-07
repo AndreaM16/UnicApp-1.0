@@ -1,0 +1,7 @@
+{
+ 	"headerText":"JustAPdf",
+ 	"documentText":"Pdf1",
+ 	"documentImage":"background-image: url(../../images/doc.png)",
+ 	"myDocumentsBack":"background-image: url(../../images/back.png)",
+ 	"downloadText":"Download"
+}

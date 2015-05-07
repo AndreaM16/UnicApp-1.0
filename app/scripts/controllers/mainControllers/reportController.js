@@ -1,26 +1,20 @@
   
-  myApp.controller("ReportController", ["$scope", "sharedProperties",  function($scope, sharedProperties){
+myApp.controller("ReportController", ["$scope", "$http","sharedProperties",  function($scope,$http, sharedProperties){
 
-          $scope.headerText = 'Segnalazioni';
+  $http.get('data/mainPages/reportJSON.json').success(function(data){
 
-          $scope.choseObjtext = '';
+    $scope.data=data;
 
-          $scope.writeMeText = 'Scrivi qui il tuo messaggio...';
+    data.objectText =  sharedProperties.getProperty();
 
-          $scope.sendMeText = 'Invia Richiesta';
-
-          $scope.myBackground = 'background-image: url('+'../../images/arrow.png'+')';
-
-          $scope.objectText =  sharedProperties.getProperty();
-
-          if ($scope.objectText!=''){
-              $scope.choseObjtext=$scope.objectText;
+    if (data.objectText!=''){
+              data.choseObjtext=data.objectText;
               
 
                 angular.element('.writeMe').keyup(function(){
                         
                         
-                        if($scope.ngTextBox!=''){
+                        if(data.ngTextBox!=''){
 
                           angular.element('.reportSendMe span').css('color', 'white');
 
@@ -33,14 +27,14 @@
                 
           }
           else {
-              $scope.choseObjtext = 'Scegli l\'oggetto della tua richiesta';
+              data.choseObjtext = 'Scegli l\'oggetto della tua richiesta';
               angular.element('.reportSendMe span').css('color', 'grey');
               
           }
         
-    }
+    })
 
-  ]);
+}]);
 
 
   /*
