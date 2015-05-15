@@ -2,7 +2,7 @@
 myApp.controller("BookingController", ["$scope", "$http","bookingSharer",function($scope, $http, bookingSharer){
 
   $scope.initGetRequestBooking = function(){
-    $http.get('data/mainPages/bookingJSON.json').success(function(data){
+    $http.get('http://localhost/booking.json').success(function(data){
       
       $scope.data=data;
       data.courseText=bookingSharer.getProperty();

@@ -1,7 +1,7 @@
 myApp.controller("myNewsController2", ["$scope","$http",function($scope,$http){
 
   $scope.initGetRequestMyNews2 = function(){
-   $http.get('data/otherPages/news/myNew2JSON.json').success(function(data){
+   $http.get('http://localhost/myNew2.json').success(function(data){
 
     $scope.data=data;
   })

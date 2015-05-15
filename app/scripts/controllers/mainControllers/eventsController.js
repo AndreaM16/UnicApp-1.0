@@ -2,7 +2,7 @@
 myApp.controller('EventsController', ["$scope","$http",function($scope,$http){
 
   $scope.initGetRequestEvents = function(){
-  	$http.get('data/mainPages/eventsJSON.json').success(function(data){
+  	$http.get('http://localhost/events.json').success(function(data){
 
       $scope.data=data;
 

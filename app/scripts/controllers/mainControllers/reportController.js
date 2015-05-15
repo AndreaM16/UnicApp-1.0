@@ -2,7 +2,7 @@
 myApp.controller("ReportController", ["$scope", "$http","sharedProperties",  function($scope,$http, sharedProperties){
 
   $scope.initGetRequestReport = function(){
-    $http.get('data/mainPages/reportJSON.json').success(function(data){
+    $http.get('http://localhost/report.json').success(function(data){
 
       $scope.data=data;
 
