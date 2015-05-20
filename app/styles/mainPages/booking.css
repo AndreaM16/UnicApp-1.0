@@ -2,18 +2,19 @@
   position: fixed;
   z-index: 2;
   top: 0%;
-  left: 15%;
-  right: 0%;
-  width: 85%;
+  left: 15% !important;
+  right: 0% !important;
+  width: 85% !important;
   height: 8%;
   background: #E5001B;
   padding: 0%;
 }
 .bookingArea {
-  width: 100%;
+  width: 100% !important;
   height: 92%;
   top: 8%;
   position: fixed;
+  left: 0 !important;
 }
 .bookingBackground {
   width: 100%;
@@ -129,27 +130,32 @@
   background-position: 50%;
   top: 61%;
   left: 80%;
-}
-.form-horizontal {
-  width: 80%;
-  position: fixed;
-  top: 50%;
-  display: none;
-  left: 10%;
   z-index: 3;
 }
-.input-group {
-  top: 0;
-  position: fixed !important;
+
+
+
+
+
+.form-horizontal {
+  width: 87%;
+  position: fixed;
+  top: 36%;
+  display: none;
   left: 0;
-  width: 100% !important;
+  z-index: 3;
 }
-.form-control {
-  top: 30%;
-  position: fixed !important;
-  left: 10%;
-  width: 65% !important;
+.datetime-picker div > table .btn-default {
+        border: 0;
+
 }
+
+.btn-default{height: 140%; left: 31%;} 
+
+.dropdown-menu {left: 11% !important;}
+
+.form-control{left: 4%;}
+
 .poppy {
   z-index: 2;
   position: fixed;
@@ -158,31 +164,8 @@
   width: 100%;
   display: none;
   top: 0;
+  left: 0;
 }
-.input-group-btn {
-  height: 5.5%;
-  width: 12%;
-  left: 75%;
-  position: fixed;
-  top: 30%;
-}
-.btn {
-  height: 98%;
-  width: 100%;
-}
-.dropdown-menu {
-  position: fixed !important;
-  height: 45% !important;
-  width: 90% !important;
-  left: 5% !important;
-  top: 40% !important;
-}
-.btn-info {
-  height: 30%;
-  width: 30%;
-}
-.btn-default {
-  line-height: 2;
-  background-color: #fff;
-  color: #000;
-}
+
+.push{width: 100% !important; margin: 0 !important; padding: 0 !important;}
+.container{width: 100% !important; margin: 0 !important; padding: 0 !important;}

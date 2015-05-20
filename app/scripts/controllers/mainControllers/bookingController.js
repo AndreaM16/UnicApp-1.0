@@ -3,8 +3,9 @@ myApp.controller("BookingController", ["$scope", "$http","bookingSharer",functio
 
   $scope.initGetRequestBooking = function(){
     $http.get('http://localhost/booking.json').success(function(data){
-      
+
       $scope.data=data;
+
       data.courseText=bookingSharer.getProperty();
 
       if (data.courseText!='Corsi'){
@@ -16,41 +17,40 @@ myApp.controller("BookingController", ["$scope", "$http","bookingSharer",functio
       }
 
     })
-  }
 
-          /*
-            $scope.datePicker=function(){
 
-              if ($scope.datePickerState=='on') {
-                  
-                  angular.element('.form-horizontal').css('display','block');
-                  angular.element('.poppy').css('display','block');
-                  $scope.datePickerState='off';
-              }
-              else{
-                  angular.element('.form-horizontal').css('display','none');
-                  angular.element('.poppy').css('display','none');
-                  $scope.datePickerState='on';
-              }
-              
-            }*/
-    /*
-          $scope.dates = {
-    date1: new Date('01 Mar 2015 00:00:00.000'),
-    date2: new Date(),
-    date3: new Date(),
-    date4: new Date('01 Mar 2015'),
-    date5: new Date('10 Mar 2015')
-  };
-  
-  $scope.open = {
-    date1: false,
-    date2: false,
-    date3: false,
-    date4: false,
-    date5: false,
-  };
-  
+    $scope.datePicker=function(){
+
+      if ($scope.datePickerState=='on') {
+
+        angular.element('.form-horizontal').css('display','block');
+        angular.element('.poppy').css('display','block');
+        $scope.datePickerState='off';
+      }
+      else{
+        angular.element('.form-horizontal').css('display','none');
+        angular.element('.poppy').css('display','none');
+        $scope.datePickerState='on';
+      }
+
+    }
+
+    $scope.dates = {
+      date1: new Date('01 Mar 2015 00:00:00.000'),
+      date2: new Date(),
+      date3: new Date(),
+      date4: new Date('01 Mar 2015'),
+      date5: new Date('10 Mar 2015')
+    };
+
+    $scope.open = {
+      date1: false,
+      date2: false,
+      date3: false,
+      date4: false,
+      date5: false,
+    };
+
   // Disable weekend selection
   $scope.disabled = function(date, mode) {
     return (mode === 'day' && (new Date().toDateString() == date.toDateString()));
@@ -67,10 +67,10 @@ myApp.controller("BookingController", ["$scope", "$http","bookingSharer",functio
   };
   
   $scope.openCalendar = function(e, date) {
-      e.preventDefault();
-      e.stopPropagation();
+    e.preventDefault();
+    e.stopPropagation();
 
-      $scope.open[date] = true;
+    $scope.open[date] = true;
   };
   
   // watch date4 and date5 to calculate difference
@@ -83,6 +83,8 @@ myApp.controller("BookingController", ["$scope", "$http","bookingSharer",functio
     } else {
       $scope.dayRange = 'n/a';
     }
-  }, true);*/
+  }, true);
+
+}
 
 }]);

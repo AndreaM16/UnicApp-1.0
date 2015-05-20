@@ -1,50 +1,53 @@
 
 <div ng-init="initGetRequestBooking()">
-<!-- Custom header -->
-<div class="bookingHeader">
-    <span class="headerText">{{data.headerText}}</span>
-    	<div class="menu-btn" ng-href="#booking"></div>
-</div>
+	<!-- Custom header -->
+	<div class="bookingHeader">
+		<span class="headerText">{{data.headerText}}</span>
+		<div class="menu-btn" ng-href="#booking"></div>
+	</div>
 
-			<div class="bookingArea">
-				<div class="bookingBackground" style="{{data.bookingImage}}"></div>
-					<div class="bookingGhostlyTile"><span>{{data.ghostlyText}}</span></div>
+	<div class="bookingArea">
+		<div class="bookingBackground" style="{{data.bookingImage}}"></div>
+		<div class="bookingGhostlyTile"><span>{{data.ghostlyText}}</span></div>
 
-						<div class="bookingTextarea">
-							<div class="bookingTextTitle"><span>{{data.bookingTitle}}</span></div>
+		<div class="bookingTextarea">
+			<div class="bookingTextTitle"><span>{{data.bookingTitle}}</span></div>
 
-								<a ng-href="#OPbook4Me">
-									<div class="getCourse"><span>{{data.courseText}}</span>
-										<div class="courseImage" style="{{data.courseBackground}}"></div>
-									</div>
-								</a>
+			<a ng-href="#OPbook4Me">
+				<div class="getCourse"><span>{{data.courseText}}</span>
+					<div class="courseImage" style="{{data.courseBackground}}"></div>
+				</div>
+			</a>
 
-									<div class="getWhen" ng-click="datePicker()"><span>{{data.whenText}}</span>
-										<div class="whenImage" style="{{data.whenBackground}}"></div>
-									</div>
-										
-						</div>
-										<div class="sendRequest"><span>{{data.requestText}}</span></div>
-	
-	<form class="form-horizontal">
-        <div class="form-group">
-          
-          <div class="col-sm-10">
-            <p class="input-group">
-                <input type="text" class="form-control" datetime-picker="dd MMM yyyy HH:mm" ng-model="dates.date3" is-open="open.date3" />
-                
-                <span class="input-group-btn">-->
-                    <button type="button" class="btn btn-default" ng-click="openCalendar($event, 'date3')"><i class="fa fa-calendar"></i></button>
-                </span>
-            </p>
-          </div>
-        </div>
-    </form>
-
-        	<div class="poppy"></div>
-
-    
-        	</div>
-					<script src="bower_components/pushy/js/pushy.js"></script>
-</div>
+			<div class="getWhen" ng-click="datePicker()"><span>{{data.whenText}}</span>
+				<div class="whenImage" style="{{data.whenBackground}}"></div>
+			</div>
 			
+		</div>
+		<div class="sendRequest"><span>{{data.requestText}}</span></div>
+		
+		<form class="form-horizontal">
+			<div class="form-group">
+				
+				<div class="col-sm-10">
+					<p class="input-group">
+						<input type="text" class="form-control" datetime-picker="dd MMM yyyy HH:mm" ng-model="dates.date3" is-open="open.date3" />
+						
+						<span class="input-group-btn">-->
+							<button type="button" class="btn btn-default" ng-click="openCalendar($event, 'date3')"><i class="fa fa-calendar"></i></button>
+						</span>
+					</p>
+				</div>
+			</div>
+		</form>
+
+		<div class="poppy"></div>
+
+		
+	</div>
+	<script src="bower_components/pushy/js/pushy.js"></script>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+
+</div>
+

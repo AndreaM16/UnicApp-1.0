@@ -209,14 +209,18 @@ h2{
   font-weight: bold;
   border: #000;
   font-size: 130%;
-}
-
-/* fixing the default button using active attribute */
-.btn-default.active{
   background-color: #E5001B;
   color: #fff;
   line-height: 3 !important;
+  border-radius: 4%;
 }
+
+a:hover{color: #fff;}
+
+/* fixing the default button using active attribute 
+.btn-default.active{
+  
+}*/
 
 .welcome{
 
