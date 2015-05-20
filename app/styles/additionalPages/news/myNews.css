@@ -31,6 +31,7 @@
     width: 100%;
     top: 8%;
     position: fixed;
+    left: 0;
   }
 
   .new1ImageContainer, .new2ImageContainer{
@@ -40,6 +41,7 @@
     background-repeat: no-repeat;
     position: absolute;
     background-position: 49%;
+
   }
 
   .textContainer{

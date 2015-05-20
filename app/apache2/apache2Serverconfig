@@ -1,0 +1,77 @@
+<VirtualHost *:80>
+	
+	
+	ServerAdmin andream@AndreaM
+
+	#Giving permissions
+	Header set Access-Control-Allow-Origin "*"
+	
+	
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	
+	################################ Main Pages #######################################
+	Alias /main.json /var/www/html/UnicApp-1.0/data/mainPages/mainJSON.json
+	Alias /news.json /var/www/html/UnicApp-1.0/data/mainPages/newsJSON.json
+	Alias /report.json /var/www/html/UnicApp-1.0/data/mainPages/reportJSON.json
+	Alias /info.json /var/www/html/UnicApp-1.0/data/mainPages/infoJSON.json
+	Alias /courses.json /var/www/html/UnicApp-1.0/data/mainPages/coursesJSON.json
+	Alias /booking.json /var/www/html/UnicApp-1.0/data/mainPages/bookingJSON.json
+	Alias /calendar.json /var/www/html/UnicApp-1.0/data/mainPages/calendarJSON.json
+	Alias /events.json /var/www/html/UnicApp-1.0/data/mainPages/eventsJSON.json
+	Alias /documents.json /var/www/html/UnicApp-1.0/data/mainPages/documentsJSON.json
+
+	################################ Other Pages #######################################
+	Alias /book4Me.json /var/www/html/UnicApp-1.0/data/otherPages/booking/book4MeJSON.json
+	Alias /myCalendar.json /var/www/html/UnicApp-1.0/data/otherPages/calendar/myCalendarJSON.json
+	Alias /calendarTime.json /var/www/html/UnicApp-1.0/data/otherPages/calendar/calendarTimeJSON.json
+	Alias /calendarPlace.json /var/www/html/UnicApp-1.0/data/otherPages/calendar/calendarPlaceJSON.json
+	Alias /coursesPage.json /var/www/html/UnicApp-1.0/data/otherPages/courses/coursesPageJSON.json
+	Alias /course1.json /var/www/html/UnicApp-1.0/data/otherPages/courses/course1JSON.json
+	Alias /course2.json /var/www/html/UnicApp-1.0/data/otherPages/courses/course2JSON.json
+	Alias /myDocuments.json /var/www/html/UnicApp-1.0/data/otherPages/documents/myDocumentsJSON.json
+	Alias /watchDocuments.json /var/www/html/UnicApp-1.0/data/otherPages/documents/watchDocumentsJSON.json
+	Alias /futureEvents.json /var/www/html/UnicApp-1.0/data/otherPages/events/futureEventsJSON.json
+	Alias /fullMap.json /var/www/html/UnicApp-1.0/data/otherPages/infos/fullMapJSON.json
+	Alias /options.json /var/www/html/UnicApp-1.0/data/otherPages/infos/optionsJSON.json
+	Alias /myNew1.json /var/www/html/UnicApp-1.0/data/otherPages/news/myNew1JSON.json
+	Alias /myNew2.json /var/www/html/UnicApp-1.0/data/otherPages/news/myNew2JSON.json
+	Alias /objReport.json /var/www/html/UnicApp-1.0/data/otherPages/report/objReportJSON.json
+	
+	# When localhost/unica you get the application that runs on localhost:9000 with its jsons
+	<Location /unica>
+		ProxyPass  http://localhost:9000/
+		ProxyPassReverse  http://localhost:9000/
+	</Location>
+
+	<Location /styles>
+		ProxyPass  http://localhost:9000/styles/
+		ProxyPassReverse  http://localhost:9000/styles/
+	</Location>
+	
+	<Location /scripts>
+		ProxyPass  http://localhost:9000/scripts/
+		ProxyPassReverse  http://localhost:9000/scripts/
+	</Location>
+
+	<Location /bower_components>
+		ProxyPass  http://localhost:9000/bower_components/
+		ProxyPassReverse  http://localhost:9000/bower_components/
+	</Location>
+
+	<Location /images>
+		ProxyPass  http://localhost:9000/images/
+		ProxyPassReverse  http://localhost:9000/images/
+	</Location>
+
+	<Location /views>
+		ProxyPass http://localhost:9000/views/
+		ProxyPassReverse http://localhost:9000/views/
+	</Location>
+
+
+	
+</VirtualHost>
+
+

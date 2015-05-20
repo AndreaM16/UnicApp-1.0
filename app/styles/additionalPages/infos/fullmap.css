@@ -25,6 +25,8 @@
 
   }
 
-.fullmapContainer{top:8%; height: 92%; width: 100%; position: fixed;}
+.fullmapContainer{top:8%; height: 92%; width: 100%; position: fixed; left: 0;}
 
 #fullmap-canvas{height: 100%; width: 100%;}
+/*.gm-style div{font-family: none !important; font-size: initial !important; font-weight: initial !important;}*/
+

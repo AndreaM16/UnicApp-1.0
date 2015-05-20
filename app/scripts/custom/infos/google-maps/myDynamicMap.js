@@ -4,10 +4,12 @@ angular.module('fullmap-canvas', [])
   .controller('FullmapController',[ 
     $(document).ready(function (){
 
-      var myCenter=new google.maps.LatLng(41.9026329,12.452200400000038);
+var myCenter=new google.maps.LatLng(41.9026329,12.452200400000038);
+      
       $(function initialize() {
 
   var mapOptions = {
+    
     zoom: 8,
     center: myCenter,
     disableDefaultUI:true,
@@ -19,6 +21,8 @@ angular.module('fullmap-canvas', [])
 
   var map = new google.maps.Map(document.getElementById('fullmap-canvas'),
       mapOptions);
+
+  //var myCenter=new google.maps.LatLng(41.9026329,12.452200400000038);
 
   var marker=new google.maps.Marker({
     position:myCenter
@@ -35,9 +39,11 @@ function loadScript() {
   script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
       '&signed_in=true&callback=initialize';
   document.body.appendChild(script);
+
 }
 
 window.onload = loadScript;
+
 
 
       })]);
