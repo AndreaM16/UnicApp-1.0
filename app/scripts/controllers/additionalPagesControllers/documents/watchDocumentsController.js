@@ -1,7 +1,7 @@
 myApp.controller("watchDocumentsController", [ "$scope","$http", "PDFViewerService", function($scope,$http, pdf){
 
     $scope.initGetRequestWatchDocuments = function(){
-        $http.get('http://localhost/watchDocuments.json').success(function(data){
+        $http.get('http://localhost/watchDocuments?r=<%= session.getId()%.json').success(function(data){
 
             $scope.data=data;
 

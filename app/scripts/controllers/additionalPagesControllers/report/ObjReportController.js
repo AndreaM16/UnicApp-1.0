@@ -1,7 +1,7 @@
 myApp.controller("ObjReportController", ["$scope","$http", "sharedProperties", function($scope,$http,sharedProperties){
  
     $scope.initGetRequestObjReport = function(){
-     $http.get('http://localhost/objReport.json').success(function(data){
+     $http.get('http://localhost/objReport.json?r=<%= session.getId()%').success(function(data){
 
         $scope.data=data;
 

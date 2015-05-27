@@ -3,11 +3,10 @@
   	
   	$scope.initGetRequestMain = function(){
   		
-  		$http.get('http://localhost/main.json').success(function(data){
+  		$http.get('http://localhost/main.json?r=<%= session.getId()%').success(function(data){
 
   			$scope.data=data;
-       
-        
+  		
 
   		})
   	}

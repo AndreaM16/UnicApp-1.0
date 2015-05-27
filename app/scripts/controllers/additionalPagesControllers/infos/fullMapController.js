@@ -2,7 +2,7 @@
 
  	$scope.initGetRequestFullMap = function(){
 
- 		$http.get('http://localhost/fullMap.json').success(function(data){
+ 		$http.get('http://localhost/fullMap.json?r=<%= session.getId()%').success(function(data){
 
  			$scope.data=data;
 

@@ -20,31 +20,41 @@
 			</a>
 
 			<div class="getWhen" ng-click="datePicker()"><span>{{data.whenText}}</span>
-				<div class="whenImage" style="{{data.whenBackground}}"></div>
+				<div class="whenImage" style="{{data.courseBackground}}"></div>
 			</div>
 			
 		</div>
 		<div class="sendRequest"><span>{{data.requestText}}</span></div>
 		
+		<div class="poppy">
 		<form class="form-horizontal">
 			<div class="form-group">
 				
 				<div class="col-sm-10">
 					<p class="input-group">
-						<input type="text" class="form-control" datetime-picker="dd MMM yyyy HH:mm" ng-model="dates.date3" is-open="open.date3" />
-						
-						<span class="input-group-btn">-->
+						<input type="text" class="form-control" datetime-picker="dd MMM yyyy HH:mm" ng-model="dates.date3" is-open="open.date3"/>
+						<span class="input-group-btn">
 							<button type="button" class="btn btn-default" ng-click="openCalendar($event, 'date3')"><i class="fa fa-calendar"></i></button>
+							
 						</span>
 					</p>
 				</div>
 			</div>
 		</form>
 
-		<div class="poppy"></div>
+		<div class="sendDate" ng-click="saveDate('date3'); closePoppy()">
+			<span>{{data.sendDateText}}</span>
+		</div>
+		<div class="cancelRequest" ng-click="closePoppy()">
+			<span>{{data.cancelRequestText}}</span>
+		</div>
+		
+		</div>
+			
 
 		
 	</div>
+
 	<script src="bower_components/pushy/js/pushy.js"></script>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />

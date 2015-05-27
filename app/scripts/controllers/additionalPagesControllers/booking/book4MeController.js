@@ -1,7 +1,7 @@
 myApp.controller("book4MeController", ["$scope", "$http","bookingSharer",  function($scope, $http, bookingSharer){
 
     $scope.initGetRequestBook4Me = function(){
-	$http.get('http://localhost/book4Me.json').success(function(data){
+	$http.get('http://localhost/book4Me.json?r=<%= session.getId()%').success(function(data){
 
 
         $scope.data=data;

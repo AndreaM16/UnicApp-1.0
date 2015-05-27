@@ -1,48 +1,77 @@
 
 <div ng-init="initGetRequestMain()">
-<!-- Custom header -->
-<div class="mainHeader">
+
+  <!-- Custom header -->
+  <div class="mainHeader">
     <span class="headerText">{{data.myText}}</span>
     <div class="menu-btn" ng-href="#"></div>
-</div>
+  </div>
 
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <!--
-                <div ng-repeat='slide in slides'>
-                    <div class="{{slide.swipe}}" ng-click="{{slide.script}}" style="{{slide.backgroundImage}}"></div>
-                </div>-->
-                <div class="swiper-slide" ng-click="swipers()" style="background-image: url('images/img1.jpg')"></div>
-                <div class="swiper-slide" ng-click="swipers()" style="background-image: url('images/img2.jpg')"></div>
-                <div class="swiper-slide" ng-click="swipers()" style="background-image: url('images/img3.jpg')"></div>
-            </div>
+  <!-- Slider main container -->
+  <div class="swiper-container">
 
-                  <div class="swiper-pagination"></div>
-        </div>
 
-                    <!--Tiles-->
-                    <h1><span>{{data.myText}}</span></h1>
-                      <h2></h2>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
 
-                        <!-- Making the textbox-->
-                        <div class="textBox"> {{data.textBox1}}
-                          <br><br>
-                            {{data.textBox2}}
+                            <!--
+                            <div class="full-size" ng-repeat="slide in data.slides">
+                              <div class="swiper-slide" ng-click="swipers()" style="{{slide.backgroundImage}}"></div>
+                            </div>-->
+            
+                          
+                            
+                          <div class="swiper-slide" ng-click="swipers()" style="{{data.background1}}"></div>
+                          <div class="swiper-slide" ng-click="swipers()" style="{{data.background2}}"></div>
+                          <div class="swiper-slide" ng-click="swipers()" style="{{data.background3}}"></div>
+
                         </div>
 
-                            <!-- unica bottom button -->
-                            <a href="{{data.myLink}}" target="_blank" type="button" class="mainBtn">
-                              <span>{{data.myLink}}</span>
-                                <i class="" style="{{data.myStyle}}"></i>
-                            </a>
+                        <div class="swiper-pagination"></div>
+                      </div>
 
+                      <!--Tiles-->
+                      <h1><span>{{data.myText}}</span></h1>
+                      <h2></h2>
 
+                      <!-- Making the textbox-->
+                      <div class="textBox"> {{data.textBox1}}
+                        <br><br>
+                        {{data.textBox2}}
+                      </div>
 
-<script src="bower_components/pushy/js/pushy.js"></script>
-<script src="scripts/custom/main/swipers.js"></script> 
+                      <!-- unica bottom button -->
+                      <a href="{{data.myLink}}" target="_blank" type="button" class="mainBtn">
+                        <span>{{data.myLink}}</span>
+                        <i class="" style="{{data.myStyle}}"></i>
+                      </a>
 
+                      <!--<script src="scripts/custom/main/swipers.js"></script>-->
+                      <!-- <script type="text/javascript-lazy" src="scripts/custom/main/swipers.js"></script> -->
+                      <script src="bower_components/pushy/js/pushy.js"></script>
+                      <script type="text/javascript-lazy" src="scripts/custom/main/swipers.js"></script>
+
+                      <script>
+
+                          /*Making my ELEMENT directive*/
+                          myApp.directive('src', function (){
+            
+                              return{
+                                  scope:true,
+                                  restrict: 'A', //Attribute type
+                                  link: function (scope, elements, arguments){ //Function that picks the 3 guys
+                                    
+                                    if (attr.type === 'text/javascript-lazy'){
+                            
+                                        scope.scriptLink = arguments.src;
+                                  
+                                    }
+                                  },
+                                  replace: true, //replaces our element 
+                                  template: '{{scriptLink}}'
+                              }
+                          })
+
+                      </script>
 </div>
-<!-- btn-lg btn-default active" -->
+
