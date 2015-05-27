@@ -150,9 +150,15 @@
 
 }
 
+.datetime-picker div > table .btn-info {
+        border: 0;
+        color: #fff !important;
+
+}
+
 .btn-default{height: 140%; left: 31%;} 
 
-.dropdown-menu {left: 11% !important;}
+.dropdown-menu {left: 8% !important;}
 
 .form-control{left: 4%;}
 
@@ -169,3 +175,67 @@
 
 .push{width: 100% !important; margin: 0 !important; padding: 0 !important;}
 .container{width: 100% !important; margin: 0 !important; padding: 0 !important;}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){
+  height: 30px;
+  width: 45px;
+  left: 0;
+}
+
+.btn-default{color: #000 !important; font-size: 100%;}
+.btn-info {
+  color: #fff !important;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.open > .dropdown-toggle.btn-info {
+  color: #fff !important;
+}
+
+.sendDate{
+  height: 5%;
+  width: 38%;
+  font-weight: bold;
+  background-color: #E5001B;
+  position: fixed;;
+  float: center;
+  bottom: 14%;
+  left: 13%;
+  top: 84%;
+  z-index: 3;
+  display: none;
+}
+
+.sendDate span{
+  font-family: Open Sans, helvetica, arial, serif !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 115%;
+  float: center;
+  color: #fff;
+  display: block;
+  line-height: 2;
+}
+
+.cancelRequest span{
+  font-family: Open Sans, helvetica, arial, serif !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 115%;
+  float: center;
+  color: #fff;
+  display: block;
+  line-height: 2;
+}
+
+
+.cancelRequest{
+  height: 5%;
+  width: 38%;
+  background-color: #E5001B;
+  position: fixed;
+  bottom: 14%;
+  left: 52%;
+  top: 84%;
+  z-index: 3;
+  display: none;
+}

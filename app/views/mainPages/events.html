@@ -8,9 +8,12 @@
 
 		<div class="eventsArea">
 				<div class="mainEventsArea">
-					<div class="futureEvents" ng-click="changeEventFromFuture()"><span>{{data.futureEvent}}</span></div>
-					<div class="oldEvents" ng-click="changeEventFromPast()"><span>{{data.oldEvent}}</span></div>
-						<div class="{{data.tileStyle}}"></div>
+					<div class="futureEvents" ng-click="changeEventFromFuture()"><span>{{data.futureEvent}}</span>
+						<div class="futureTile"></div>
+					</div>
+					<div class="oldEvents" ng-click="changeEventFromPast()"><span>{{data.oldEvent}}</span>
+						<div class="oldTile"></div>
+					</div>
 							<div class="selectedEventsArea"></div>
 				</div>
 		</div>

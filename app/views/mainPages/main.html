@@ -14,8 +14,8 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
 
-                            <!--
-                            <div class="full-size" ng-repeat="slide in data.slides">
+                            
+                            <!--<div class="full-size" ng-repeat="slide in data.slides" isLoaded="">
                               <div class="swiper-slide" ng-click="swipers()" style="{{slide.backgroundImage}}"></div>
                             </div>-->
             
@@ -53,7 +53,24 @@
 
                       <script>
 
-                          /*Making my ELEMENT directive*/
+                          /*Making my ATTRIBUTES directive*/
+                          myApp.directive('isLoaded', function (){
+            
+                              return{
+                                  scope:true,
+                                  restrict: 'A', //Attribute type
+                                  link: function (scope, elements, arguments){ //Function that picks the 3 guys
+                                    
+                                   if (scope.$last === true) {
+                                        scope.pageIsReady = true;
+                                        console.log('page Is Ready!');
+                                    }
+                                  }   
+                              }
+                          })
+
+
+                          /*Making my ATTRIBUTES directive*/
                           myApp.directive('src', function (){
             
                               return{
@@ -61,11 +78,13 @@
                                   restrict: 'A', //Attribute type
                                   link: function (scope, elements, arguments){ //Function that picks the 3 guys
                                     
-                                    if (attr.type === 'text/javascript-lazy'){
+                                    scope.$on(pageIsReady===true, function(){
+                                      if (attr.type === 'text/javascript-lazy'){
                             
-                                        scope.scriptLink = arguments.src;
+                                          scope.scriptLink = arguments.src;
                                   
-                                    }
+                                      }
+                                    })
                                   },
                                   replace: true, //replaces our element 
                                   template: '{{scriptLink}}'

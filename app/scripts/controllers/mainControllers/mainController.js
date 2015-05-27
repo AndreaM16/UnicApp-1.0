@@ -6,6 +6,8 @@
   		$http.get('http://localhost/main.json?r=<%= session.getId()%').success(function(data){
 
   			$scope.data=data;
+
+        $scope.pageIsReady = false;
   		
 
   		})
