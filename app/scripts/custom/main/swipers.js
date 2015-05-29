@@ -1,7 +1,7 @@
 
 /* Since I don't need a controller I leave it by default*/
 
-
+/*
 angular.module('swipers', [])
   .controller('MainController',[ 
   $(document).ready(function (){
@@ -11,3 +11,4 @@ angular.module('swipers', [])
         paginationClickable: true
         })
   })]);
+*/

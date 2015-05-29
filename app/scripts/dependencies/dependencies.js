@@ -10,7 +10,8 @@ angular
     'ngTouch',
     'ngPDFViewer',
     'ui.bootstrap', 
-    'ui.bootstrap.datetimepicker'
-
+    'ui.bootstrap.datetimepicker'/*,
+    'ngRepeatIsLoaded'/*,
+    'lazy-script-load'*/
 
   ]);

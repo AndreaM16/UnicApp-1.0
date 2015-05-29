@@ -8,13 +8,80 @@
   <meta charset="utf-8">
   <!--Page's Title-->
   <title>{{data.myTitle}}</title>
-    <!--Description of the aiming of the App
-        and
-        enabling different devices to fit our App for their own resolution-->
+
+
         <div ng-repeat='meta in data.metas'>
           <meta name="{{meta.name}}" content="{{meta.content}}">
         </div>
 
+          <!-- Yeoman's scaffolded AngularJS and JQuery scripts -->
+          <script src="bower_components/jquery/dist/jquery.js"></script>
+          <script src="bower_components/angular/angular.js"></script>
+          <script src="bower_components/angular-resource/angular-resource.js"></script>
+          <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+          <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+          <script src="bower_components/angular-touch/angular-touch.js"></script>
+          <script src="bower_components/angular-animate/angular-animate.js"></script>
+          <script src="bower_components/angular-route/angular-route.js"></script>
+          
+
+          <!-- Custom Scripts -->
+          <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+          <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
+          <script src="scripts/custom/main/swipers.js"></script>
+
+
+          <!--App Modules-->
+          <script src="scripts/dependencies/dependencies.js"></script>
+          <!--<script src="scripts/directives/ngRepeatIsLoaded.js"></script>-->
+          <!--<script src="scripts/directives/lazy-script-load.js"></script>-->
+          <script src="scripts/custom/pdfViewer/ng-pdfviewer.js"></script>
+          <script src="scripts/custom/pdfViewer/pdf.js"></script>
+          <script src="scripts/custom/pdfViewer/pdf.compat.js"></script>
+          <script src="scripts/custom/booking/ui-bootstrap.tpls.js"></script>
+          <script src="scripts/custom/booking/datetime-picker.js"></script>
+
+          <!-- App services -->
+          <script src="scripts/services/booking/book4MeServices.js"></script>
+          <script src="scripts/services/report/reportServices.js"></script>
+          <!--<script src="scripts/services/main/ngRepeatService.js"></script>-->
+
+          <!--App Main Pages Controllers-->
+          <script src="scripts/controllers/mainControllers/mainController.js"></script>
+          <script src="scripts/controllers/mainControllers/infoController.js"></script>
+          <script src="scripts/controllers/mainControllers/newsController.js"></script>
+          <script src="scripts/controllers/mainControllers/reportController.js"></script>
+          <script src="scripts/controllers/mainControllers/coursesController.js"></script>
+          <script src="scripts/controllers/mainControllers/bookingController.js"></script>
+          <script src="scripts/controllers/mainControllers/calendarController.js"></script>
+          <script src="scripts/controllers/mainControllers/eventsController.js"></script>
+          <script src="scripts/controllers/mainControllers/documentsController.js"></script>
+
+          <!--Additional Pages Controllers -->
+          <script src="scripts/controllers/additionalPagesControllers/infos/fullMapController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/infos/optionsController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/news/myNewsController1.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/news/myNewsController2.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/report/ObjReportController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/courses/coursesPageController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/courses/course1Controller.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/courses/course2Controller.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/booking/book4MeController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/calendar/myCalendarController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/calendar/calendarTimeController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/calendar/calendarPlaceController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/events/futureEventsController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/documents/myDocumentsController.js"></script>
+          <script src="scripts/controllers/additionalPagesControllers/documents/watchDocumentsController.js"></script>
+
+          <!--App Routes-->
+          <script src="scripts/routes/routes.js"></script>
+
+          <!-- Google Maps API -->
+          <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?v=3.13/key=AIzaSyArqKwlqOFydRwfrFSsCnuEqfKeZVNuTeM"></script>
+          <script src="scripts/custom/main/viewSwipe.js"></script>
+        
         <!-- Views CSS -->
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/mainPages/main.css">
@@ -45,28 +112,25 @@
         <link type="text/css" rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
         <link rel="stylesheet" href="bower_components/pushy/css/pushy.css">
         <link rel="stylesheet" type="text/css" href="styles/plugins/viewSwipe.css">
-       
 
 
-        <!-- Google Apis -->
+
       </head>
 
-      <body>
+<body>
 
-        <div ng-init="initGetRequestMain()">
+  <div ng-init="initGetRequestMain()">
     <!--container contains all the part of the body that has
     to be pushed on the right to open the menu-->
     <div class="container">
       <div class="push">
 
-
         <!--ng-view to contain all my views class="Appdoitsize" -->
-        <div ng-view="" ng-class="{slide: Appdoitsize }">
-
-        </div> 
+        <div ng-view="" ng-class="{slide: Appdoitsize }"></div> 
 
         <!-- Pushy Menu -->
         <div class="pushy pushy-left">
+
           <div class="welcome">{{data.myTitle}}</div>
           <div class="menuList">
             <div ng-repeat='item in data.items'>
@@ -78,95 +142,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-  <div class="scriptsContainer"> 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-    <div class="customScripts">
-      <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
-      <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
-
-    </div>
-  </div>
-
-  <!--App Modules-->
-  <script src="scripts/dependencies/dependencies.js"></script>
-  <script src="scripts/directives/lazyLoadScript.js"></script>
-  <script src="scripts/custom/pdfViewer/ng-pdfviewer.js"></script>
-  <script src="scripts/custom/pdfViewer/pdf.js"></script>
-  <script src="scripts/custom/pdfViewer/pdf.compat.js"></script>
-  <script src="scripts/custom/booking/ui-bootstrap.tpls.js"></script>
-  <script src="scripts/custom/booking/datetime-picker.js"></script>
-  
-
-  <!-- App services -->
-
-  <script src="scripts/services/booking/book4MeServices.js"></script>
-  <script src="scripts/services/report/reportServices.js"></script>
-
-  <!--App Main Pages Controllers-->
-  <script src="scripts/controllers/mainControllers/mainController.js"></script>
-  <script src="scripts/controllers/mainControllers/infoController.js"></script>
-  <script src="scripts/controllers/mainControllers/newsController.js"></script>
-  <script src="scripts/controllers/mainControllers/reportController.js"></script>
-  <script src="scripts/controllers/mainControllers/coursesController.js"></script>
-  <script src="scripts/controllers/mainControllers/bookingController.js"></script>
-  <script src="scripts/controllers/mainControllers/calendarController.js"></script>
-  <script src="scripts/controllers/mainControllers/eventsController.js"></script>
-  <script src="scripts/controllers/mainControllers/documentsController.js"></script>
-
-  <!--Additional Pages Controllers -->
-  <script src="scripts/controllers/additionalPagesControllers/infos/fullMapController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/infos/optionsController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/news/myNewsController1.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/news/myNewsController2.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/report/ObjReportController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/courses/coursesPageController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/courses/course1Controller.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/courses/course2Controller.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/booking/book4MeController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/calendar/myCalendarController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/calendar/calendarTimeController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/calendar/calendarPlaceController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/events/futureEventsController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/documents/myDocumentsController.js"></script>
-  <script src="scripts/controllers/additionalPagesControllers/documents/watchDocumentsController.js"></script>
-
-
-
-  <!--App Routes-->
-  <script src="scripts/routes/routes.js"></script>
-  <script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?v=3.13/key=AIzaSyArqKwlqOFydRwfrFSsCnuEqfKeZVNuTeM"></script>
-  <script src="scripts/custom/main/viewSwipe.js"></script>
-
-  
-
 
 </body>
 

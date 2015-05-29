@@ -14,83 +14,42 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
 
-                            
-                            <!--<div class="full-size" ng-repeat="slide in data.slides" isLoaded="">
+                            <!--
+                            <div class="full-size" ng-repeat="slide in data.slides" ng-repeat-is-loaded="">
                               <div class="swiper-slide" ng-click="swipers()" style="{{slide.backgroundImage}}"></div>
                             </div>-->
-            
-                          
-                            
-                          <div class="swiper-slide" ng-click="swipers()" style="{{data.background1}}"></div>
-                          <div class="swiper-slide" ng-click="swipers()" style="{{data.background2}}"></div>
-                          <div class="swiper-slide" ng-click="swipers()" style="{{data.background3}}"></div>
 
+
+          
+          <div class="swiper-slide" ng-click="swipers()" style="{{data.background1}}"></div>
+          <div class="swiper-slide" ng-click="swipers()" style="{{data.background2}}"></div>
+          <div class="swiper-slide" ng-click="swipers()" style="{{data.background3}}"></div>
+    </div>
+
+          <div class="swiper-pagination"></div>
+  </div>
+
+                        <!--Tiles-->
+                        <h1><span>{{data.myText}}</span></h1>
+                        <h2></h2>
+
+                        <!-- Making the textbox-->
+                        <div class="textBox"> {{data.textBox1}}
+                          <br><br>
+                          {{data.textBox2}}
                         </div>
 
-                        <div class="swiper-pagination"></div>
-                      </div>
+                        <!-- unica bottom button -->
+                        <a href="{{data.myLink}}" target="_blank" type="button" class="mainBtn">
+                          <span>{{data.myLink}}</span>
+                          <i class="" style="{{data.myStyle}}"></i>
+                        </a>
 
-                      <!--Tiles-->
-                      <h1><span>{{data.myText}}</span></h1>
-                      <h2></h2>
+                       
+                        <!--<script src="scripts/custom/main/swipers.js"></script>-->
+                        <!-- <script type="text/javascript-lazy" src="scripts/custom/main/swipers.js"></script> -->
+                        <script src="bower_components/pushy/js/pushy.js"></script>
+                        <!--<lazy-load dirtype="text/javascript-lazy" src="scripts/custom/main/swipers.js"></lazy-load>-->
 
-                      <!-- Making the textbox-->
-                      <div class="textBox"> {{data.textBox1}}
-                        <br><br>
-                        {{data.textBox2}}
-                      </div>
-
-                      <!-- unica bottom button -->
-                      <a href="{{data.myLink}}" target="_blank" type="button" class="mainBtn">
-                        <span>{{data.myLink}}</span>
-                        <i class="" style="{{data.myStyle}}"></i>
-                      </a>
-
-                      <!--<script src="scripts/custom/main/swipers.js"></script>-->
-                      <!-- <script type="text/javascript-lazy" src="scripts/custom/main/swipers.js"></script> -->
-                      <script src="bower_components/pushy/js/pushy.js"></script>
-                      <script type="text/javascript-lazy" src="scripts/custom/main/swipers.js"></script>
-
-                      <script>
-
-                          /*Making my ATTRIBUTES directive*/
-                          myApp.directive('isLoaded', function (){
-            
-                              return{
-                                  scope:true,
-                                  restrict: 'A', //Attribute type
-                                  link: function (scope, elements, arguments){ //Function that picks the 3 guys
-                                    
-                                   if (scope.$last === true) {
-                                        scope.pageIsReady = true;
-                                        console.log('page Is Ready!');
-                                    }
-                                  }   
-                              }
-                          })
-
-
-                          /*Making my ATTRIBUTES directive*/
-                          myApp.directive('src', function (){
-            
-                              return{
-                                  scope:true,
-                                  restrict: 'A', //Attribute type
-                                  link: function (scope, elements, arguments){ //Function that picks the 3 guys
-                                    
-                                    scope.$on(pageIsReady===true, function(){
-                                      if (attr.type === 'text/javascript-lazy'){
-                            
-                                          scope.scriptLink = arguments.src;
-                                  
-                                      }
-                                    })
-                                  },
-                                  replace: true, //replaces our element 
-                                  template: '{{scriptLink}}'
-                              }
-                          })
-
-                      </script>
 </div>
 
