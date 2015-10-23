@@ -1,0 +1,4 @@
+UnicApp is a simple web application designed for mobile use. UnicApp was built in order to study the basics of web developing and gain knowledge on some of the most modern web technologies and developing technics.
+UnicApp was developed using: AngularJS, HTML, CSS3, Twitter Bootstrap and jQuery.
+
+If you are curious about the application, you are free to clone it on your PC. I used Grunt to build the application, so, simply, if you clone it, you have to reach the folder where UnicApp is scaffolded and run "grunt serve".
